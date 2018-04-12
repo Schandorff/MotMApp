@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="StartPage.xaml.cs">
+    <Files>
+      <File FileName="Data/TeamManager.cs" Line="29" Column="37" />
+      <File FileName="StartPage.xaml" Line="5" Column="31" />
+      <File FileName="StartPage.xaml.cs" Line="21" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.07E1A340-0F1C-46CD-BAAC-2852F2102FE8" FirstBuild="True">
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AE83162B-6AE0-4552-933D-1E2AD5BB355A">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.Manofthematch.iOS>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
   <MonoDevelop.Ide.ItemProperties.Manofthematch FirstBuild="True" />
 </Properties>

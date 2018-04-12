@@ -8,7 +8,7 @@ namespace Manofthematch
         {
             InitializeComponent();
 
-            MainPage = new ManofthematchPage();
+            MainPage = new StartPage();
         }
 
         protected override void OnStart()
