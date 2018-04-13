@@ -17,23 +17,13 @@ namespace Manofthematch
 
         public StartPage()
         {
-            //BindingContext = Token;
             InitializeComponent();
-
-
-
         }
-        async void GetAuth(object sender, EventArgs e)
-        {
 
-            Token = await manager.GetToken();
-            if (Token.AccesToken != null)
-            {
-                Label.Text = Token.AccesToken;
-            }
-            else{
-                Label.Text = "Den var sgu tom";
-            }
+        //object Content = manager.GetContent();
+        async void GetContent(object sender, EventArgs e)
+        {
+            object response = await manager.GetContent();
         }
 
 	}
