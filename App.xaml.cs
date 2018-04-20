@@ -1,4 +1,11 @@
 ﻿using Xamarin.Forms;
+using Manofthematch.Models;
+using System.Threading.Tasks;
+
+using System.Collections.Generic;
+
+using Manofthematch.Data;
+using System;
 
 namespace Manofthematch
 {
@@ -7,13 +14,13 @@ namespace Manofthematch
         public App()
         {
             InitializeComponent();
-
-            MainPage = new StartPage();
+            //MainPage = new StartPage();
+            MainPage = new LandingPage();
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+                        
         }
 
         protected override void OnSleep()

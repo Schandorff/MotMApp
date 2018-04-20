@@ -56,8 +56,6 @@
 /Users/simonschandorff/Developement/Mobile Dev/Manofthematch/Droid/obj/Debug/linksrc/Xamarin.Forms.Core.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/Manofthematch/Droid/obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/Manofthematch/Droid/obj/Debug/linksrc/Xamarin.Forms.Xaml.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\MotM.Man_of_the_match.apk
@@ -95,11 +93,15 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Newtonsoft.Json.xml
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojResolveAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CoreCompileInputs.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.App.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.ManofthematchPage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.StartPage.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.LandingPage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CopyComplete
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\bin\MotM.Man_of_the_match.apk
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\res\layout\tabbar.xml
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\res\layout\toolbar.xml
@@ -175,10 +177,3 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Transac
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Services.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.pdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojResolveAssemblyReference.cache
-D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Manofthematch.Droid.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\FormsViewGroup.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Xamarin.Forms.Xaml.dll.mdb
