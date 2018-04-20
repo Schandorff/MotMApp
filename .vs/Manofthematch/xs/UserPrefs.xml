@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StartPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LandingPage.xaml">
     <Files>
-      <File FileName="Data/TeamManager.cs" Line="29" Column="37" />
-      <File FileName="StartPage.xaml" Line="5" Column="31" />
-      <File FileName="StartPage.xaml.cs" Line="21" Column="9" />
+      <File FileName="LandingPage.xaml.cs" Line="28" Column="30" />
+      <File FileName="LandingPage.xaml" Line="6" Column="7" />
+      <File FileName="Data/Authorization.cs" Line="64" Column="29" />
+      <File FileName="App.xaml.cs" Line="19" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/LandingPage.xaml.cs" relfile="LandingPage.xaml.cs" line="37" column="1" />
+      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/LandingPage.xaml.cs" relfile="LandingPage.xaml.cs" line="35" column="1" />
+      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/LandingPage.xaml.cs" relfile="LandingPage.xaml.cs" line="28" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AE83162B-6AE0-4552-933D-1E2AD5BB355A">

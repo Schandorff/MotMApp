@@ -1,9 +1,7 @@
 ﻿using Xamarin.Forms;
 using Manofthematch.Models;
 using System.Threading.Tasks;
-
 using System.Collections.Generic;
-
 using Manofthematch.Data;
 using System;
 
@@ -20,7 +18,7 @@ namespace Manofthematch
 
         protected override void OnStart()
         {
-                        
+           // await GetContent();          
         }
 
         protected override void OnSleep()
@@ -31,6 +29,11 @@ namespace Manofthematch
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+        async Task GetContent()
+        {
+            Authorization authorization = new Authorization();
+           object response = await authorization.GetAllClubs("GetAllCLubs", 1083);
         }
     }
 }

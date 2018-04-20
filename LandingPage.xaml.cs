@@ -1,46 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Manofthematch.Data;
 using Manofthematch.Models;
-using Manofthematch;
 
 namespace Manofthematch
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+	//[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LandingPage : ContentPage
 	{
         Authorization authorization = new Authorization();
-        //Task<AuthToken> token = authorization.GetToken();
-        //string method = "GetAllClubs";
+        readonly IList<Club> clubs = new ObservableCollection<Club>();
+        readonly Authorization manager = new Authorization();
         
 
-    public LandingPage ()
+        public LandingPage ()
 		{
-            //Task.Run(async () => { await GetContent(); }).Wait();
+            BindingContext = clubs;
             InitializeComponent ();   
 		}
 
-        
+        async void OnRefresh(object sender, EventArgs e)
+        {
+            // Turn on network indicator
+            this.IsBusy = true;
 
-        //protected override async void OnStart()
-        //{
-        //    //await GetContent();
-        //    //base.OnStart();
-        //    await GetContent(sender, OnAppearing);
-        //}
+            try
+            {
+                var clubCollection = await manager.GetAllClubs("GetAllCLubs", 1083);
 
-        //async void GetContent(object sender, EventArgs e)
-        //{
-        //    object response = await authorization.GetAllClubs("GetAllCLubs", 1083);
-        //}
+                foreach (Club club in clubCollection)
+                {
+                    if (clubs.All(b => b.clubId != club.clubId))
+                        clubs.Add(club);
+                }
+            }
+            finally
+            {
+                this.IsBusy = false;
+            }
+        }
+
+
 
     }
+
 
 
 }
