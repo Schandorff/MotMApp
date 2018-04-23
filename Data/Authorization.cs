@@ -28,31 +28,11 @@ namespace Manofthematch.Data
             var response = await client.PostAsync(AuthUrl, new StringContent(Credentials, Encoding.UTF8, "application/json"));
 
             AuthToken Token = JsonConvert.DeserializeObject<AuthToken>(await response.Content.ReadAsStringAsync());
-            //client.DefaultRequestHeaders.Add("Authorization", Authororization.access_token);
 
-            //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Authororization.access_token);
-
-            //return JsonConvert.DeserializeObject<AT>(await response.Content.ReadAsStringAsync());
             return Token;
         }
 
-        //async void GetAuth(object sender, EventArgs e)
-        //{
-        //    Authorization authorize = new Authorization();
-        //    AuthToken Token = new AuthToken();
-        //    Token = await authorize.GetToken();
-        //}
 
-        //public async Task<List<Club>> GetAllClubs(string method, [Optional] int id)
-        //{
-        //    HttpClient client = new HttpClient();
-        //    var Token = await GetToken();
-        //    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.AccessToken);
-        //    var answer = await client.GetAsync(ContentUrl + method + "?" + "rootID=" + id);
-        //    //List<Club> response = JsonConvert.DeserializeObject<List<Club>>(await answer.Content.ReadAsStringAsync());
-        //    List<Club> response = JsonConvert.DeserializeObject<List<Club>>(await answer.Content.ReadAsStringAsync());
-        //    return response;
-        //}
 
         public async Task<List<Club>> GetAllClubs(string method, [Optional] int id)
         {
@@ -61,6 +41,16 @@ namespace Manofthematch.Data
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
             var answer = await client.GetAsync(ContentUrl + method + "?" + "rootID=" + id);
             List<Club> response = JsonConvert.DeserializeObject<List<Club>>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
+        public async Task<Club> GetClub(string method, [Optional] int id)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await GetToken();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "cID=" + id);
+            Club response = JsonConvert.DeserializeObject<Club>(await answer.Content.ReadAsStringAsync());
             return response;
         }
 

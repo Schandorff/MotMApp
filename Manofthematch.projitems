@@ -15,6 +15,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SingleClub.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -36,6 +40,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sponsor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StartPage.xaml.cs">
       <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SingleClub.xaml.cs">
+      <DependentUpon>SingleClub.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

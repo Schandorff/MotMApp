@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LandingPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Club.cs">
     <Files>
-      <File FileName="LandingPage.xaml.cs" Line="28" Column="30" />
-      <File FileName="LandingPage.xaml" Line="6" Column="7" />
-      <File FileName="Data/Authorization.cs" Line="64" Column="29" />
-      <File FileName="App.xaml.cs" Line="19" Column="19" />
+      <File FileName="LandingPage.xaml.cs" Line="18" Column="14" />
+      <File FileName="SingleClub.xaml.cs" Line="31" Column="44" />
+      <File FileName="App.xaml.cs" Line="39" Column="15" />
+      <File FileName="LandingPage.xaml" Line="17" Column="81" />
+      <File FileName="SingleClub.xaml" Line="6" Column="110" />
+      <File FileName="Data/Authorization.cs" Line="31" Column="13" />
+      <File FileName="Models/Club.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/LandingPage.xaml.cs" relfile="LandingPage.xaml.cs" line="37" column="1" />
-      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/LandingPage.xaml.cs" relfile="LandingPage.xaml.cs" line="35" column="1" />
-      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/LandingPage.xaml.cs" relfile="LandingPage.xaml.cs" line="28" column="1" />
+      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/SingleClub.xaml" relfile="SingleClub.xaml" line="5" column="106" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

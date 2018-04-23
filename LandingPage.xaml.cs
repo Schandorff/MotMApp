@@ -17,14 +17,19 @@ namespace Manofthematch
         Authorization authorization = new Authorization();
         readonly IList<Club> clubs = new ObservableCollection<Club>();
         readonly Authorization manager = new Authorization();
-        
 
         public LandingPage ()
 		{
+            //foreach (Club club in)
+            //{
+            //    if (clubs.All(b => b.clubId != club.clubId))
+            //        clubs.Add(club);
+            //}
             BindingContext = clubs;
-            InitializeComponent ();   
-		}
+            InitializeComponent ();
+          
 
+		}
         async void OnRefresh(object sender, EventArgs e)
         {
             // Turn on network indicator
@@ -44,6 +49,10 @@ namespace Manofthematch
             {
                 this.IsBusy = false;
             }
+        }
+        async void OnClubSelect(object sender, ItemTappedEventArgs e)
+        {
+            await Navigation.PushAsync(new SingleClub((Club)e.Item));
         }
 
 

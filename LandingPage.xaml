@@ -11,7 +11,7 @@
             <ScrollView>
                
                <ListView ItemsSource="{Binding}"
-                  >
+                    ItemTapped="OnClubSelect">
             <ListView.ItemTemplate>
               <DataTemplate>
                 <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}">

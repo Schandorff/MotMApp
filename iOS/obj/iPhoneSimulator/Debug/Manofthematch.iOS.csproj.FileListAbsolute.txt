@@ -187,3 +187,4 @@ D:/source/Xamarin projects/MotMApp/iOS/obj/iPhoneSimulator/Debug/Manofthematch.i
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/Manofthematch.iOS.SingleClub.xaml.g.cs

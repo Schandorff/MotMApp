@@ -9,16 +9,17 @@ namespace Manofthematch
 {
     public partial class App : Application
     {
+
         public App()
         {
             InitializeComponent();
             //MainPage = new StartPage();
-            MainPage = new LandingPage();
+            MainPage = new NavigationPage(new LandingPage());
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
-           // await GetContent();          
+           await GetContent();          
         }
 
         protected override void OnSleep()
@@ -33,7 +34,12 @@ namespace Manofthematch
         async Task GetContent()
         {
             Authorization authorization = new Authorization();
-           object response = await authorization.GetAllClubs("GetAllCLubs", 1083);
+            AllClubs = await authorization.GetAllClubs("GetAllCLubs", 1083);
+        }
+        public List<Club> AllClubs
+        {
+            get;
+            set;
         }
     }
 }
