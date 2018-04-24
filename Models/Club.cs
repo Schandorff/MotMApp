@@ -13,5 +13,7 @@ namespace Manofthematch.Models
         public string clubCity { get; set; }
         public string clubLogo { get; set; }
         public string clubImage { get; set; }
+        public List<Sponsor> Sponsors { get; set; }
+        public List<Team> Teams { get; set; }
     }
 }

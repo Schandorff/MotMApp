@@ -2,9 +2,45 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Manofthematch.SingleClub">
     <ContentPage.Content>
          <StackLayout>
-            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding clubName}"></Label>
-            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding clubAddress}"></Label>
+       <StackLayout>
+         
+               <Label x:Name="clubName"></Label>
+               <ListView ItemsSource="{Binding}"
+                    >
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <TextCell Text="{Binding TeamName}">
+                  
+                </TextCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+           
         </StackLayout>
-       
+        
+        <StackLayout>
+               
+               <ListView ItemsSource="{Binding}"
+                    >
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="{Binding teamMatches.[0].matchStartDateTime}"></Label>
+                            <Label Text="{Binding TeamName}"></Label>
+                            <Label Text="{Binding teamMatches.[0].opponent}"></Label>
+                        </StackLayout>
+                    </StackLayout>            
+                </ViewCell>
+          
+              </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+
+        </StackLayout>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>

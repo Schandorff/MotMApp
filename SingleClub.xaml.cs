@@ -2,6 +2,8 @@
 using Manofthematch.Data;
 using Manofthematch.Models;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 using Xamarin.Forms;
 
@@ -11,6 +13,8 @@ namespace Manofthematch
     {
         readonly Club currentClub;
         readonly Authorization manager = new Authorization();
+        public IList<Team> teams = new ObservableCollection<Team>();
+
         Club requestedClub = new Club();
         //readonly IList<Club> clubs;
         //readonly Authorization manager;
@@ -28,7 +32,23 @@ namespace Manofthematch
             base.OnAppearing();
 
             requestedClub = await manager.GetClub("GetCLub", currentClub.clubId);
-            BindingContext = requestedClub;
+
+            List<Team> ClubTeams = requestedClub.Teams;
+            foreach (Team team in ClubTeams)
+            {
+                if (teams.All(b => b.teamId != team.teamId))
+                    teams.Add(team);
+                
+                IList<Match> teamMatches = new ObservableCollection<Match>();
+
+                foreach (Match match in team.teamMatches)
+                {
+                    teamMatches.Add(match);
+                }
+            }
+            BindingContext = teams;
+
+            clubName.Text = currentClub.clubName;
             
         }
     }

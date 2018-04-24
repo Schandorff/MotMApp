@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Club.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SingleClub.xaml">
     <Files>
-      <File FileName="LandingPage.xaml.cs" Line="18" Column="14" />
-      <File FileName="SingleClub.xaml.cs" Line="31" Column="44" />
-      <File FileName="App.xaml.cs" Line="39" Column="15" />
-      <File FileName="LandingPage.xaml" Line="17" Column="81" />
-      <File FileName="SingleClub.xaml" Line="6" Column="110" />
-      <File FileName="Data/Authorization.cs" Line="31" Column="13" />
-      <File FileName="Models/Club.cs" Line="1" Column="1" />
+      <File FileName="LandingPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SingleClub.xaml.cs" Line="25" Column="26" />
+      <File FileName="SingleClub.xaml" Line="31" Column="86" />
+      <File FileName="LandingPage.xaml" Line="26" Column="15" />
+      <File FileName="Models/Team.cs" Line="13" Column="39" />
+      <File FileName="Models/Match.cs" Line="14" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -22,5 +21,4 @@
   </MonoDevelop.Ide.ItemProperties.Manofthematch.iOS>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch FirstBuild="True" />
 </Properties>
