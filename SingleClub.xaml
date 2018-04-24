@@ -26,8 +26,8 @@
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell>
-                    <StackLayout>
-                        <StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
                             <Label Text="{Binding teamMatches.[0].matchStartDateTime}"></Label>
                             <Label Text="{Binding TeamName}"></Label>
                             <Label Text="{Binding teamMatches.[0].opponent}"></Label>

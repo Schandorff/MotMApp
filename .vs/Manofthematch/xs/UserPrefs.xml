@@ -3,10 +3,10 @@
     <Files>
       <File FileName="LandingPage.xaml.cs" Line="1" Column="1" />
       <File FileName="SingleClub.xaml.cs" Line="25" Column="26" />
-      <File FileName="SingleClub.xaml" Line="31" Column="86" />
+      <File FileName="SingleClub.xaml" Line="34" Column="37" />
       <File FileName="LandingPage.xaml" Line="26" Column="15" />
       <File FileName="Models/Team.cs" Line="13" Column="39" />
-      <File FileName="Models/Match.cs" Line="14" Column="31" />
+      <File FileName="Models/Match.cs" Line="10" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
