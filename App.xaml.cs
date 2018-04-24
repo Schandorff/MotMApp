@@ -4,6 +4,9 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Manofthematch.Data;
 using System;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
+using System.Diagnostics;
 
 namespace Manofthematch
 {
@@ -19,7 +22,8 @@ namespace Manofthematch
 
         protected override async void OnStart()
         {
-           await GetContent();          
+           await GetContent();
+           CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
         }
 
         protected override void OnSleep()
@@ -41,5 +45,41 @@ namespace Manofthematch
             get;
             set;
         }
+
+        //protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+
+        //    //ConnectionDetails.Text = "The Network Connection Status: " + CrossConnectivity.Current.IsConnected.ToString();
+
+
+        //    CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+        //}
+
+        //protected override void OnDisappearing()
+        //{
+        //    base.OnDisappearing();
+
+        //    if (CrossConnectivity.Current != null)
+        //        CrossConnectivity.Current.ConnectivityChanged -= UpdateNetworkInfo;
+        //}
+
+        private void UpdateNetworkInfo(object sender, ConnectivityChangedEventArgs e)
+        {
+            if (!e.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else if (e.IsConnected)
+            {
+                Debug.WriteLine($"Connected");
+            }
+            //if (CrossConnectivity.Current != null && CrossConnectivity.Current.ConnectionTypes != null)
+            //{
+            //    var connectionType = e.IsConnected;
+            //    ConnectionDetails.Text = "The Network Connection Status: " + connectionType.ToString();
+            //}
+        }
+
     }
 }
