@@ -13,18 +13,26 @@ namespace Manofthematch
     public partial class App : Application
     {
 
+        public List<Club> toomanyclubs;
+
         public App()
         {
             InitializeComponent();
-            //MainPage = new StartPage();
+
             MainPage = new NavigationPage(new LandingPage());
         }
 
-        protected override async void OnStart()
+
+        
+
+        protected async override void OnStart()
         {
-           await GetContent();
-           CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+            toomanyclubs = await GetContent();
+            
+            CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
         }
+
+        
 
         protected override void OnSleep()
         {
@@ -35,34 +43,17 @@ namespace Manofthematch
         {
             // Handle when your app resumes
         }
-        async Task GetContent()
+        async Task<List<Club>> GetContent()
         {
             Authorization authorization = new Authorization();
             AllClubs = await authorization.GetAllClubs("GetAllCLubs", 1083);
+            return AllClubs;
         }
         public List<Club> AllClubs
         {
             get;
             set;
         }
-
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-
-        //    //ConnectionDetails.Text = "The Network Connection Status: " + CrossConnectivity.Current.IsConnected.ToString();
-
-
-        //    CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
-        //}
-
-        //protected override void OnDisappearing()
-        //{
-        //    base.OnDisappearing();
-
-        //    if (CrossConnectivity.Current != null)
-        //        CrossConnectivity.Current.ConnectivityChanged -= UpdateNetworkInfo;
-        //}
 
         private void UpdateNetworkInfo(object sender, ConnectivityChangedEventArgs e)
         {
@@ -74,11 +65,7 @@ namespace Manofthematch
             {
                 Debug.WriteLine($"Connected");
             }
-            //if (CrossConnectivity.Current != null && CrossConnectivity.Current.ConnectionTypes != null)
-            //{
-            //    var connectionType = e.IsConnected;
-            //    ConnectionDetails.Text = "The Network Connection Status: " + connectionType.ToString();
-            //}
+
         }
 
     }

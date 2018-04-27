@@ -34,16 +34,19 @@ namespace Manofthematch
             requestedClub = await manager.GetClub("GetCLub", currentClub.clubId);
 
             List<Team> ClubTeams = requestedClub.Teams;
+
+            
             foreach (Team team in ClubTeams)
             {
                 if (teams.All(b => b.teamId != team.teamId))
                     teams.Add(team);
                 
                 IList<Match> teamMatches = new ObservableCollection<Match>();
-
-                foreach (Match match in team.teamMatches)
-                {
-                    teamMatches.Add(match);
+                if (teamMatches.Count != 0) { 
+                    foreach (Match match in team.teamMatches)
+                    {
+                        teamMatches.Add(match);
+                    }
                 }
             }
             BindingContext = teams;

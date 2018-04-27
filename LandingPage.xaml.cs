@@ -11,6 +11,7 @@ using Manofthematch.Models;
 using System.Diagnostics;
 using Plugin.Connectivity.Abstractions;
 using Plugin.Connectivity;
+using Manofthematch;
 
 namespace Manofthematch
 {
@@ -18,21 +19,66 @@ namespace Manofthematch
 	public partial class LandingPage : ContentPage
 	{
         Authorization authorization = new Authorization();
-        readonly IList<Club> clubs = new ObservableCollection<Club>();
+        public IList<Club> clubs = new ObservableCollection<Club>();
         readonly Authorization manager = new Authorization();
 
         public LandingPage ()
 		{
-            //foreach (Club club in)
+            //this.clubs = clubs;
+            //List<Club> anyClubs = await GetContent();
+            //foreach (Club club in manyclubs)
             //{
             //    if (clubs.All(b => b.clubId != club.clubId))
             //        clubs.Add(club);
             //}
             BindingContext = clubs;
             InitializeComponent ();
-          
+            
+
 
 		}
+
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else
+            {
+                Debug.WriteLine($"Connected");
+                this.IsBusy = true;
+                try
+                {
+                    var clubCollection = await GetContent();
+
+                    foreach (Club club in clubCollection)
+                    {
+                        if (clubs.All(b => b.clubId != club.clubId))
+                            clubs.Add(club);
+                    }
+                }
+                finally
+                {
+                    this.IsBusy = false;
+                }
+            }
+        }
+
+        async Task<List<Club>> GetContent()
+        {
+            Authorization authorization = new Authorization();
+            AllClubs = await authorization.GetAllClubs("GetAllCLubs", 1083);
+            return AllClubs;
+        }
+
+        public List<Club> AllClubs
+        {
+            get;
+            set;
+        }
+
         async void OnRefresh(object sender, EventArgs e)
         {
             // Turn on network indicator

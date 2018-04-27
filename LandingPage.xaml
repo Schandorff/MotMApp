@@ -2,24 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Manofthematch.LandingPage">
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
-      </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
     <ContentPage.Content>
         <StackLayout>
-         <Button Clicked="OnRefresh" Text="klik mig" Margin="50"/>
+            <!--<Button Clicked="OnRefresh" Text="Stem" Style="{DynamicResource btnStyle}"/>-->
             <ScrollView>
-               
-               <ListView ItemsSource="{Binding}"
-                    ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}">
-                  
-                </TextCell>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+               <ListView ItemsSource="{Binding}" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </ScrollView>
         </StackLayout>
     </ContentPage.Content>

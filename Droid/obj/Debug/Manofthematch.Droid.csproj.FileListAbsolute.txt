@@ -84,13 +84,14 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Core.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Platform.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\FormsViewGroup.pdb
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\FormsViewGroup.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Plugin.Connectivity.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Plugin.Connectivity.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Plugin.Connectivity.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Plugin.Connectivity.Abstractions.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Plugin.Connectivity.Abstractions.xml
-D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\FormsViewGroup.pdb
-D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Newtonsoft.Json.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Core.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Core.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
@@ -99,7 +100,6 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Platform.Androi
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Newtonsoft.Json.xml
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojResolveAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CoreCompileInputs.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.App.xaml.g.cs
@@ -189,6 +189,9 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Transac
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Services.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.pdb
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Android.Arch.Core.Common.dll
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Android.Arch.Lifecycle.Common.dll
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Android.Arch.Lifecycle.Runtime.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Manofthematch.Droid.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\FormsViewGroup.dll.mdb

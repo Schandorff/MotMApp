@@ -11,6 +11,9 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Net.Http.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Android.Arch.Core.Common.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Common.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Android.Arch.Lifecycle.Runtime.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Android.Support.Annotations.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Android.Support.Compat.dll
