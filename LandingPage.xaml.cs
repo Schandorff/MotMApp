@@ -24,64 +24,13 @@ namespace Manofthematch
 
         public LandingPage ()
 		{
-            //this.clubs = clubs;
-            //List<Club> anyClubs = await GetContent();
-            //foreach (Club club in manyclubs)
-            //{
-            //    if (clubs.All(b => b.clubId != club.clubId))
-            //        clubs.Add(club);
-            //}
             BindingContext = clubs;
-            InitializeComponent ();
-            
-
-
+            InitializeComponent ();     
 		}
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            if (!CrossConnectivity.Current.IsConnected)
-            {
-                Debug.WriteLine($"No connection");
-            }
-            else
-            {
-                Debug.WriteLine($"Connected");
-                this.IsBusy = true;
-                try
-                {
-                    var clubCollection = await GetContent();
-
-                    foreach (Club club in clubCollection)
-                    {
-                        if (clubs.All(b => b.clubId != club.clubId))
-                            clubs.Add(club);
-                    }
-                }
-                finally
-                {
-                    this.IsBusy = false;
-                }
-            }
-        }
-
-        async Task<List<Club>> GetContent()
-        {
-            Authorization authorization = new Authorization();
-            AllClubs = await authorization.GetAllClubs("GetAllCLubs", 1083);
-            return AllClubs;
-        }
-
-        public List<Club> AllClubs
-        {
-            get;
-            set;
-        }
-
-        async void OnRefresh(object sender, EventArgs e)
-        {
-            // Turn on network indicator
             if (!CrossConnectivity.Current.IsConnected)
             {
                 Debug.WriteLine($"No connection");
@@ -106,6 +55,7 @@ namespace Manofthematch
                 }
             }
         }
+
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
         {
             await Navigation.PushAsync(new SingleClub((Club)e.Item));
