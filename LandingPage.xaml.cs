@@ -18,9 +18,9 @@ namespace Manofthematch
 	//[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LandingPage : ContentPage
 	{
-        Authorization authorization = new Authorization();
+        //Authorization authorization = new Authorization();
         public IList<Club> clubs = new ObservableCollection<Club>();
-        readonly Authorization manager = new Authorization();
+        readonly ApiMethods apiMethods = new ApiMethods();
 
         public LandingPage ()
 		{
@@ -41,7 +41,7 @@ namespace Manofthematch
                 this.IsBusy = true;
                 try
                 {
-                    var clubCollection = await manager.GetAllClubs("GetAllCLubs", 1083);
+                    var clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
 
                     foreach (Club club in clubCollection)
                     {

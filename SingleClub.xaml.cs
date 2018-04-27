@@ -12,7 +12,7 @@ namespace Manofthematch
     public partial class SingleClub : ContentPage
     {
         readonly Club currentClub;
-        readonly Authorization manager = new Authorization();
+        readonly ApiMethods apiMethods = new ApiMethods();
         public IList<Team> teams = new ObservableCollection<Team>();
 
         Club requestedClub = new Club();
@@ -23,18 +23,13 @@ namespace Manofthematch
         {
             this.currentClub = currentClub;
             InitializeComponent();
-           
-
-
         }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
-            requestedClub = await manager.GetClub("GetCLub", currentClub.clubId);
-
+            requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
             List<Team> ClubTeams = requestedClub.Teams;
-
             
             foreach (Team team in ClubTeams)
             {
@@ -50,9 +45,7 @@ namespace Manofthematch
                 }
             }
             BindingContext = teams;
-
-            clubName.Text = currentClub.clubName;
-            
+            clubName.Text = currentClub.clubName;            
         }
     }
 }

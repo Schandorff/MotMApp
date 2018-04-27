@@ -12,27 +12,16 @@ namespace Manofthematch
 {
     public partial class App : Application
     {
-
-        public List<Club> toomanyclubs;
-
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new LandingPage());
-        }
+        }        
 
-
-        
-
-        protected async override void OnStart()
-        {
-            toomanyclubs = await GetContent();
-            
+        protected override void OnStart()
+        {            
             CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
-        }
-
-        
+        }        
 
         protected override void OnSleep()
         {
@@ -42,17 +31,6 @@ namespace Manofthematch
         protected override void OnResume()
         {
             // Handle when your app resumes
-        }
-        async Task<List<Club>> GetContent()
-        {
-            Authorization authorization = new Authorization();
-            AllClubs = await authorization.GetAllClubs("GetAllCLubs", 1083);
-            return AllClubs;
-        }
-        public List<Club> AllClubs
-        {
-            get;
-            set;
         }
 
         private void UpdateNetworkInfo(object sender, ConnectivityChangedEventArgs e)
@@ -67,6 +45,5 @@ namespace Manofthematch
             }
 
         }
-
     }
 }
