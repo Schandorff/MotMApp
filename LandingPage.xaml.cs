@@ -19,12 +19,16 @@ namespace Manofthematch
 	public partial class LandingPage : ContentPage
 	{
         //Authorization authorization = new Authorization();
-        public IList<Club> clubs = new ObservableCollection<Club>();
+        public IList<Club> sealandClubs = new ObservableCollection<Club>();
+        public IList<Club> jutlandClubs = new ObservableCollection<Club>();
+        public IList<Club> fuenenClubs = new ObservableCollection<Club>();
+        public IList<Club> bornholmClubs = new ObservableCollection<Club>();
         readonly ApiMethods apiMethods = new ApiMethods();
+        
 
         public LandingPage ()
 		{
-            BindingContext = clubs;
+            NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             InitializeComponent ();     
 		}
 
@@ -43,23 +47,49 @@ namespace Manofthematch
                 {
                     var clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
 
-                    foreach (Club club in clubCollection)
-                    {
-                        if (clubs.All(b => b.clubId != club.clubId))
-                            clubs.Add(club);
-                    }
+                    jutlandClubs = await SortClubsByRegion(clubCollection, "Jylland");
+                    fuenenClubs = await SortClubsByRegion(clubCollection, "Fyn");
+                    sealandClubs = await SortClubsByRegion(clubCollection, "Sjælland");
+                    bornholmClubs = await SortClubsByRegion(clubCollection, "Bornholm");
+
+                    //foreach (Club club in sealandClubs)
+                    //{
+                    //    if (sealandClubs.All(b => b.clubId != club.clubId))
+                    //        clubs.Add(club);
+                    //}
                 }
                 finally
                 {
                     this.IsBusy = false;
                 }
             }
+            allJutlandClubs.ItemsSource = jutlandClubs;
+            allFuenenClubs.ItemsSource = fuenenClubs;
+            allSealandClubs.ItemsSource = sealandClubs;
+            allBornholmClubs.ItemsSource = bornholmClubs;
+            //BindingContext = sealandClubs;
         }
 
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
         {
             await Navigation.PushAsync(new SingleClub((Club)e.Item));
-        }        
+        }
+
+        public async Task<List<Club>> SortClubsByRegion (List<Club> sender, string region)
+        {
+            List<Club> clubCollection = sender;
+            List<Club> sortedClub = new List<Club>();
+
+            foreach (Club club in clubCollection)
+            {
+                if (club.clubRegion == region)
+                { 
+                   sortedClub.Add(club);
+                }
+            }
+
+            return sortedClub;
+        }
     }
 }
 

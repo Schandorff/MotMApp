@@ -12,15 +12,20 @@ namespace Manofthematch
 {
     public partial class App : Application
     {
+        public static NavigationPage Navigation = null;
         public App()
         {
             InitializeComponent();
+            
             MainPage = new NavigationPage(new LandingPage());
+            //Application.Current.MainPage = Navigation;
+            //Current.MainPage = Navigation;
         }        
 
         protected override void OnStart()
         {            
             CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+            
         }        
 
         protected override void OnSleep()
@@ -44,6 +49,12 @@ namespace Manofthematch
                 Debug.WriteLine($"Connected");
             }
 
+        }
+
+        // Called by the back button in our header/navigation bar.
+        public async void OnBackButtonPressed(object sender, EventArgs e)
+        {
+            await ((NavigationPage)Application.Current.MainPage).PopAsync();
         }
     }
 }

@@ -114,7 +114,7 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <BundleResource Include="Resources\tennis.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -127,6 +127,57 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FodboldBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FodboldBG%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FodboldBG%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hockey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hockey%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hockey%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soccer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soccer%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soccer%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tennis%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tennis%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrowback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrowback%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrowback%403x.png" />
   </ItemGroup>
   <Import Project="..\Manofthematch.projitems" Label="Shared" Condition="Exists('..\Manofthematch.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

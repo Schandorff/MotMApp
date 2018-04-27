@@ -16,11 +16,10 @@ namespace Manofthematch
         public IList<Team> teams = new ObservableCollection<Team>();
 
         Club requestedClub = new Club();
-        //readonly IList<Club> clubs;
-        //readonly Authorization manager;
 
         public SingleClub(Club currentClub)
         {
+            NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             this.currentClub = currentClub;
             InitializeComponent();
         }

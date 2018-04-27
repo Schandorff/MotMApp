@@ -16,6 +16,46 @@
                 <Setter Property="HeightRequest" Value="30"/>
                 <Setter Property="Margin" Value="10"/>
             </Style>
+
+            <ControlTemplate x:Key="MainPageTemplate">
+
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Begin Header -->
+                    <StackLayout x:Name="navBar"
+                        Orientation="Vertical"
+                        HorizontalOptions="Start"
+                        VerticalOptions="FillAndExpand"
+                        Spacing="0"
+                        BackgroundColor="#0000"
+                        HeightRequest="100"
+                        Grid.Column="0" Grid.Row="0">
+                            <StackLayout.Padding>
+                                <OnPlatform x:TypeArguments="Thickness"
+                                iOS="10, 10, 10, 10"
+                                Android="10, 10, 10, 10"
+                                WinPhone="10, 10, 10, 10" />
+                            </StackLayout.Padding>
+                        <!-- Header Content. -->
+                        <Image Source="arrowback.png" WidthRequest="20" HeightRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnBackButtonPressed" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                    <!-- End Header -->
+
+                    <!-- Begin Content -->
+                    <ScrollView Grid.Column="0" Grid.Row="1">
+                        <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                    </ScrollView>
+                    <!-- End Content -->
+                </Grid>
+            </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
