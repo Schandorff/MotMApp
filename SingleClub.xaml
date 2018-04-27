@@ -4,7 +4,7 @@
          <StackLayout>
        <StackLayout>
          
-               <Label x:Name="clubName"></Label>
+               <Label x:Name="clubName" VerticalTextAlignment="Center"></Label>
                <ListView ItemsSource="{Binding}"
                     >
             <ListView.ItemTemplate>
@@ -20,17 +20,19 @@
         </StackLayout>
         
         <StackLayout>
-               
-               <ListView ItemsSource="{Binding}"
-                    >
+              <ScrollView Orientation="Horizontal">
+               <ListView x:Name="gameList" RowHeight="100" WidthRequest="400">
+       
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell>
-                    <StackLayout Orientation="Vertical">
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding teamMatches.[0].matchStartDateTime}"></Label>
-                            <Label Text="{Binding TeamName}"></Label>
-                            <Label Text="{Binding teamMatches.[0].opponent}"></Label>
+                    <StackLayout>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding matchStartDateTime}"></Label>
+                            <Label Text="{Binding matchAddress}"></Label>
+                            <Label Text="TeamName"></Label>
+
+                            <Label Text="{Binding opponent}"></Label>
                         </StackLayout>
                     </StackLayout>            
                 </ViewCell>
@@ -39,8 +41,9 @@
             </ListView.ItemTemplate>
         </ListView>
             
-
+            </ScrollView>
         </StackLayout>
-            </StackLayout>
-    </ContentPage.Content>
+            
+      </StackLayout>
+   </ContentPage.Content>
 </ContentPage>

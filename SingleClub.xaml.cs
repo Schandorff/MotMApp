@@ -13,7 +13,9 @@ namespace Manofthematch
     {
         readonly Club currentClub;
         readonly Authorization manager = new Authorization();
-        public IList<Team> teams = new ObservableCollection<Team>();
+        readonly IList<Team> teams = new ObservableCollection<Team>();
+        readonly IList<Match> teamMatches = new ObservableCollection<Match>();
+
 
         Club requestedClub = new Club();
         //readonly IList<Club> clubs;
@@ -39,17 +41,20 @@ namespace Manofthematch
                 if (teams.All(b => b.teamId != team.teamId))
                     teams.Add(team);
                 
-                IList<Match> teamMatches = new ObservableCollection<Match>();
+               
 
                 foreach (Match match in team.teamMatches)
                 {
                     teamMatches.Add(match);
+
                 }
+
             }
+            gameList.ItemsSource = teamMatches;
             BindingContext = teams;
 
             clubName.Text = currentClub.clubName;
-            
+
         }
     }
 }
