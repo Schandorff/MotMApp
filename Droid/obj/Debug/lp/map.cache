@@ -1,6 +1,11 @@
 FormsViewGroup
 Newtonsoft.Json
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity
 System.Runtime
+Xamarin.Android.Arch.Core.Common
+Xamarin.Android.Arch.Lifecycle.Common
+Xamarin.Android.Arch.Lifecycle.Runtime
 Xamarin.Android.Support.Animated.Vector.Drawable
 Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat

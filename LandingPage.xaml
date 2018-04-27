@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Manofthematch.LandingPage">
-    <ContentPage.ToolbarItems>
+             x:Class="Manofthematch.LandingPage"
+             BackgroundImage="FodboldBG.png">
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
-      </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
     <ContentPage.Content>
-        <StackLayout>
-         <Button Clicked="OnRefresh" Text="klik mig" Margin="50"/>
-            <ScrollView>
-               
-               <ListView ItemsSource="{Binding}"
-                    ItemTapped="OnClubSelect">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}">
-                  
-                </TextCell>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-            </ScrollView>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Spacing="0">
+                <ListView x:Name="allJutlandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                </StackLayout>
+                <ListView x:Name="allSealandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <ListView x:Name="allBornholmClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            
+                <ListView x:Name="allFuenenClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>            
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

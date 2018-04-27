@@ -8,57 +8,89 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Manofthematch.Data;
 using Manofthematch.Models;
+using System.Diagnostics;
+using Plugin.Connectivity.Abstractions;
+using Plugin.Connectivity;
+using Manofthematch;
 
 namespace Manofthematch
 {
 	//[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LandingPage : ContentPage
 	{
-        Authorization authorization = new Authorization();
-        readonly IList<Club> clubs = new ObservableCollection<Club>();
-        readonly Authorization manager = new Authorization();
+        //Authorization authorization = new Authorization();
+        public IList<Club> sealandClubs = new ObservableCollection<Club>();
+        public IList<Club> jutlandClubs = new ObservableCollection<Club>();
+        public IList<Club> fuenenClubs = new ObservableCollection<Club>();
+        public IList<Club> bornholmClubs = new ObservableCollection<Club>();
+        readonly ApiMethods apiMethods = new ApiMethods();
+        
 
         public LandingPage ()
 		{
-            //foreach (Club club in)
-            //{
-            //    if (clubs.All(b => b.clubId != club.clubId))
-            //        clubs.Add(club);
-            //}
-            BindingContext = clubs;
-            InitializeComponent ();
-          
-
+            NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
+            InitializeComponent ();     
 		}
-        async void OnRefresh(object sender, EventArgs e)
+
+        protected async override void OnAppearing()
         {
-            // Turn on network indicator
-            this.IsBusy = true;
-
-            try
+            base.OnAppearing();
+            if (!CrossConnectivity.Current.IsConnected)
             {
-                var clubCollection = await manager.GetAllClubs("GetAllCLubs", 1083);
-
-                foreach (Club club in clubCollection)
+                Debug.WriteLine($"No connection");
+            }
+            else
+            {
+                Debug.WriteLine($"Connected");
+                this.IsBusy = true;
+                try
                 {
-                    if (clubs.All(b => b.clubId != club.clubId))
-                        clubs.Add(club);
+                    var clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
+
+                    jutlandClubs = await SortClubsByRegion(clubCollection, "Jylland");
+                    fuenenClubs = await SortClubsByRegion(clubCollection, "Fyn");
+                    sealandClubs = await SortClubsByRegion(clubCollection, "Sjælland");
+                    bornholmClubs = await SortClubsByRegion(clubCollection, "Bornholm");
+
+                    //foreach (Club club in sealandClubs)
+                    //{
+                    //    if (sealandClubs.All(b => b.clubId != club.clubId))
+                    //        clubs.Add(club);
+                    //}
+                }
+                finally
+                {
+                    this.IsBusy = false;
                 }
             }
-            finally
-            {
-                this.IsBusy = false;
-            }
+            allJutlandClubs.ItemsSource = jutlandClubs;
+            allFuenenClubs.ItemsSource = fuenenClubs;
+            allSealandClubs.ItemsSource = sealandClubs;
+            allBornholmClubs.ItemsSource = bornholmClubs;
+            //BindingContext = sealandClubs;
         }
+
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
         {
             await Navigation.PushAsync(new SingleClub((Club)e.Item));
         }
 
+        public async Task<List<Club>> SortClubsByRegion (List<Club> sender, string region)
+        {
+            List<Club> clubCollection = sender;
+            List<Club> sortedClub = new List<Club>();
 
+            foreach (Club club in clubCollection)
+            {
+                if (club.clubRegion == region)
+                { 
+                   sortedClub.Add(club);
+                }
+            }
 
+            return sortedClub;
+        }
     }
-
-
-
 }
+
+//await navigation.poptoroot

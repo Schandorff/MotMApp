@@ -4,23 +4,29 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Manofthematch.Data;
 using System;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
+using System.Diagnostics;
 
 namespace Manofthematch
 {
     public partial class App : Application
     {
-
+        public static NavigationPage Navigation = null;
         public App()
         {
             InitializeComponent();
-            //MainPage = new StartPage();
+            
             MainPage = new NavigationPage(new LandingPage());
-        }
+            //Application.Current.MainPage = Navigation;
+            //Current.MainPage = Navigation;
+        }        
 
-        protected override async void OnStart()
-        {
-           await GetContent();          
-        }
+        protected override void OnStart()
+        {            
+            CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+            
+        }        
 
         protected override void OnSleep()
         {
@@ -31,15 +37,24 @@ namespace Manofthematch
         {
             // Handle when your app resumes
         }
-        async Task GetContent()
+
+        private void UpdateNetworkInfo(object sender, ConnectivityChangedEventArgs e)
         {
-            Authorization authorization = new Authorization();
-            AllClubs = await authorization.GetAllClubs("GetAllCLubs", 1083);
+            if (!e.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else if (e.IsConnected)
+            {
+                Debug.WriteLine($"Connected");
+            }
+
         }
-        public List<Club> AllClubs
+
+        // Called by the back button in our header/navigation bar.
+        public async void OnBackButtonPressed(object sender, EventArgs e)
         {
-            get;
-            set;
+            await ((NavigationPage)Application.Current.MainPage).PopAsync();
         }
     }
 }
