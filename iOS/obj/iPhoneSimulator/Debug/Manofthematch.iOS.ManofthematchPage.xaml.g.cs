@@ -11,7 +11,7 @@
 namespace Manofthematch {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\source\\Xamarin projects\\MotMApp\\ManofthematchPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/simonschandorff/Developement/Mobile Dev/MotMApp/ManofthematchPage.xaml")]
     public partial class ManofthematchPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
