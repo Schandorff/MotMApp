@@ -6,7 +6,7 @@
              BackgroundImage="FodboldBG.png">
     <ContentPage.Content>
         <ScrollView>
-        <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="Default" HasUnevenRows="false" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect">
+            <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}">
 
                 <flv:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
