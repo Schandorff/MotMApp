@@ -5,22 +5,48 @@
              x:Class="Manofthematch.FlowListTryout"
              BackgroundImage="FodboldBG.png">
     <ContentPage.Content>
-        <ScrollView>
-            <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Column="0" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Handball" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>                
+            </Grid>
 
-                <flv:FlowListView.FlowColumnTemplate>
-                    <DataTemplate>
-                        
-                            <StackLayout Orientation="Vertical" Padding="10">
-                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">                                    
-                                    <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
-                                    <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="sportTypeLabel" Text="Fodbold" FontSize="Large" TextColor="White" Grid.Column="0" Grid.Row="1"></Label>
+            
+            <ScrollView Grid.Column="0" Grid.Row="2">
+                <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand">
+                    <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">                                    
+                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>    
                             </StackLayout>
-                            </StackLayout>
-                        
-                    </DataTemplate>
-                </flv:FlowListView.FlowColumnTemplate>
-            </flv:FlowListView>
-        </ScrollView>
+                        </DataTemplate>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

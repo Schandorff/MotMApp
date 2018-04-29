@@ -36,9 +36,10 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ObjectModel.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Collections.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threading.dll
@@ -70,7 +71,6 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Ser
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.Linq.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Globalization.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.Expressions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Dynamic.Runtime.dll

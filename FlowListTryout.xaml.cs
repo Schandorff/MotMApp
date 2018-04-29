@@ -19,44 +19,45 @@ namespace Manofthematch
     public partial class FlowListTryout : ContentPage
     {
         public FlowObservableCollection<Club> allClubs = new FlowObservableCollection<Club>();
-        public FlowObservableCollection<Object> clubsSortedBySport = new FlowObservableCollection<Object>();
+        public FlowObservableCollection<Object> clubsSorted = new FlowObservableCollection<Object>();
         public List<Club> clubCollection = new List<Club>();
-
+        bool isInitialized = false;
         readonly ApiMethods apiMethods = new ApiMethods();
 
         public FlowListTryout()
         {
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
+            //soccerBtn.Clicked += delegate (object sender, EventArgs e) { this.button_Click(sender, e, "Hockey"); };
             InitializeComponent();
         }        
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            if (!CrossConnectivity.Current.IsConnected)
+            if (!isInitialized)
             {
-                Debug.WriteLine($"No connection");
-            }
-            else
-            {
-                Debug.WriteLine($"Connected");
-                this.IsBusy = true;
-                try
+                if (!CrossConnectivity.Current.IsConnected)
                 {
-                    clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
-                    allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
-                    
+                    Debug.WriteLine($"No connection");
                 }
-                finally
+                else
                 {
-                    this.IsBusy = false;
+                    Debug.WriteLine($"Connected");
+                    this.IsBusy = true;
+                    try
+                    {
+                        clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
+                        allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
+                        clubsSorted = await SortClubs(allClubs, "Soccer");
+                        TestClubXamlList.FlowItemsSource = clubsSorted;
+                    }
+                    finally
+                    {
+                        this.IsBusy = false;
+                        isInitialized = true;
+                    }
                 }
-            }
-
-            
-
-            clubsSortedBySport = await SortBySports(allClubs, "Soccer");
-            TestClubXamlList.FlowItemsSource = clubsSortedBySport;
+            }   
         }
 
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
@@ -71,21 +72,18 @@ namespace Manofthematch
             }
         }
 
-        async Task<FlowObservableCollection<Object>> SortBySports (FlowObservableCollection<Club> allClubs, string sportstype)
+        
+
+        //sort the clubs into sports ordered by region
+        async Task<FlowObservableCollection<Object>> SortClubs (FlowObservableCollection<Club> allClubs, string sportstype)
         {
             List<Club> clubs = new List<Club>(allClubs);
-            //IEnumerable<Club> _sortedClubsSport = new List<Club>();
-            FlowObservableCollection<Club> sortedClubsSport = new FlowObservableCollection<Club>();
-            //clubs = allClubs;
-
-            var __sortedClubsSport = clubs.Where(a => a.clubSports.Contains(sportstype))
+            var sortedClubs = clubs.Where(a => a.clubSports.Contains(sportstype))
                                     .OrderBy(a => a.clubRegion)
                                     .GroupBy(a => a.clubRegion)                                    
                                     .Select(itemGroup => new Grouping<string, Club>(itemGroup.Key, itemGroup))
-                                    .ToList(); //  .Where(c => c.clubSports.Contains(sportstype));
-
-            //IOrderedEnumerable<Club> _sortedClubsSport = new ObservableCollection<Club>(__sortedClubsSport);
-            var Items = new FlowObservableCollection<Object>(__sortedClubsSport);
+                                    .ToList();
+            var Items = new FlowObservableCollection<Object>(sortedClubs);
             return Items;
         }
 
@@ -111,6 +109,38 @@ namespace Manofthematch
                 ColumnCount = columnCount;
             }
         }
+
+        async private void sportBtn_Clicked(object sender, EventArgs e)
+        {
+            Button _sender = (Button)sender;
+            string message = _sender.CommandParameter.ToString();
+            switch (message)
+            {
+                case "Soccer":
+                    sportTypeLabel.Text = "Fodbold";
+                    break;
+                case "Handball":
+                    sportTypeLabel.Text = "Håndbold";
+                    break;
+                case "Tennis":
+                    sportTypeLabel.Text = "Tennis";
+                    break;
+                case "Hockey":
+                    sportTypeLabel.Text = "Hockey";
+                    break;
+                default:
+                    break;
+            }
+            clubsSorted = await SortClubs(allClubs, message);
+            TestClubXamlList.FlowItemsSource = clubsSorted;
+        }
+
+        //async void button_Click(object sender, EventArgs e, string message)
+        //{
+        //    clubsSorted = await SortClubs(allClubs, message);
+        //    TestClubXamlList.FlowItemsSource = clubsSorted;
+            
+        //}
     }
 }
 
