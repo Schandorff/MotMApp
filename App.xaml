@@ -16,7 +16,8 @@
                 <Setter Property="HeightRequest" Value="30"/>
                 <Setter Property="Margin" Value="10"/>
             </Style>
-
+            
+            <!--Header and content template for content pages-->
             <ControlTemplate x:Key="MainPageTemplate">
 
                 <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">

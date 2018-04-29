@@ -9,38 +9,118 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <StackLayout Spacing="0">
-                <ListView x:Name="allJutlandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
-                        </DataTemplate>
+                
+                <Grid x:Name="clubsGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding MyCommand}" CommandParameter="{Binding clubName}" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Grid>
+
+                
+                <ListView x:Name="allJutlandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
+                        <ListView.Header>
+                            <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
+                                <Label Text="Jylland" TextColor="#fff"/>                                
+                            </StackLayout>
+                        </ListView.Header>
+                        <ListView.ItemTemplate>
+                            
+                            <DataTemplate>
+
+                                <ViewCell Height="300">
+                                    <StackLayout Orientation="Vertical">                                        
+                                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                                <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+                                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                            </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+
+                            </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                </StackLayout>
-                <ListView x:Name="allSealandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                
+
+                <ListView x:Name="allSealandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
+                    <ListView.Header>
+                        <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
+                            <Label Text="Sjælland" TextColor="#fff"/>
+                        </StackLayout>
+                    </ListView.Header>
                     <ListView.ItemTemplate>
+
                         <DataTemplate>
-                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+
+                            <ViewCell Height="300">
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+                                        <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <ListView x:Name="allBornholmClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+                <ListView x:Name="allBornholmClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
+                    <ListView.Header>
+                        <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
+                            <Label Text="Bornholm" TextColor="#fff"/>
+                        </StackLayout>
+                    </ListView.Header>
                     <ListView.ItemTemplate>
+
                         <DataTemplate>
-                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+
+                            <ViewCell Height="300">
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+                                        <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-            
-                <ListView x:Name="allFuenenClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None">
+
+                <ListView x:Name="allFuenenClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
+                    <ListView.Header>
+                        <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
+                            <Label Text="Fyn" TextColor="#fff"/>
+                        </StackLayout>
+                    </ListView.Header>
                     <ListView.ItemTemplate>
+
                         <DataTemplate>
-                            <TextCell Text="{Binding clubName}" Detail="{Binding clubAddress}"></TextCell>
+
+                            <ViewCell Height="300">
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+                                        <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>            
+            
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

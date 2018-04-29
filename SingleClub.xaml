@@ -25,8 +25,7 @@
         
         <StackLayout>
                
-               <ListView ItemsSource="{Binding}"
-                    >
+            <ListView ItemsSource="{Binding}">
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell>

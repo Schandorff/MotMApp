@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="Manofthematch.FlowListTryout"
+             BackgroundImage="FodboldBG.png">
+    <ContentPage.Content>
+        <ScrollView>
+        <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="Default" HasUnevenRows="false" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect">
+
+                <flv:FlowListView.FlowColumnTemplate>
+                    <DataTemplate>
+                        
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">                                    
+                                    <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                    <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            </StackLayout>
+                        
+                    </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>
+            </flv:FlowListView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -7,19 +7,23 @@ using System;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System.Diagnostics;
+using DLToolkit.Forms;
+using DLToolkit.Forms.Controls;
 
 namespace Manofthematch
 {
     public partial class App : Application
     {
-        public static NavigationPage Navigation = null;
+        //public static NavigationPage Navigation = null;
         public App()
         {
-            InitializeComponent();
             
-            MainPage = new NavigationPage(new LandingPage());
+            InitializeComponent();
+            FlowListView.Init();
+            MainPage = new NavigationPage(new FlowListTryout());
             //Application.Current.MainPage = Navigation;
             //Current.MainPage = Navigation;
+            
         }        
 
         protected override void OnStart()
