@@ -44,12 +44,14 @@ namespace Manofthematch
                 {
                     Debug.WriteLine($"Connected");
                     this.IsBusy = true;
+                    
                     try
                     {
                         clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
                         allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
                         clubsSorted = await SortClubs(allClubs, "Soccer");
                         TestClubXamlList.FlowItemsSource = clubsSorted;
+                        
                     }
                     finally
                     {
@@ -118,15 +120,23 @@ namespace Manofthematch
             {
                 case "Soccer":
                     sportTypeLabel.Text = "Fodbold";
+                    BackgroundImage = "FodboldBG.png";
                     break;
                 case "Handball":
                     sportTypeLabel.Text = "Håndbold";
+                    BackgroundImage = "HandballBG.png";
                     break;
                 case "Tennis":
                     sportTypeLabel.Text = "Tennis";
+                    BackgroundImage = "TennisBG.png";
                     break;
                 case "Hockey":
                     sportTypeLabel.Text = "Hockey";
+                    BackgroundImage = "HockeyBG.png";
+                    break;
+                case "Favourites":
+                    sportTypeLabel.Text = "Favourites";
+                    BackgroundImage = "FavouritesBG.png";
                     break;
                 default:
                     break;

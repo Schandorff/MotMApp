@@ -182,6 +182,69 @@
   <ItemGroup>
     <BundleResource Include="Resources\arrowback%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrowdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrowdown%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrowdown%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burgermenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burgermenu%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\burgermenu%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FavouritesBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FavouritesBG%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FavouritesBG%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\handball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\handball%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\handball%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HandballBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HandballBG%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HandballBG%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HockeyBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HockeyBG%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HockeyBG%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TennisBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TennisBG%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TennisBG%403x.png" />
+  </ItemGroup>
   <Import Project="..\Manofthematch.projitems" Label="Shared" Condition="Exists('..\Manofthematch.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.1.444934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.1.444934\build\netstandard1.0\Xamarin.Forms.targets')" />
