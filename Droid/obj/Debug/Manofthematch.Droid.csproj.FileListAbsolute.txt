@@ -107,12 +107,8 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CoreCompileInputs.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.App.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.ManofthematchPage.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.StartPage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.SingleClub.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.LandingPage.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.Page1.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.FlowListTryout.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CopyComplete
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.pdb

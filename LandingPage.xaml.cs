@@ -1,138 +1,155 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Manofthematch.Models;
+using Manofthematch.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Manofthematch.Data;
-using Manofthematch.Models;
-using System.Diagnostics;
-using Plugin.Connectivity.Abstractions;
 using Plugin.Connectivity;
-using Manofthematch;
-using System.ComponentModel;
+using System.Diagnostics;
+using DLToolkit.Forms.Controls;
+using DLToolkit.Forms;
+using System.Collections.ObjectModel;
 
 namespace Manofthematch
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LandingPage : ContentPage
-	{
-        //Authorization authorization = new Authorization();
-        public IList<Club> sealandClubs = new ObservableCollection<Club>();
-        public IList<Club> jutlandClubs = new ObservableCollection<Club>();
-        public IList<Club> fuenenClubs = new ObservableCollection<Club>();
-        public IList<Club> bornholmClubs = new ObservableCollection<Club>();
-
-        public IList<Club> allTestClubs = new List<Club>();
-
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class LandingPage : ContentPage
+    {
+        public FlowObservableCollection<Club> allClubs = new FlowObservableCollection<Club>();
+        public FlowObservableCollection<Object> clubsSorted = new FlowObservableCollection<Object>();
+        public List<Club> clubCollection = new List<Club>();
+        bool isInitialized = false;
         readonly ApiMethods apiMethods = new ApiMethods();
-        
 
-        public LandingPage ()
-		{
+        public LandingPage()
+        {
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
-            InitializeComponent ();
-            BindingContext = this;
-            
-            
+            //soccerBtn.Clicked += delegate (object sender, EventArgs e) { this.button_Click(sender, e, "Hockey"); };
+            InitializeComponent();
         }
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+            if (!isInitialized)
+            {
+                if (!CrossConnectivity.Current.IsConnected)
+                {
+                    Debug.WriteLine($"No connection");
+                }
+                else
+                {
+                    Debug.WriteLine($"Connected");
+                    this.IsBusy = true;
+
+                    try
+                    {
+                        clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
+                        allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
+                        clubsSorted = await SortClubs(allClubs, "Soccer");
+                        TestClubXamlList.FlowItemsSource = clubsSorted;
+                    }
+                    finally
+                    {
+                        this.IsBusy = false;
+                        isInitialized = true;
+                    }
+                }
+            }
+        }
+
+        async void OnClubSelect(object sender, ItemTappedEventArgs e)
+        {
             if (!CrossConnectivity.Current.IsConnected)
             {
                 Debug.WriteLine($"No connection");
             }
             else
             {
-                Debug.WriteLine($"Connected");
-                this.IsBusy = true;
-                try
-                {
-                    var clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
-                    allTestClubs = clubCollection;
-                    jutlandClubs = await SortClubsByRegion(clubCollection, "Jylland");
-                    fuenenClubs = await SortClubsByRegion(clubCollection, "Fyn");
-                    sealandClubs = await SortClubsByRegion(clubCollection, "Sjælland");
-                    bornholmClubs = await SortClubsByRegion(clubCollection, "Bornholm");
-                }
-                finally
-                {
-                    this.IsBusy = false;
-                }
+                await Navigation.PushAsync(new SingleClub((Club)e.Item));
             }
-
-            allJutlandClubs.ItemsSource = jutlandClubs;
-            allFuenenClubs.ItemsSource = fuenenClubs;
-            allSealandClubs.ItemsSource = sealandClubs;
-            allBornholmClubs.ItemsSource = bornholmClubs;
-            
-            allJutlandClubs.HeightRequest = (90 * jutlandClubs.Count) + (10 * jutlandClubs.Count);
-            allFuenenClubs.HeightRequest = (90 * fuenenClubs.Count) + (10 * fuenenClubs.Count);
-            allSealandClubs.HeightRequest = (90 * sealandClubs.Count) + (10 * sealandClubs.Count);
-            allBornholmClubs.HeightRequest = (90 * bornholmClubs.Count) + (10 * bornholmClubs.Count);
-
-            int count = 0;
-            for (int k = 0; k <= allTestClubs.Count; k++)
-            {
-                for (int row = 0; row < clubsGrid.RowDefinitions.Count; row++)
-                {
-                    for (int col = 0; col < clubsGrid.ColumnDefinitions.Count; col++)
-                    {
-                        if (count >= allTestClubs.Count)
-                        {
-                            break;
-                        }
-                        Club tempClub = allTestClubs[count];
-                        clubsGrid.Children.Add(new Image { Source = tempClub.clubLogo, HeightRequest = 40, WidthRequest = 40,   }, col, row);
-                        count++;
-                    }
-                }
-            }
-
-            var MyCommand = new Command<String>(s => Debug.WriteLine("command executed: {0}", s));
         }
-        
-        async void OnClubSelect(object sender, ItemTappedEventArgs e)
+
+
+
+        //sort the clubs into sports ordered by region
+        async Task<FlowObservableCollection<Object>> SortClubs(FlowObservableCollection<Club> allClubs, string sportstype)
         {
-            await Navigation.PushAsync(new SingleClub((Club)e.Item));
+            List<Club> clubs = new List<Club>(allClubs);
+            var sortedClubs = clubs.Where(a => a.clubSports.Contains(sportstype))
+                                    .OrderBy(a => a.clubRegion)
+                                    .GroupBy(a => a.clubRegion)
+                                    .Select(itemGroup => new Grouping<string, Club>(itemGroup.Key, itemGroup))
+                                    .ToList();
+            var Items = new FlowObservableCollection<Object>(sortedClubs);
+            return Items;
         }
 
-        public async Task<List<Club>> SortClubsByRegion (List<Club> sender, string region)
+        public class Grouping<K, T> : FlowObservableCollection<T>
         {
-            List<Club> clubCollection = sender;
-            List<Club> sortedClub = new List<Club>();
+            public K Key { get; private set; }
+            public int ColumnCount { get; private set; }
 
-            foreach (Club club in clubCollection)
+            public Grouping(K key)
             {
-                if (club.clubRegion == region)
-                { 
-                   sortedClub.Add(club);
-                }
+                Key = key;
             }
 
-            return sortedClub;
+            public Grouping(K key, IEnumerable<T> items)
+                : this(key)
+            {
+                AddRange(items);
+            }
+
+            public Grouping(K key, IEnumerable<T> items, int columnCount)
+                : this(key, items)
+            {
+                ColumnCount = columnCount;
+            }
         }
 
-        
+        async private void sportBtn_Clicked(object sender, EventArgs e)
+        {
+            Button _sender = (Button)sender;
+            string message = _sender.CommandParameter.ToString();
+            switch (message)
+            {
+                case "Soccer":
+                    sportTypeLabel.Text = "Fodbold";
+                    BackgroundImage = "FodboldBG.png";
+                    break;
+                case "Handball":
+                    sportTypeLabel.Text = "Håndbold";
+                    BackgroundImage = "HandballBG.png";
+                    break;
+                case "Tennis":
+                    sportTypeLabel.Text = "Tennis";
+                    BackgroundImage = "TennisBG.png";
+                    break;
+                case "Hockey":
+                    sportTypeLabel.Text = "Hockey";
+                    BackgroundImage = "HockeyBG.png";
+                    break;
+                case "Favourites":
+                    sportTypeLabel.Text = "Favourites";
+                    BackgroundImage = "FavouritesBG.png";
+                    break;
+                default:
+                    break;
+            }
+            clubsSorted = await SortClubs(allClubs, message);
+            TestClubXamlList.FlowItemsSource = clubsSorted;
+        }
 
-        //public Command TapCommand => new Command<Club>((ClubObject) => Tapped(ClubObject));
-
-        //private void Tapped(Club ClubObject)
+        //async void button_Click(object sender, EventArgs e, string message)
         //{
-        //    DisplayAlert("Tapped!", ClubObject.clubName, "Gotcha");
-        //}
+        //    clubsSorted = await SortClubs(allClubs, message);
+        //    TestClubXamlList.FlowItemsSource = clubsSorted;
 
-        void OnTapGestureRecognizerTapped(object sender, EventArgs args)
-        {
-            //OnClubSelect(sender, args);
-            int tapCount = 0;
-            tapCount++;
-        }
+        //}
     }
 }
 
-//await navigation.poptoroot

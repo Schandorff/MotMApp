@@ -20,7 +20,7 @@ namespace Manofthematch
             
             InitializeComponent();
             FlowListView.Init();
-            MainPage = new NavigationPage(new FlowListTryout());
+            MainPage = new NavigationPage(new LandingPage());
             //Application.Current.MainPage = Navigation;
             //Current.MainPage = Navigation;
             

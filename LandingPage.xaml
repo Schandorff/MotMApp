@@ -1,127 +1,71 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              x:Class="Manofthematch.LandingPage"
-             BackgroundImage="FodboldBG.png">
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Text="Refresh" Icon="ic_autorenew.png" Clicked="OnRefresh" />
-    </ContentPage.ToolbarItems>-->
+             Title="Klubber"
+             BackgroundImage="FodboldBG.png"
+             ControlTemplate="{DynamicResource MainPageTemplate}">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                
-                <Grid x:Name="clubsGrid">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding MyCommand}" CommandParameter="{Binding clubName}" NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
-                </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                
-                <ListView x:Name="allJutlandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
-                        <ListView.Header>
-                            <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
-                                <Label Text="Jylland" TextColor="#fff"/>                                
+            <Grid Grid.Column="0" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="10, 10, 10, 10"
+                                Android="10, 10, 10, 10"
+                                WinPhone="10, 10, 10, 10" />
+                </Grid.Padding>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="sportBtn_Clicked" CommandParameter="Favourites" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
+            </Grid>
+
+            <Label x:Name="sportTypeLabel" Text="Fodbold" FontSize="Large" FontAttributes="Bold" Margin="5" TextColor="White" Grid.Column="0" Grid.Row="1"></Label>
+
+            <ScrollView Grid.Column="0" Grid.Row="2">
+                <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="40" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand">
+                    <flv:FlowListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="20" Padding="0,5,0,5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Label Margin="10,0,0,0" Text="{Binding Key}" TextColor="White" VerticalTextAlignment="Center" FontSize="16" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                    </Label>
+                                </StackLayout>
+                            </ViewCell>
+
+                        </DataTemplate>
+                    </flv:FlowListView.GroupHeaderTemplate>
+                    <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
+                                <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
                             </StackLayout>
-                        </ListView.Header>
-                        <ListView.ItemTemplate>
-                            
-                            <DataTemplate>
-
-                                <ViewCell Height="300">
-                                    <StackLayout Orientation="Vertical">                                        
-                                            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
-                                                <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
-                                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
-                                            </StackLayout>
-                                    </StackLayout>
-                                </ViewCell>
-
-                            </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                
-
-                <ListView x:Name="allSealandClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
-                    <ListView.Header>
-                        <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
-                            <Label Text="Sjælland" TextColor="#fff"/>
-                        </StackLayout>
-                    </ListView.Header>
-                    <ListView.ItemTemplate>
-
-                        <DataTemplate>
-
-                            <ViewCell Height="300">
-                                <StackLayout Orientation="Vertical">
-                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
-                                        <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
-                                        <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
-                                    </StackLayout>
-                                </StackLayout>
-                            </ViewCell>
-
                         </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-                <ListView x:Name="allBornholmClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
-                    <ListView.Header>
-                        <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
-                            <Label Text="Bornholm" TextColor="#fff"/>
-                        </StackLayout>
-                    </ListView.Header>
-                    <ListView.ItemTemplate>
-
-                        <DataTemplate>
-
-                            <ViewCell Height="300">
-                                <StackLayout Orientation="Vertical">
-                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
-                                        <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
-                                        <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
-                                    </StackLayout>
-                                </StackLayout>
-                            </ViewCell>
-
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-                <ListView x:Name="allFuenenClubs" ItemTapped="OnClubSelect" SeparatorColor="Transparent" SeparatorVisibility="None" RowHeight="300">
-                    <ListView.Header>
-                        <StackLayout Padding="10,5,0,5" BackgroundColor="Transparent">
-                            <Label Text="Fyn" TextColor="#fff"/>
-                        </StackLayout>
-                    </ListView.Header>
-                    <ListView.ItemTemplate>
-
-                        <DataTemplate>
-
-                            <ViewCell Height="300">
-                                <StackLayout Orientation="Vertical">
-                                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
-                                        <Label Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
-                                        <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" />
-                                    </StackLayout>
-                                </StackLayout>
-                            </ViewCell>
-
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>            
-            
-            </StackLayout>
-        </ScrollView>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
