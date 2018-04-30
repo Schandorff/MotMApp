@@ -190,12 +190,8 @@ D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\optimized\
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.csprojResolveAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.csproj.CoreCompileInputs.cache
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.App.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.ManofthematchPage.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.StartPage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.SingleClub.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.LandingPage.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.Page1.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.FlowListTryout.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.csproj.CopyComplete
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.exe
 D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.pdb
