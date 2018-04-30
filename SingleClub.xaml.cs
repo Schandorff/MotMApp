@@ -74,7 +74,8 @@ namespace Manofthematch
                 sponsorList.ItemsSource = sponsors;
                 
 
-                //clubName.Text = currentClub.clubName;
+                clubName.Text = currentClub.clubName;
+                sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.4);
 
             }
         private void currentMatchSorting(object sender, EventArgs e)

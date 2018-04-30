@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Manofthematch.SingleClub"
              xmlns:local="clr-namespace:Manofthematch.Controls"
-             BackgroundImage="FodboldBG.png">
+             BackgroundImage="FodboldBG.png"
+             BackgroundColor="Transparent">
     <ContentPage.Content>
         <StackLayout>
 
@@ -9,7 +10,8 @@
             <local:HVScrollGridView ListOrientation="Horizontal"
                         x:Name="sponsorList"
                         VerticalOptions="Start"
-                         BackgroundColor="White">
+                                    HeightRequest="100"
+                                    >
                 <local:HVScrollGridView.ItemTemplate>
                     <DataTemplate>
                         <ContentView>
@@ -33,7 +35,7 @@
 
             
             
-         <Label Text="Club view"></Label>
+         <Label x:Name="clubName"></Label>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Button x:Name="current" Clicked="currentMatchSorting" Text="Aktuelle" Margin="0, 0, 30, 0" FontSize="20" TextColor="White"></Button>
                 <Button x:Name="coming" Clicked="comingMatchSorting" Text="Kommende" HorizontalOptions="Center" FontSize="16" TextColor="Gray"></Button>
