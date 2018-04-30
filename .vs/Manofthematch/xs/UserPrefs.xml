@@ -1,24 +1,23 @@
-﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SingleClub.xaml">
+﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controls/HVScrollGridView.cs">
     <Files>
-      <File FileName="LandingPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SingleClub.xaml.cs" Line="25" Column="26" />
-      <File FileName="SingleClub.xaml" Line="34" Column="37" />
-      <File FileName="LandingPage.xaml" Line="26" Column="15" />
-      <File FileName="Models/Team.cs" Line="13" Column="39" />
-      <File FileName="Models/Match.cs" Line="10" Column="41" />
+      <File FileName="SingleClub.xaml" Line="34" Column="38" />
+      <File FileName="SingleClub.xaml.cs" Line="78" Column="78" />
+      <File FileName="Data/ApiMethods.cs" Line="33" Column="81" />
+      <File FileName="Models/Club.cs" Line="17" Column="28" />
+      <File FileName="Models/Sponsor.cs" Line="11" Column="34" />
+      <File FileName="Controls/HVScrollGridView.cs" Line="9" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/SingleClub.xaml" relfile="SingleClub.xaml" line="5" column="106" />
+      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/SingleClub.xaml" relfile="SingleClub.xaml" line="13" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AE83162B-6AE0-4552-933D-1E2AD5BB355A">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.Manofthematch.iOS>
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.74705BCB-5305-4F34-919C-0095830F304D" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

@@ -12,8 +12,13 @@ namespace Manofthematch
     public partial class SingleClub : ContentPage
     {
         readonly Club currentClub;
+        readonly Authorization manager = new Authorization();
+        readonly IList<Team> teams = new ObservableCollection<Team>();
+        readonly IList<Sponsor> sponsors = new ObservableCollection<Sponsor>();
+        public IList<Match> currentMatches = new ObservableCollection<Match>();
+        public IList<Match> comingMatches = new ObservableCollection<Match>();
+        public IList<Match> completedMatches = new ObservableCollection<Match>();
         readonly ApiMethods apiMethods = new ApiMethods();
-        public IList<Team> teams = new ObservableCollection<Team>();
 
         Club requestedClub = new Club();
 
@@ -29,22 +34,80 @@ namespace Manofthematch
             base.OnAppearing();
             requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
             List<Team> ClubTeams = requestedClub.Teams;
-            
+            List<Sponsor> ClubSponsors = requestedClub.Sponsors;
+
+            //add to teams list
             foreach (Team team in ClubTeams)
             {
                 if (teams.All(b => b.teamId != team.teamId))
                     teams.Add(team);
-                
-                IList<Match> teamMatches = new ObservableCollection<Match>();
-                if (teamMatches.Count != 0) { 
-                    foreach (Match match in team.teamMatches)
-                    {
-                        teamMatches.Add(match);
-                    }
+
+                    //if (teamMatches.Count != 0)
+                    //{
+                        foreach (Match match in team.teamMatches)
+                        {
+                                if (match.status == "Current"){
+                                    currentMatches.Add(match);
+                                }
+                                else if (match.status == "Coming")
+                                {
+                                    comingMatches.Add(match);
+                                }
+                                else if (match.status == "Finished")
+                                {
+                                    completedMatches.Add(match);
+                                }   
+
+                        }
+                    //}
+
                 }
+
+            // add to sponsor list
+            foreach (Sponsor sponsor in ClubSponsors){
+                if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
+                    sponsors.Add(sponsor);
             }
-            BindingContext = teams;
-            clubName.Text = currentClub.clubName;            
+
+                BindingContext = teams;
+                gameList.ItemsSource = currentMatches;
+                sponsorList.ItemsSource = sponsors;
+                
+
+                clubName.Text = currentClub.clubName;
+                sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.4);
+
+            }
+        private void currentMatchSorting(object sender, EventArgs e)
+        {
+            gameList.ItemsSource = currentMatches;
+            current.FontSize = 22;
+            current.TextColor = Color.White;
+                coming.FontSize = 16;
+                coming.TextColor = Color.Gray;
+                completed.FontSize = 16;
+                completed.TextColor = Color.Gray;
         }
-    }
+        private void comingMatchSorting(object sender, EventArgs e){
+            gameList.ItemsSource = comingMatches;
+            coming.FontSize = 22;
+            coming.TextColor = Color.White;
+                current.FontSize = 16;
+                current.TextColor = Color.Gray;
+                completed.FontSize = 16;
+                completed.TextColor = Color.Gray;
+
+        }
+        private void completedMatchSorting(object sender, EventArgs e)
+        {
+            gameList.ItemsSource = completedMatches;
+            completed.FontSize = 22;
+            completed.TextColor = Color.White;
+                current.FontSize = 16;
+                current.TextColor = Color.Gray;
+                coming.FontSize = 16;
+                coming.TextColor = Color.Gray;
+
+        }
+        }
 }

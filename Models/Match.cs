@@ -12,6 +12,6 @@ namespace Manofthematch.Models
         public string matchCity { get; set; }
         public string matchStartDateTime { get; set; }
         public string opponent { get; set; }
-        public string status { get; set; }
+        public string status { get; set; } 
     }
 }
