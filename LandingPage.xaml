@@ -44,13 +44,16 @@
             <Label x:Name="sportTypeLabel" Text="Fodbold" FontSize="Large" FontAttributes="Bold" Margin="5" TextColor="White" Grid.Column="0" Grid.Row="1"></Label>
 
             <ScrollView Grid.Column="0" Grid.Row="2">
-                <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="40" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand">
+                <flv:FlowListView x:Name="TestClubXamlList" BackgroundColor="Transparent" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="40" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand">
                     <flv:FlowListView.GroupHeaderTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout BackgroundColor="Transparent" HeightRequest="20" Padding="0,5,0,5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                <StackLayout HeightRequest="20" Padding="0,5,0,5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+
                                     <Label Margin="10,0,0,0" Text="{Binding Key}" TextColor="White" VerticalTextAlignment="Center" FontSize="16" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                                    </Label>
+                                    </Label> 
+
+
                                 </StackLayout>
                             </ViewCell>
 

@@ -107,6 +107,10 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Manofthematch.Droid.dll" comes first in this list. */
 		"Manofthematch.Droid.dll",
+		"CarouselView.FormsPlugin.Abstractions.dll",
+		"CarouselView.FormsPlugin.Android.dll",
+		"Com.Android.DeskClock.dll",
+		"Com.ViewPagerIndicator.dll",
 		"DLToolkit.Forms.Controls.FlowListView.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",

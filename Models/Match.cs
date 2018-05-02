@@ -13,5 +13,7 @@ namespace Manofthematch.Models
         public string matchStartDateTime { get; set; }
         public string opponent { get; set; }
         public string status { get; set; } 
+        public int homeGoal { get; set; }
+        public int opponentGoal { get; set; }
     }
 }

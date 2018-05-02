@@ -4,6 +4,8 @@ using Manofthematch.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using DLToolkit.Forms.Controls;
+using DLToolkit.Forms;
 
 using Xamarin.Forms;
 
@@ -13,7 +15,7 @@ namespace Manofthematch
     {
         readonly Club currentClub;
         readonly Authorization manager = new Authorization();
-        readonly IList<Team> teams = new ObservableCollection<Team>();
+        readonly FlowObservableCollection<Team> teams = new FlowObservableCollection<Team>();
         readonly IList<Sponsor> sponsors = new ObservableCollection<Sponsor>();
         public IList<Match> currentMatches = new ObservableCollection<Match>();
         public IList<Match> comingMatches = new ObservableCollection<Match>();
@@ -46,6 +48,7 @@ namespace Manofthematch
                     //{
                         foreach (Match match in team.teamMatches)
                         {
+                    
                                 if (match.status == "Current"){
                                     currentMatches.Add(match);
                                 }
@@ -70,12 +73,16 @@ namespace Manofthematch
             }
 
                 BindingContext = teams;
+                clubTeamList.FlowItemsSource = teams;
                 gameList.ItemsSource = currentMatches;
                 sponsorList.ItemsSource = sponsors;
-                
 
-                clubName.Text = currentClub.clubName;
-                sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.4);
+
+
+            Title = currentClub.clubName;
+                coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+                completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+                sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
 
             }
         private void currentMatchSorting(object sender, EventArgs e)
@@ -84,18 +91,18 @@ namespace Manofthematch
             current.FontSize = 22;
             current.TextColor = Color.White;
                 coming.FontSize = 16;
-                coming.TextColor = Color.Gray;
+            coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
                 completed.FontSize = 16;
-                completed.TextColor = Color.Gray;
+            completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
         }
         private void comingMatchSorting(object sender, EventArgs e){
             gameList.ItemsSource = comingMatches;
             coming.FontSize = 22;
             coming.TextColor = Color.White;
                 current.FontSize = 16;
-                current.TextColor = Color.Gray;
+            current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
                 completed.FontSize = 16;
-                completed.TextColor = Color.Gray;
+            completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
         }
         private void completedMatchSorting(object sender, EventArgs e)
@@ -104,9 +111,9 @@ namespace Manofthematch
             completed.FontSize = 22;
             completed.TextColor = Color.White;
                 current.FontSize = 16;
-                current.TextColor = Color.Gray;
+            current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
                 coming.FontSize = 16;
-                coming.TextColor = Color.Gray;
+            coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
         }
         }

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Manofthematch.SingleClub"
              xmlns:local="clr-namespace:Manofthematch.Controls"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              BackgroundImage="FodboldBG.png"
-             BackgroundColor="Transparent">
+             BackgroundColor="Transparent"
+             Title="Klubber"
+             ControlTemplate="{DynamicResource MainPageTemplate}">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="300"/>
+            </Grid.RowDefinitions>
 
-
+            <StackLayout Grid.Column="0" Grid.Row="0">
             <local:HVScrollGridView ListOrientation="Horizontal"
                         x:Name="sponsorList"
                         VerticalOptions="Start"
@@ -17,14 +28,10 @@
                         <ContentView>
                             <ContentView.Content>
                                
-                                    <StackLayout>
-                                    
+                                    <StackLayout WidthRequest="130">
 
-                                    <Label Text="{Binding sponsorName}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Center"
-                                               VerticalTextAlignment="Center"/>
-                                </StackLayout>
+                                    <Image Source="{Binding sponsorLogo}" Margin="10" HeightRequest="100" HorizontalOptions="Center"/>
+                                    </StackLayout>
 
 
                             </ContentView.Content>
@@ -32,14 +39,28 @@
                     </DataTemplate>
                 </local:HVScrollGridView.ItemTemplate>
             </local:HVScrollGridView>
+            </StackLayout>
+
+            <ScrollView Grid.Column="0" Grid.Row="1">
+            <flv:FlowListView x:Name="clubTeamList" BackgroundColor="Transparent" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="40" FlowUseAbsoluteLayoutInternally="false" IsGroupingEnabled="false" VerticalOptions="FillAndExpand">
+             <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate>
+                            <StackLayout BackgroundColor="Transparent" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                                <!--<Image Source="{Binding TeamName}" HeightRequest="40" WidthRequest="40" />-->
+                                <Label Text="{Binding TeamName}" TextColor="#fff" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
+            </ScrollView>
+
 
             
-            
-         <Label x:Name="clubName"></Label>
+            <StackLayout Grid.Column="0" Grid.Row="2">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button x:Name="current" Clicked="currentMatchSorting" Text="Aktuelle" Margin="0, 0, 30, 0" FontSize="20" TextColor="White"></Button>
-                <Button x:Name="coming" Clicked="comingMatchSorting" Text="Kommende" HorizontalOptions="Center" FontSize="16" TextColor="Gray"></Button>
-                <Button x:Name="completed" Clicked="completedMatchSorting" Text="Afsluttede" FontSize="16" Margin="30, 0, 0, 0" TextColor="Gray"></Button>
+                <Button x:Name="current" Clicked="currentMatchSorting" BackgroundColor="Transparent" Text="Aktuelle" FontSize="22" TextColor="White"></Button>
+                <Button x:Name="coming" Clicked="comingMatchSorting" BackgroundColor="Transparent" Text="Kommende" HorizontalOptions="Center" FontSize="16"></Button>
+                <Button x:Name="completed" Clicked="completedMatchSorting" BackgroundColor="Transparent" Text="Afsluttede" FontSize="16"></Button>
             </StackLayout>
 
          <local:HVScrollGridView ListOrientation="Horizontal"
@@ -49,10 +70,8 @@
                     <DataTemplate>
                         <ContentView>
                             <ContentView.Content>
-                                <Frame HasShadow="false" CornerRadius="10" WidthRequest="170" BackgroundColor="White" Margin="20">
-                                    <StackLayout>
-                                    
-
+                                <Frame HasShadow="false" CornerRadius="10" WidthRequest="140" BackgroundColor="White" Margin="20">
+                                <StackLayout>
                                     <Label Text="{Binding matchStartDateTime}"
                                                LineBreakMode="MiddleTruncation"
                                                HorizontalTextAlignment="Center"
@@ -61,16 +80,41 @@
                                                LineBreakMode="MiddleTruncation"
                                                HorizontalTextAlignment="Center"
                                                VerticalTextAlignment="Center"/>
-                                    <Label Text="Holdnavn"
+                                        <Grid>
+                                            
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1.5*"/>
+                                            <ColumnDefinition Width="0.5*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        
+                                        </Grid.RowDefinitions>
+
+                                    <Label Grid.Column="0" Grid.Row="0" Text="Holdnavn"
                                                LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Center"
+                                               HorizontalTextAlignment="Start"
                                                VerticalTextAlignment="Center"/>
-                                    <Label Text="{Binding opponent}"
+                                    <Label Grid.Column="1" Grid.Row="0" Text="{Binding homeGoal}"
                                                LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Center"
+                                               HorizontalTextAlignment="End"
                                                VerticalTextAlignment="Center"/>
-                                        <Button Text="Stem"/>
-                                </StackLayout>
+                                    <Label Grid.Column="0" Grid.Row="1" Text="{Binding opponent}"
+                                               LineBreakMode="MiddleTruncation"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="1" Grid.Row="1" Text="{Binding opponentGoal}"
+                                               LineBreakMode="MiddleTruncation"
+                                               HorizontalTextAlignment="End"
+                                               VerticalTextAlignment="Center"/>
+                                    
+
+                                </Grid>
+                                            <StackLayout Margin="0, 20, 0, 0">
+                                            <Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="Stem"/>
+                                            </StackLayout>
+                                      </StackLayout>
                                 </Frame>
 
                             </ContentView.Content>
@@ -78,71 +122,8 @@
                     </DataTemplate>
                 </local:HVScrollGridView.ItemTemplate>
             </local:HVScrollGridView>
-
-
-
-            
-       <!--<StackLayout>
-         
-               <Label x:Name="clubName" VerticalTextAlignment="Center"></Label>
-               <ListView ItemsSource="{Binding}"
-                    >
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <TextCell Text="{Binding TeamName}">
-                  
-                </TextCell>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-            
-           
-        </StackLayout>-->
-        
-<<<<<<< HEAD
-        <StackLayout>
-               
-            <ListView ItemsSource="{Binding}">
-=======
-        <!--<StackLayout>
-             
-          <ListView x:Name="gameList" RowHeight="100">
-       
->>>>>>> feb327f1c7525f00af401e0bafed9cdf4b132d36
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ViewCell>
-                    <StackLayout>
-                        <StackLayout Orientation="Vertical">
-                            <Label Text="{Binding matchStartDateTime}"></Label>
-                            <Label Text="{Binding matchAddress}"></Label>
-                            <Label Text="TeamName"></Label>
-
-                            <Label Text="{Binding opponent}"></Label>
-                        </StackLayout>
-                    </StackLayout>            
-                </ViewCell>
-          
-              </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        </StackLayout>-->
-            
-
-  <!--<cv:CarouselView x:Name="gameList" HeightRequest="300" WidthRequest="300">
-                <cv:CarouselView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout Orientation="Vertical">
-                            <Label Text="{Binding matchStartDateTime}"></Label>
-                            <Label Text="{Binding matchAddress}"></Label>
-                            <Label Text="TeamName"></Label>
-
-                            <Label Text="{Binding opponent}"></Label>
-                            </StackLayout>
-                    </DataTemplate>
-                </cv:CarouselView.ItemTemplate>
-</cv:CarouselView>-->
-
             </StackLayout>
+
+            </Grid>
    </ContentPage.Content>
 </ContentPage>

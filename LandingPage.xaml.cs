@@ -34,6 +34,7 @@ namespace Manofthematch
         protected async override void OnAppearing()
         {
             base.OnAppearing();
+
             if (!isInitialized)
             {
                 if (!CrossConnectivity.Current.IsConnected)
@@ -50,6 +51,7 @@ namespace Manofthematch
                         clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
                         allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
                         clubsSorted = await SortClubs(allClubs, "Soccer");
+
                         TestClubXamlList.FlowItemsSource = clubsSorted;
                     }
                     finally
@@ -59,6 +61,7 @@ namespace Manofthematch
                     }
                 }
             }
+
         }
 
         async void OnClubSelect(object sender, ItemTappedEventArgs e)

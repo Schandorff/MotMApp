@@ -1,12 +1,12 @@
-﻿<Properties StartupConfiguration="{B32C64EC-9E9D-41E3-B6A7-1AE64D32EB9C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controls/HVScrollGridView.cs">
+﻿<Properties StartupConfiguration="{53AC13EA-02F5-4C53-90E8-16DE6EBE670F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SingleClub.xaml">
     <Files>
-      <File FileName="SingleClub.xaml" Line="34" Column="38" />
-      <File FileName="SingleClub.xaml.cs" Line="78" Column="78" />
-      <File FileName="Data/ApiMethods.cs" Line="33" Column="81" />
-      <File FileName="Models/Club.cs" Line="17" Column="28" />
-      <File FileName="Models/Sponsor.cs" Line="11" Column="34" />
-      <File FileName="Controls/HVScrollGridView.cs" Line="9" Column="24" />
+      <File FileName="LandingPage.xaml" Line="74" Column="15" />
+      <File FileName="LandingPage.xaml.cs" Line="80" Column="9" />
+      <File FileName="SingleClub.xaml" Line="31" Column="67" />
+      <File FileName="SingleClub.xaml.cs" Line="51" Column="21" />
+      <File FileName="App.xaml" Line="90" Column="1" />
+      <File FileName="Models/Match.cs" Line="17" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
