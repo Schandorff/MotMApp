@@ -97,18 +97,18 @@
         </ListView>
             
            
-        </StackLayout>-->
+        </StackLayout>
         
-<<<<<<< HEAD
+
         <StackLayout>
                
             <ListView ItemsSource="{Binding}">
-=======
-        <!--<StackLayout>
+
+        <StackLayout>
              
           <ListView x:Name="gameList" RowHeight="100">
        
->>>>>>> feb327f1c7525f00af401e0bafed9cdf4b132d36
+
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell>

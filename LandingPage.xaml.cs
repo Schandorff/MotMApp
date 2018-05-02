@@ -12,6 +12,8 @@ using System.Diagnostics;
 using DLToolkit.Forms.Controls;
 using DLToolkit.Forms;
 using System.Collections.ObjectModel;
+using System.Reactive.Linq;
+using Akavache;
 
 namespace Manofthematch
 {
@@ -24,6 +26,8 @@ namespace Manofthematch
         bool isInitialized = false;
         readonly ApiMethods apiMethods = new ApiMethods();
 
+        public Favourites Favourites = new Favourites();
+
         public LandingPage()
         {
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
@@ -31,7 +35,7 @@ namespace Manofthematch
             InitializeComponent();
         }
 
-        protected async override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
             if (!isInitialized)
@@ -63,6 +67,7 @@ namespace Manofthematch
 
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
         {
+
             if (!CrossConnectivity.Current.IsConnected)
             {
                 Debug.WriteLine($"No connection");
@@ -111,7 +116,7 @@ namespace Manofthematch
             }
         }
 
-        async private void sportBtn_Clicked(object sender, EventArgs e)
+        private async void sportBtn_Clicked(object sender, EventArgs e)
         {
             Button _sender = (Button)sender;
             string message = _sender.CommandParameter.ToString();
@@ -134,8 +139,11 @@ namespace Manofthematch
                     BackgroundImage = "HockeyBG.png";
                     break;
                 case "Favourites":
-                    sportTypeLabel.Text = "Favourites";
-                    BackgroundImage = "FavouritesBG.png";
+                    //Favourites.FavClubs = clubCollection;
+                    //await BlobCache.InMemory.InsertObject("favourites", Favourites);
+                    //sportTypeLabel.Text = "Favourites";
+                    //BackgroundImage = "FavouritesBG.png";
+                    await Navigation.PushAsync(new FavouritePage());
                     break;
                 default:
                     break;

@@ -7,6 +7,7 @@ using System;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System.Diagnostics;
+using Akavache;
 using DLToolkit.Forms;
 using DLToolkit.Forms.Controls;
 
@@ -20,10 +21,11 @@ namespace Manofthematch
             
             InitializeComponent();
             FlowListView.Init();
-            MainPage = new NavigationPage(new LandingPage());
+            MainPage = new NavigationPage(new FavouritePage());
+            BlobCache.ApplicationName = "Manofthematch";
             //Application.Current.MainPage = Navigation;
             //Current.MainPage = Navigation;
-            
+
         }        
 
         protected override void OnStart()

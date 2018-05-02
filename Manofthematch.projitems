@@ -21,8 +21,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\LocalStorage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\ApiMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FavouritePage.xaml.cs">
+      <DependentUpon>FavouritePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\AuthToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DeviceId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Favourites.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Team.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
@@ -45,6 +52,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FavouritePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
