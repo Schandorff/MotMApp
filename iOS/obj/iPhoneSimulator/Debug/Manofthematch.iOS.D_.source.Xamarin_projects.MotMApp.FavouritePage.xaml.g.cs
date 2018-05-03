@@ -15,6 +15,7 @@ namespace Manofthematch {
     public partial class FavouritePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+<<<<<<< HEAD:iOS/obj/iPhoneSimulator/Debug/Manofthematch.iOS.D_.source.Xamarin_projects.MotMApp.FavouritePage.xaml.g.cs
         private global::Xamarin.Forms.Button GetGuid;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -33,6 +34,18 @@ namespace Manofthematch {
             DeviceIdLbl = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "DeviceIdLbl");
             DeleteGuid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "DeleteGuid");
             DeviceIdLbl2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "DeviceIdLbl2");
+=======
+        private global::Xamarin.Forms.Label sportTypeLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::DLToolkit.Forms.Controls.FlowListView TestClubXamlList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private void InitializeComponent() {
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LandingPage));
+            sportTypeLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "sportTypeLabel");
+            TestClubXamlList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "TestClubXamlList");
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202:iOS/obj/iPhoneSimulator/Debug/Manofthematch.iOS..Users.simonschandorff.Developement.Mobile_Dev.MotMApp.LandingPage.xaml.g.cs
         }
     }
 }

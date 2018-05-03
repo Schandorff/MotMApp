@@ -2216,7 +2216,10 @@ namespace Manofthematch.Droid
 			global::Com.ViewPagerIndicator.Resource.Styleable.CirclePageIndicator_vpiStrokeWidth = global::Manofthematch.Droid.Resource.Styleable.CirclePageIndicator_vpiStrokeWidth;
 			global::Com.ViewPagerIndicator.Resource.Styleable.ViewPagerIndicator = global::Manofthematch.Droid.Resource.Styleable.ViewPagerIndicator;
 			global::Com.ViewPagerIndicator.Resource.Styleable.ViewPagerIndicator_vpiCirclePageIndicatorStyle = global::Manofthematch.Droid.Resource.Styleable.ViewPagerIndicator_vpiCirclePageIndicatorStyle;
+<<<<<<< HEAD
 			global::Splat.Resource.String.library_name = global::Manofthematch.Droid.Resource.String.library_name;
+=======
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Manofthematch.Droid.Resource.Attribute.actionBarSize;
 		}
 		

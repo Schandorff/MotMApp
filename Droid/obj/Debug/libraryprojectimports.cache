@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+<<<<<<< HEAD
     <Jar>obj\Debug\lp\7\jl\formsviewgroup.jar</Jar>
     <Jar>obj\Debug\lp\24\jl\arch-core-common.jar</Jar>
     <Jar>obj\Debug\lp\25\jl\arch-lifecycle-common.jar</Jar>
@@ -81,5 +82,66 @@
     <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\38.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\39.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\41.stamp</ResolvedResourceDirectoryStamp>
+=======
+    <Jar>obj\Debug\lp\5\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\lp\10\jl\arch-core-common.jar</Jar>
+    <Jar>obj\Debug\lp\11\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Debug\lp\14\jl\support-annotations.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\10\jl\arch-core-common.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\11\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\12\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\13\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\14\jl\support-annotations.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\15\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\16\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\17\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\18\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\19\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\20\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\21\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\22\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\23\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\24\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\25\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\26\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\27\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\28\jl\bin\classes.jar</Jar>
+    <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\5\jl\formsviewgroup.jar</Jar>
+  </Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\1\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\2\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\3\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\15\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\18\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\20\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\21\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\22\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\23\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\24\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\25\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\27\jl\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\lp\1\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\2\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\3\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\22\jl\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\1.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\2.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\15.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\18.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\20.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\21.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\22.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\23.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\24.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\25.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\27.stamp</ResolvedResourceDirectoryStamp>
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
   </ResolvedResourceDirectoryStamps>
 </Paths>

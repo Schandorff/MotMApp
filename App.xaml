@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Manofthematch.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -9,12 +9,15 @@
             <Style x:Key="btnStyle" TargetType="Button">
                 <!--<Setter Property="FontSize" Value="10"/>-->
                 <Setter Property="BackgroundColor" Value="#F8144E"/>
-                <Setter Property="CornerRadius" Value="15"/>
-                <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="BorderWidth" Value="5"/>
-                <Setter Property="WidthRequest" Value="70"/>
-                <Setter Property="HeightRequest" Value="30"/>
-                <Setter Property="Margin" Value="10"/>
+                <Setter Property="CornerRadius" Value="25"/>
+
+
+                <Setter Property="WidthRequest" Value="60"/>
+                <Setter Property="HeightRequest" Value="50"/>
+
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="22"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
             
             <!--Header and content template for content pages-->

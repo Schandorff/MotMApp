@@ -15,7 +15,17 @@ namespace Manofthematch {
     public partial class FavouritePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+<<<<<<< HEAD:Droid/obj/Debug/Manofthematch.Droid.D_.source.Xamarin_projects.MotMApp.FavouritePage.xaml.g.cs
         private global::Xamarin.Forms.Button GetGuid;
+=======
+        private global::Manofthematch.Controls.HVScrollGridView sponsorList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::DLToolkit.Forms.Controls.FlowListView clubTeamList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button current;
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202:iOS/obj/iPhoneSimulator/Debug/Manofthematch.iOS..Users.simonschandorff.Developement.Mobile_Dev.MotMApp.SingleClub.xaml.g.cs
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label DeviceIdLbl;
@@ -28,11 +38,21 @@ namespace Manofthematch {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
+<<<<<<< HEAD:Droid/obj/Debug/Manofthematch.Droid.D_.source.Xamarin_projects.MotMApp.FavouritePage.xaml.g.cs
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FavouritePage));
             GetGuid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "GetGuid");
             DeviceIdLbl = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "DeviceIdLbl");
             DeleteGuid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "DeleteGuid");
             DeviceIdLbl2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "DeviceIdLbl2");
+=======
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SingleClub));
+            sponsorList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Manofthematch.Controls.HVScrollGridView>(this, "sponsorList");
+            clubTeamList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "clubTeamList");
+            current = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "current");
+            coming = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "coming");
+            completed = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "completed");
+            gameList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Manofthematch.Controls.HVScrollGridView>(this, "gameList");
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202:iOS/obj/iPhoneSimulator/Debug/Manofthematch.iOS..Users.simonschandorff.Developement.Mobile_Dev.MotMApp.SingleClub.xaml.g.cs
         }
     }
 }

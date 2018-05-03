@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll.config
+=======
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\MotM.Man_of_the_match.apk
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\MotM.Man_of_the_match-Signed.apk
+<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Akavache.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Akavache.Sqlite3.dll
+=======
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\CarouselView.FormsPlugin.Abstractions.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\CarouselView.FormsPlugin.Android.dll
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Com.Android.DeskClock.dll
@@ -74,9 +80,11 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Platform.Androi
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojResolveAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CoreCompileInputs.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.App.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.SingleClub.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.SingleTeam.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.LandingPage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.FavouritePage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CopyComplete
@@ -150,9 +158,13 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Core.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.IdentityModel.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Net.Http.pdb
+<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Runtime.Serialization.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Xml.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Xml.Linq.pdb
+=======
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Xml.pdb
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Data.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Numerics.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Transactions.pdb
@@ -161,6 +173,8 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Mono.Security.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.IO.Compression.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.IO.Compression.FileSystem.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.ComponentModel.Composition.pdb
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Runtime.Serialization.pdb
+D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.ServiceModel.Internals.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.Web.Services.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\System.ServiceModel.Internals.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Mono.Android.pdb
@@ -170,9 +184,13 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Core.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.IdentityModel.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Net.Http.pdb
+<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Runtime.Serialization.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Xml.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Xml.Linq.pdb
+=======
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Xml.pdb
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Data.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Numerics.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Transactions.pdb
@@ -181,6 +199,8 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Mono.Security.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.IO.Compression.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.IO.Compression.FileSystem.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.ComponentModel.Composition.pdb
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Runtime.Serialization.pdb
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.Web.Services.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\System.ServiceModel.Internals.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Manofthematch.Droid.dll.mdb

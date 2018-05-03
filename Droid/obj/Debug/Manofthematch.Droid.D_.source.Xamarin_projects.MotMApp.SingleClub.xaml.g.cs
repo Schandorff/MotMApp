@@ -18,7 +18,23 @@ namespace Manofthematch {
         private global::Manofthematch.Controls.HVScrollGridView sponsorList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+<<<<<<< HEAD
         private global::Xamarin.Forms.Label clubName;
+=======
+        private global::DLToolkit.Forms.Controls.FlowListView clubTeamList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button current;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button coming;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button completed;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Manofthematch.Controls.HVScrollGridView gameList;
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button current;
@@ -36,7 +52,11 @@ namespace Manofthematch {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SingleClub));
             sponsorList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Manofthematch.Controls.HVScrollGridView>(this, "sponsorList");
+<<<<<<< HEAD
             clubName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "clubName");
+=======
+            clubTeamList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DLToolkit.Forms.Controls.FlowListView>(this, "clubTeamList");
+>>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
             current = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "current");
             coming = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "coming");
             completed = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "completed");
