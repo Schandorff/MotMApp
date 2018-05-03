@@ -1,9 +1,6 @@
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Manofthematch.Droid.dll
-<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Akavache.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Akavache.Sqlite3.dll
-=======
->>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\CarouselView.FormsPlugin.Abstractions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\CarouselView.FormsPlugin.Android.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Com.Android.DeskClock.dll
@@ -62,7 +59,6 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.dll
-<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.dll
@@ -70,8 +66,6 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threadi
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.Expressions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.Extensions.dll
-=======
->>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\netstandard.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Data.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Numerics.dll
@@ -84,8 +78,6 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.Comp
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.Compression.FileSystem.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Serialization.Xml.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Security.Cryptography.Algorithms.dll
@@ -93,25 +85,9 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Securit
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Services.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ObjectModel.dll
-<<<<<<< HEAD
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.Primitives.dll
-=======
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Collections.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threading.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.Extensions.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.Primitives.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Globalization.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.Expressions.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.dll
->>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Dynamic.Runtime.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Globalization.dll

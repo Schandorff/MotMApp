@@ -107,11 +107,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Manofthematch.Droid.dll" comes first in this list. */
 		"Manofthematch.Droid.dll",
-<<<<<<< HEAD
 		"Akavache.dll",
 		"Akavache.Sqlite3.dll",
-=======
->>>>>>> ef02c92d4b1f9d1c79290beed35d29ebacce5202
 		"CarouselView.FormsPlugin.Abstractions.dll",
 		"CarouselView.FormsPlugin.Android.dll",
 		"Com.Android.DeskClock.dll",

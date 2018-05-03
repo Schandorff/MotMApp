@@ -56,7 +56,7 @@ namespace Manofthematch
                         allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
                         clubsSorted = await SortClubs(allClubs, "Soccer");
 
-                        TestClubXamlList.FlowItemsSource = clubsSorted;
+                        //TestClubXamlList.FlowItemsSource = clubsSorted;
                     }
                     finally
                     {
@@ -65,6 +65,7 @@ namespace Manofthematch
                     }
                 }
             }
+            TestClubXamlList.FlowItemsSource = clubsSorted;
 
         }
 
