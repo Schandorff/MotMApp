@@ -6,7 +6,8 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using DLToolkit.Forms.Controls;
 using DLToolkit.Forms;
-
+using Plugin.Connectivity;
+using System.Diagnostics;
 using Xamarin.Forms;
 
 namespace Manofthematch
@@ -88,33 +89,44 @@ namespace Manofthematch
         private void currentMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = currentMatches;
-            current.FontSize = 22;
+            current.FontSize = 12;
             current.TextColor = Color.White;
-                coming.FontSize = 16;
+                coming.FontSize = 10;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.FontSize = 16;
+                completed.FontSize = 10;
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
         }
         private void comingMatchSorting(object sender, EventArgs e){
             gameList.ItemsSource = comingMatches;
-            coming.FontSize = 22;
+            coming.FontSize = 12;
             coming.TextColor = Color.White;
-                current.FontSize = 16;
+                current.FontSize = 10;
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.FontSize = 16;
+                completed.FontSize = 10;
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
         }
         private void completedMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = completedMatches;
-            completed.FontSize = 22;
+            completed.FontSize = 12;
             completed.TextColor = Color.White;
-                current.FontSize = 16;
+                current.FontSize = 10;
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                coming.FontSize = 16;
+                coming.FontSize = 10;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
+        }
+        async void OnTeamSelect(object sender, ItemTappedEventArgs e)
+        {
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else
+            {
+                await Navigation.PushAsync(new SingleTeam((Team)e.Item));
+            }
         }
         }
 }

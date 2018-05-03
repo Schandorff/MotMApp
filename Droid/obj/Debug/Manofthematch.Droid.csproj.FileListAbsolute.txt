@@ -294,10 +294,14 @@ D:/source/Xamarin projects/MotMApp/Droid/obj/Debug/Manofthematch.Droid.StartPage
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Plugin.Connectivity.Abstractions.xml
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Newtonsoft.Json.xml
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/FormsViewGroup.pdb
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/FormsViewGroup.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Core.pdb
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Core.xml
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Platform.Android.pdb
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Xaml.pdb
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Xaml.xml
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/Manofthematch.Droid.csprojResolveAssemblyReference.cache
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/Manofthematch.Droid.csproj.CoreCompileInputs.cache
@@ -368,10 +372,7 @@ D:/source/Xamarin projects/MotMApp/Droid/obj/Debug/Manofthematch.Droid.StartPage
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/res/drawable-hdpi/tennisbg.png
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/R.cs.flag
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/uploadflags.txt
-/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/FormsViewGroup.dll.mdb
-/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
-/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
-/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/Manofthematch.Droid.SingleTeam.xaml.g.cs
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/linksrc/Manofthematch.Droid.pdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/linksrc/Mono.Android.pdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Debug/linksrc/Plugin.Connectivity.Abstractions.pdb
