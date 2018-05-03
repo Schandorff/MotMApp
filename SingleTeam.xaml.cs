@@ -25,56 +25,56 @@ namespace Manofthematch
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            Title = currentTeam.TeamName;
-            List<Sponsor> ClubSponsors = currentTeam.Sponsors;
+        //    Title = currentTeam.TeamName;
+        //    List<Sponsor> ClubSponsors = currentTeam.Sponsors;
 
-            //add to teams list
-            foreach (Team team in ClubTeams)
-            {
-                if (teams.All(b => b.teamId != team.teamId))
-                    teams.Add(team);
+        //    //add to teams list
+        //    foreach (Team team in ClubTeams)
+        //    {
+        //        if (teams.All(b => b.teamId != team.teamId))
+        //            teams.Add(team);
 
-                //if (teamMatches.Count != 0)
-                //{
-                foreach (Match match in team.teamMatches)
-                {
+        //        //if (teamMatches.Count != 0)
+        //        //{
+        //        foreach (Match match in team.teamMatches)
+        //        {
 
-                    if (match.status == "Current")
-                    {
-                        currentMatches.Add(match);
-                    }
-                    else if (match.status == "Coming")
-                    {
-                        comingMatches.Add(match);
-                    }
-                    else if (match.status == "Finished")
-                    {
-                        completedMatches.Add(match);
-                    }
+        //            if (match.status == "Current")
+        //            {
+        //                currentMatches.Add(match);
+        //            }
+        //            else if (match.status == "Coming")
+        //            {
+        //                comingMatches.Add(match);
+        //            }
+        //            else if (match.status == "Finished")
+        //            {
+        //                completedMatches.Add(match);
+        //            }
 
-                }
-                //}
+        //        }
+        //        //}
 
-            }
+        //    }
 
-            // add to sponsor list
-            foreach (Sponsor sponsor in ClubSponsors)
-            {
-                if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
-                    sponsors.Add(sponsor);
-            }
+        //    // add to sponsor list
+        //    foreach (Sponsor sponsor in ClubSponsors)
+        //    {
+        //        if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
+        //            sponsors.Add(sponsor);
+        //    }
 
-            BindingContext = teams;
-            clubTeamList.FlowItemsSource = teams;
-            gameList.ItemsSource = currentMatches;
-            sponsorList.ItemsSource = sponsors;
+        //    BindingContext = teams;
+        //    clubTeamList.FlowItemsSource = teams;
+        //    gameList.ItemsSource = currentMatches;
+        //    sponsorList.ItemsSource = sponsors;
 
 
 
-            Title = currentClub.clubName;
-            coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-            completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-            sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
+        //    Title = currentClub.clubName;
+        //    coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+        //    completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+        //    sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
 
         }
     }
