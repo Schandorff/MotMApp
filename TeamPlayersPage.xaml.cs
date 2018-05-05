@@ -28,9 +28,6 @@ namespace Manofthematch
             this.currentMatchId = currentMatchId;
 		    NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             InitializeComponent ();
-
-		    //var myCarousel = new CarouselViewControl();
-		    
         }
 
 	    protected override async void OnAppearing()
@@ -50,8 +47,6 @@ namespace Manofthematch
 	                int matchID = int.Parse(currentMatchId.CommandParameter.ToString());
 	                mPlayers = await apiMethods.GetMatchPlayers("GetMatchPlayers", matchID);
 	                MatchPlayers = new FlowObservableCollection<Player>(mPlayers); //cast List<Club> to FlowObservableCollection
-
-
 	                Carousel.ItemsSource = MatchPlayers;
 	            }
 	            finally

@@ -22,7 +22,7 @@ namespace Manofthematch
         public IList<Match> comingMatches = new ObservableCollection<Match>();
         public IList<Match> completedMatches = new ObservableCollection<Match>();
         readonly ApiMethods apiMethods = new ApiMethods();
-
+        bool isInitialized = false;
         Club requestedClub = new Club();
 
         public SingleClub(Club currentClub)
@@ -35,6 +35,8 @@ namespace Manofthematch
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+
+            if (!isInitialized) { 
             requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
             List<Team> ClubTeams = requestedClub.Teams;
             List<Sponsor> ClubSponsors = requestedClub.Sponsors;
@@ -86,6 +88,9 @@ namespace Manofthematch
                 sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
 
             }
+
+            isInitialized = true;
+        }
         private void currentMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = currentMatches;

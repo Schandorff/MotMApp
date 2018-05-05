@@ -14,6 +14,7 @@ using DLToolkit.Forms;
 using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using Akavache;
+using Javax.Security.Auth;
 
 namespace Manofthematch
 {
@@ -25,20 +26,20 @@ namespace Manofthematch
         public List<Club> clubCollection = new List<Club>();
         bool isInitialized = false;
         readonly ApiMethods apiMethods = new ApiMethods();
-
+        public string Message;
         public Favourites Favourites = new Favourites();
 
         public LandingPage()
         {
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
-            //soccerBtn.Clicked += delegate (object sender, EventArgs e) { this.button_Click(sender, e, "Hockey"); };
             InitializeComponent();
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
+            clubsSorted = await SortClubs(allClubs, Message);
+            TestClubXamlList.FlowItemsSource = clubsSorted;
             if (!isInitialized)
             {
                 if (!CrossConnectivity.Current.IsConnected)
@@ -63,11 +64,12 @@ namespace Manofthematch
                         this.IsBusy = false;
                         isInitialized = true;
                     }
+                    
                 }
             }
-            //TestClubXamlList.FlowItemsSource = clubsSorted;
-
+            
         }
+        
 
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
         {
@@ -123,8 +125,10 @@ namespace Manofthematch
         private async void sportBtn_Clicked(object sender, EventArgs e)
         {
             Button _sender = (Button)sender;
-            string message = _sender.CommandParameter.ToString();
-            switch (message)
+            Message = _sender.CommandParameter.ToString();
+            clubsSorted = await SortClubs(allClubs, Message);
+            TestClubXamlList.FlowItemsSource = clubsSorted;
+            switch (Message)
             {
                 case "Soccer":
                     sportTypeLabel.Text = "Fodbold";
@@ -142,18 +146,24 @@ namespace Manofthematch
                     sportTypeLabel.Text = "Hockey";
                     BackgroundImage = "HockeyBG.png";
                     break;
-                case "Favourites":
-                    //Favourites.FavClubs = clubCollection;
-                    //await BlobCache.InMemory.InsertObject("favourites", Favourites);
-                    //sportTypeLabel.Text = "Favourites";
-                    //BackgroundImage = "FavouritesBG.png";
-                    await Navigation.PushAsync(new FavouritePage(allClubs));
-                    break;
+                //case "Favourites":
+                //    //Favourites.FavClubs = clubCollection;
+                //    //await BlobCache.InMemory.InsertObject("favourites", Favourites);
+                //    //sportTypeLabel.Text = "Favourites";
+                //    //BackgroundImage = "FavouritesBG.png";
+                //    await Navigation.PushAsync(new FavouritePage(allClubs));
+                //    break;
                 default:
                     break;
             }
-            clubsSorted = await SortClubs(allClubs, message);
-            TestClubXamlList.FlowItemsSource = clubsSorted;
+
+            
+
+
+        }
+        private async void favBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FavouritePage(allClubs));
         }
 
         //async void button_Click(object sender, EventArgs e, string message)

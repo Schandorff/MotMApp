@@ -38,7 +38,7 @@
                 <Button Clicked="sportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
                 <Button Clicked="sportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
                 <Button Clicked="sportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="sportBtn_Clicked" CommandParameter="Favourites" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="favBtn_Clicked" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
             </Grid>
 
             <StackLayout BackgroundColor="Transparent" Padding="0,0,3,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="1">

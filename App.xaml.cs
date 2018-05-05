@@ -18,21 +18,15 @@ namespace Manofthematch
         //public static NavigationPage Navigation = null;
         public App()
         {
-            
             InitializeComponent();
             FlowListView.Init();
-            
             MainPage = new NavigationPage(new LandingPage());
             BlobCache.ApplicationName = "Manofthematch";
-            //Application.Current.MainPage = Navigation;
-            //Current.MainPage = Navigation;
-
         }        
 
         protected override void OnStart()
         {            
             CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
-            
         }        
 
         protected override void OnSleep()
@@ -61,7 +55,7 @@ namespace Manofthematch
         // Called by the back button in our header/navigation bar.
         public async void OnBackButtonPressed(object sender, EventArgs e)
         {
-            await ((NavigationPage)Application.Current.MainPage).PopAsync();
+            await MainPage.Navigation.PopAsync();
         }
     }
 }
