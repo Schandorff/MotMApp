@@ -21,6 +21,7 @@ namespace Manofthematch
             
             InitializeComponent();
             FlowListView.Init();
+            
             MainPage = new NavigationPage(new LandingPage());
             BlobCache.ApplicationName = "Manofthematch";
             //Application.Current.MainPage = Navigation;

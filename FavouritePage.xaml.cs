@@ -9,6 +9,7 @@ using Plugin.Connectivity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Diagnostics;
+using DLToolkit.Forms.Controls;
 
 namespace Manofthematch
 {
@@ -17,7 +18,7 @@ namespace Manofthematch
 	{
         public LocalStorage LocalStorage = new LocalStorage();
 	    
-        public FavouritePage ()
+        public FavouritePage (object clubsSorted)
         {
 		    NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             InitializeComponent ();

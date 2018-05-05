@@ -128,5 +128,18 @@ namespace Manofthematch
                 await Navigation.PushAsync(new SingleTeam((Team)e.Item));
             }
         }
+
+        async void MatchVoteBtn_OnClicked(object sender, EventArgs e)
+        {
+            Button _sender = (Button)sender;
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else
+            {
+                await Navigation.PushAsync(new TeamPlayersPage(_sender));
+            }
         }
+    }
 }

@@ -30,6 +30,7 @@
                     </Grid.RowDefinitions>
 
                     <!-- Begin Header -->
+
                     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="#0000" Grid.Column="0" Grid.Row="0">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="30" />
@@ -53,28 +54,6 @@
                         <Label x:Name="navTitle" Text="{TemplateBinding Title}" FontSize="Large" FontAttributes="Bold" TextColor="White" Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
                     </Grid>
 
-                    <!--<StackLayout x:Name="navBar"
-                        Orientation="Horizontal"
-                        HorizontalOptions="Start"
-                        VerticalOptions="FillAndExpand"
-                        Spacing="0"
-                        BackgroundColor="#0000"
-                        HeightRequest="100"
-                        Grid.Column="0" Grid.Row="0">
-                            <StackLayout.Padding>
-                                <OnPlatform x:TypeArguments="Thickness"
-                                iOS="10, 10, 10, 10"
-                                Android="10, 10, 10, 10"
-                                WinPhone="10, 10, 10, 10" />
-                            </StackLayout.Padding>
-                        --><!-- Header Content. --><!--
-                        <Image Source="arrowback.png" WidthRequest="20" HeightRequest="20">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="OnBackButtonPressed" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <Label x:Name="navTitle" Text="Titel"></Label>
-                    </StackLayout>-->
                     <!-- End Header -->
 
                     <!-- Begin Content -->

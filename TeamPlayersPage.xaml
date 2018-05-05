@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             Title="Spillere"
+             x:Class="Manofthematch.TeamPlayersPage"
+             BackgroundImage="TeamplayersBG.png"
+             ControlTemplate="{DynamicResource MainPageTemplate}">
+    <ContentPage.Content>
+        <controls:CarouselViewControl x:Name="Carousel" IndicatorsTintColor="White" ShowIndicators="True"  
+                                      CurrentPageIndicatorTintColor="Black"  Orientation="Horizontal" InterPageSpacing="10" 
+                                      VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  AnimateTransition="true" IsSwipeEnabled="true">
+            <controls:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid x:Name="FrameGrid">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100*"/>
+                            </Grid.RowDefinitions>
+                            <Frame HasShadow="false" CornerRadius="30" Margin="40" BackgroundColor="White" Grid.Column="0" Grid.Row="0">
+                                <Grid x:Name="ContentGrid">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="5*"/>
+                                        <RowDefinition Height="7*"/>
+                                        <RowDefinition Height="60*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid x:Name="ContentHeader" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="20*"/>
+                                            <ColumnDefinition Width="80*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Button x:Name="FavStar" Image="graystar.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                                        <Grid Grid.Column="1" Grid.Row="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                        <Label x:Name="PlayerFirstName" Text="{Binding playerFirstName}" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large" Grid.Column="0" Grid.Row="0"></Label>
+                                        <Label x:Name="PlayerLastName" Text="{Binding playerLastName}" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large" Grid.Column="1" Grid.Row="0"></Label>
+                                        </Grid>
+                                    </Grid>
+                                <Label x:Name="PlayerRole" Text="{Binding roleType}" TextColor="{StaticResource textColorGray}" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+                                <StackLayout x:Name="Alder" Grid.Column="0" Grid.Row="2">
+                                    <Label Text="Alder" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" ></Label>
+                                    <Label Text="34 år" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" ></Label>
+                                </StackLayout>
+
+                                <StackLayout x:Name="Kampe" Grid.Column="1" Grid.Row="2">
+                                    <Label Text="Kampe" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+                                    <Label Text="12" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+                                </StackLayout>
+
+                                <StackLayout x:Name="Hold" Grid.Column="2" Grid.Row="2">
+                                    <Label Text="Hold" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold"></Label>
+                                    <Label Text="{Binding teamName}" TextColor="{StaticResource textColorGray}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+                                </StackLayout>
+
+                                <Image x:Name="PLayerImage" Source="playerImg.png" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"></Image>
+                                <Button Style="{StaticResource btnStyle}" WidthRequest="70" Text="STEM" VerticalOptions="End" Margin="0, 0 , 0, 0" BackgroundColor="#CCF8144E" Grid.Column="1" Grid.Row="3"/>
+                                
+                            </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </controls:CarouselViewControl.ItemTemplate>
+            </controls:CarouselViewControl>
+    </ContentPage.Content>
+</ContentPage>

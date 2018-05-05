@@ -294,6 +294,33 @@
   <ItemGroup>
     <BundleResource Include="Resources\TennisBG%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TeamplayersBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TeamplayersBG%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TeamplayersBG%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\graystar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\graystar%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\graystar%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\playerImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\playerImg%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\playerImg%403x.png" />
+  </ItemGroup>
   <Import Project="..\Manofthematch.projitems" Label="Shared" Condition="Exists('..\Manofthematch.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

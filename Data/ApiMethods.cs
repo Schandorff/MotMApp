@@ -34,5 +34,15 @@ namespace Manofthematch.Data
             Club response = JsonConvert.DeserializeObject<Club>(await answer.Content.ReadAsStringAsync());
             return response;
         }
+
+        public async Task<List<Player>> GetMatchPlayers(string method, int id)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetToken();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "mID=" + id);
+            List<Player> response = JsonConvert.DeserializeObject<List<Player>>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
     }
 }

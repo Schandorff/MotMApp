@@ -56,7 +56,7 @@ namespace Manofthematch
                         allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
                         clubsSorted = await SortClubs(allClubs, "Soccer");
 
-                        //TestClubXamlList.FlowItemsSource = clubsSorted;
+                        TestClubXamlList.FlowItemsSource = clubsSorted;
                     }
                     finally
                     {
@@ -65,7 +65,7 @@ namespace Manofthematch
                     }
                 }
             }
-            TestClubXamlList.FlowItemsSource = clubsSorted;
+            //TestClubXamlList.FlowItemsSource = clubsSorted;
 
         }
 
@@ -147,7 +147,7 @@ namespace Manofthematch
                     //await BlobCache.InMemory.InsertObject("favourites", Favourites);
                     //sportTypeLabel.Text = "Favourites";
                     //BackgroundImage = "FavouritesBG.png";
-                    await Navigation.PushAsync(new FavouritePage());
+                    await Navigation.PushAsync(new FavouritePage(allClubs));
                     break;
                 default:
                     break;
