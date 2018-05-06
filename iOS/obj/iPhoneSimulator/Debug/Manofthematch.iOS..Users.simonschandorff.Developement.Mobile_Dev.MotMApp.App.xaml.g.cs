@@ -11,12 +11,12 @@
 namespace Manofthematch {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/simonschandorff/Developement/Mobile Dev/MotMApp/PlayerCard.xaml")]
-    public partial class PlayerCard : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/simonschandorff/Developement/Mobile Dev/MotMApp/App.xaml")]
+    public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PlayerCard));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
         }
     }
 }

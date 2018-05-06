@@ -93,8 +93,8 @@
                                             <ColumnDefinition Width="0.5*"/>
                                         </Grid.ColumnDefinitions>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition Height="30"/>
                                         
                                         </Grid.RowDefinitions>
 
