@@ -17,6 +17,11 @@ MonoSymbolArchive=False
 AndroidUseLatestPlatformSdk=true
 TargetFrameworkVersion=v8.1
 AndroidCreatePackagePerAbi=
+<<<<<<< HEAD
 OS=Unix
 DesignTimeBuild=
+=======
+OS=Windows_NT
+DesignTimeBuild=true
+>>>>>>> 5383ec7fd13388e819f18b7c3766330fc0156535
 AndroidIncludeDebugSymbols=True
