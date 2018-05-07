@@ -44,5 +44,14 @@ namespace Manofthematch.Data
             List<Player> response = JsonConvert.DeserializeObject<List<Player>>(await answer.Content.ReadAsStringAsync());
             return response;
         }
+        public async Task<Team> GetTeam(string method, [Optional] int id)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetToken();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "tID=" + id);
+            Team response = JsonConvert.DeserializeObject<Team>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
     }
 }

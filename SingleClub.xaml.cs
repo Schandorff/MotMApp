@@ -30,12 +30,29 @@ namespace Manofthematch
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             this.currentClub = currentClub;
             InitializeComponent();
+
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
+            switch (currentClub.clubSports[0])
+            {
+                case "Soccer":
+                    BackgroundImage = "FodboldBG.png";
+                    break;
+                case "Handball":
+                    BackgroundImage = "HandballBG.png";
+                    break;
+                case "Tennis":
+                    BackgroundImage = "TennisBG.png";
+                    break;
+                case "Hockey":
+                    BackgroundImage = "HockeyBG.png";
+                    break;
+                default:
+                    break;
+            }
             if (!isInitialized) { 
             requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
             List<Team> ClubTeams = requestedClub.Teams;

@@ -12,8 +12,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="150"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
 
@@ -31,6 +31,7 @@
                                     <StackLayout>
 
                                     <Image Source="{Binding sponsorLogo}" Margin="10, 0" HeightRequest="80" VerticalOptions="Center" HorizontalOptions="Center"/>
+
                                     </StackLayout>
 
 
@@ -59,14 +60,14 @@
             </Grid.RowDefinitions>
                     
             <StackLayout Grid.Row="0" Grid.Column="0">
-                <Button x:Name="current" FontSize="12" BackgroundColor="Transparent" Text="Aktuelle" TextColor="White"></Button>
-                </StackLayout>
+                        <Button x:Name="current" Clicked="currentMatchSorting"  FontSize="18" BackgroundColor="Transparent" Text="Aktuelle" TextColor="White"></Button>
+                    </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="1">
-                <Button x:Name="coming"  FontSize="10" BackgroundColor="Transparent" Text="Kommende" ></Button>
-            </StackLayout>
+                        <Button x:Name="coming" Clicked="comingMatchSorting" FontSize="14" BackgroundColor="Transparent" Text="Kommende" TextColor="#CCFFFFFF"></Button>
+                    </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="2">
-                <Button x:Name="completed"  FontSize="10" BackgroundColor="Transparent" Text="Afsluttede"></Button>
-            </StackLayout>
+                        <Button x:Name="completed" Clicked="completedMatchSorting" FontSize="14" BackgroundColor="Transparent" Text="Afsluttede" TextColor="#CCFFFFFF"></Button>
+                    </StackLayout>
                 </Grid>
 
          <local:HVScrollGridView ListOrientation="Horizontal"
@@ -76,52 +77,48 @@
                     <DataTemplate>
                         <ContentView>
                             <ContentView.Content>
-                                <Frame HasShadow="false" CornerRadius="10" WidthRequest="110" BackgroundColor="White" Margin="20">
-                                <StackLayout>
-                                    <Label Text="{Binding matchStartDateTime}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Center"
-                                               VerticalTextAlignment="Center"/>
-                                    <Label Text="{Binding matchAddress}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Center"
-                                               VerticalTextAlignment="Center"/>
-                                        <Grid>
-                                            
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="1.5*"/>
-                                            <ColumnDefinition Width="0.5*"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="30"/>
-                                            <RowDefinition Height="30"/>
-                                        
-                                        </Grid.RowDefinitions>
+                                <Frame HasShadow="false" CornerRadius="10" WidthRequest="130" BackgroundColor="White" Margin="20">
+                                        <StackLayout>
+                                            <Label Text="{Binding matchStartDateTime}"
+                                                       LineBreakMode="MiddleTruncation"
+                                                       HorizontalTextAlignment="Center"
+                                                       VerticalTextAlignment="Center"/>
+                                            <Label Text="{Binding matchAddress}"
+                                                       LineBreakMode="MiddleTruncation"
+                                                       HorizontalTextAlignment="Center"
+                                                       VerticalTextAlignment="Center"/>
+                                            <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="1.5*"/>
+                                                <ColumnDefinition Width="0.5*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="20"/>
+                                            </Grid.RowDefinitions>
 
-                                    <Label Grid.Column="0" Grid.Row="0" Text="{Binding matchHomeTeam}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="1" Grid.Row="0" Text="{Binding homeGoal}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="End"
-                                               VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="0" Grid.Row="1" Text="{Binding opponent}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="1" Grid.Row="1" Text="{Binding opponentGoal}"
-                                               LineBreakMode="MiddleTruncation"
-                                               HorizontalTextAlignment="End"
-                                               VerticalTextAlignment="Center"/>
-                                    
-
-                                </Grid>
+                                                <Label Grid.Column="0" Grid.Row="0" Text="{Binding matchHomeTeam}"
+                                                           LineBreakMode="MiddleTruncation"
+                                                           HorizontalTextAlignment="Start"
+                                                           VerticalTextAlignment="Center"/>
+                                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding homeGoal}"
+                                                           LineBreakMode="MiddleTruncation"
+                                                           HorizontalTextAlignment="End"
+                                                           VerticalTextAlignment="Center"/>
+                                                <Label Grid.Column="0" Grid.Row="1" Text="{Binding opponent}"
+                                                           LineBreakMode="MiddleTruncation"
+                                                           HorizontalTextAlignment="Start"
+                                                           VerticalTextAlignment="Center"/>
+                                                <Label Grid.Column="1" Grid.Row="1" Text="{Binding opponentGoal}"
+                                                           LineBreakMode="MiddleTruncation"
+                                                           HorizontalTextAlignment="End"
+                                                           VerticalTextAlignment="Center"/> 
+                                            </Grid> 
                                             <StackLayout Margin="0, 20, 0, 0">
-                                            <Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM"/>
+                                                <Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM"/>
                                             </StackLayout>
-                                      </StackLayout>
-                                </Frame>
+                                        </StackLayout>
+                                    </Frame>
 
                             </ContentView.Content>
                         </ContentView>

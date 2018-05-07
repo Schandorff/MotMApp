@@ -60,10 +60,10 @@
                         <Button x:Name="current" Clicked="currentMatchSorting" FontSize="18" BackgroundColor="Transparent" Text="Aktuelle" TextColor="White"></Button>
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="1">
-                        <Button x:Name="coming" Clicked="comingMatchSorting" FontSize="14" BackgroundColor="Transparent" Text="Kommende" ></Button>
+                        <Button x:Name="coming" Clicked="comingMatchSorting" FontSize="14" BackgroundColor="Transparent" Text="Kommende" TextColor="#CCFFFFFF"></Button>
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="2">
-                        <Button x:Name="completed" Clicked="completedMatchSorting" FontSize="14" BackgroundColor="Transparent" Text="Afsluttede"></Button>
+                        <Button x:Name="completed" Clicked="completedMatchSorting" FontSize="14" BackgroundColor="Transparent" Text="Afsluttede" TextColor="#CCFFFFFF"></Button>
                     </StackLayout>
                 </Grid>
 
