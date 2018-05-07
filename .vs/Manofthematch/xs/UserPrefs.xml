@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{53AC13EA-02F5-4C53-90E8-16DE6EBE670F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="Models/Team.cs">
     <Files>
-      <File FileName="SingleClub.xaml" Line="19" Column="13" />
-      <File FileName="SingleClub.xaml.cs" Line="4" Column="1" />
-      <File FileName="SingleTeam.xaml" Line="68" Column="44" />
-      <File FileName="SingleTeam.xaml.cs" Line="29" Column="63" />
-      <File FileName="Models/Team.cs" Line="1" Column="1" />
+      <File FileName="SingleClub.xaml" Line="129" Column="15" />
+      <File FileName="SingleClub.xaml.cs" Line="30" Column="37" />
+      <File FileName="Models/Team.cs" Line="14" Column="23" />
+      <File FileName="LandingPage.xaml" Line="80" Column="15" />
+      <File FileName="Models/Match.cs" Line="19" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,10 +13,11 @@
     <BreakpointStore>
       <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/SingleClub.xaml" relfile="SingleClub.xaml" line="5" column="106" />
       <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/SingleClub.xaml" relfile="SingleClub.xaml" line="13" column="1" />
+      <Breakpoint file="/Users/simonschandorff/Developement/Mobile Dev/MotMApp/SingleClub.xaml.cs" relfile="SingleClub.xaml.cs" line="41" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AE83162B-6AE0-4552-933D-1E2AD5BB355A" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.new_device" />
 </Properties>

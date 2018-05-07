@@ -94,31 +94,31 @@ namespace Manofthematch
         private void currentMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = currentMatches;
-            current.FontSize = 12;
+            current.FontSize = 18;
             current.TextColor = Color.White;
-                coming.FontSize = 10;
+                coming.FontSize = 14;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.FontSize = 10;
+                completed.FontSize = 14;
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
         }
         private void comingMatchSorting(object sender, EventArgs e){
             gameList.ItemsSource = comingMatches;
-            coming.FontSize = 12;
+            coming.FontSize = 18;
             coming.TextColor = Color.White;
-                current.FontSize = 10;
+                current.FontSize = 14;
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.FontSize = 10;
+                completed.FontSize = 14;
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
         }
         private void completedMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = completedMatches;
-            completed.FontSize = 12;
+            completed.FontSize = 18;
             completed.TextColor = Color.White;
-                current.FontSize = 10;
+                current.FontSize = 14;
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                coming.FontSize = 10;
+                coming.FontSize = 14;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
         }
