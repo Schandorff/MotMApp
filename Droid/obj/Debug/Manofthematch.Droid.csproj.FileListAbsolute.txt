@@ -237,6 +237,7 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Transac
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Services.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.pdb
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojResolveAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Manofthematch.Droid.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Akavache.dll.mdb
