@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
+    <Jar>obj\Debug\lp\7\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\lp\24\jl\arch-core-common.jar</Jar>
+    <Jar>obj\Debug\lp\25\jl\arch-lifecycle-common.jar</Jar>
+    <Jar>obj\Debug\lp\28\jl\support-annotations.jar</Jar>
     <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\24\jl\arch-core-common.jar</Jar>
     <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\25\jl\arch-lifecycle-common.jar</Jar>
     <Jar>D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\lp\26\jl\bin\classes.jar</Jar>
