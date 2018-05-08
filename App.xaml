@@ -19,6 +19,8 @@
                 <Setter Property="FontSize" Value="22"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
+
+            
             
             <!--Header and content template for content pages-->
             <ControlTemplate x:Key="MainPageTemplate">

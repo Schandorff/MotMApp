@@ -7,12 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Manofthematch.Models;
 using System.Runtime.InteropServices;
+using MOTMUmbracoBackend.Models;
 
 namespace Manofthematch.Data
 {
     class ApiMethods
     {
         const string ContentUrl = "https://motmapi.nikolajsimonsen.com/Umbraco/API/TestApi/";
+        const string TestUrl = "http://localhost:6801/Umbraco/API/TestApi/";
         Authorization authorization = new Authorization();
 
         public async Task<List<Club>> GetAllClubs(string method, [Optional] int id)
@@ -52,6 +54,29 @@ namespace Manofthematch.Data
             var answer = await client.GetAsync(ContentUrl + method + "?" + "tID=" + id);
             Team response = JsonConvert.DeserializeObject<Team>(await answer.Content.ReadAsStringAsync());
             return response;
+        }
+
+        public async Task<Vote> PostVote(string method, int id, Vote vote)
+        {
+            HttpClient client = new HttpClient();
+            VoteSend testmessage = new VoteSend();
+            testmessage.playerId = vote.playerId;
+            testmessage.deviceId = vote.deviceId;
+            var Token = await authorization.GetToken();
+            
+            StringContent message = new StringContent(
+                JsonConvert.SerializeObject(testmessage),
+                Encoding.UTF8, "application/json");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.PostAsync(ContentUrl + method + "?" + "mID=" + id, message);
+            Vote response = JsonConvert.DeserializeObject<Vote>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
+        private class VoteSend
+        {
+            public string deviceId { get; set; }
+            public int playerId { get; set;  }
         }
     }
 }

@@ -71,7 +71,7 @@
                                 </StackLayout>
 
                                 <Image x:Name="PLayerImage" Source="playerImg.png" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"></Image>
-                                <Button Style="{StaticResource btnStyle}" WidthRequest="70" Text="STEM" VerticalOptions="End" Margin="0, 0 , 0, 0" BackgroundColor="#CCF8144E" Grid.Column="1" Grid.Row="3"/>
+                                <Button Style="{StaticResource btnStyle}" Clicked="PlayerVoteBtn_OnClicked" CommandParameter="{Binding playerId}" WidthRequest="70" Text="STEM" VerticalOptions="End" Margin="0, 0 , 0, 0" BackgroundColor="#CCF8144E" Grid.Column="1" Grid.Row="3"/>
                                 
                             </Grid>
                             </Frame>

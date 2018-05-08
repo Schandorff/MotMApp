@@ -405,6 +405,18 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\playerImg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ReceiptBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ReceiptBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ReceiptBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ReceiptBG.png" />
+  </ItemGroup>
   <Import Project="..\Manofthematch.projitems" Label="Shared" Condition="Exists('..\Manofthematch.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

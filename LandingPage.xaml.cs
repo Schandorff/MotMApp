@@ -14,7 +14,7 @@ using DLToolkit.Forms;
 using System.Collections.ObjectModel;
 using System.Reactive.Linq;
 using Akavache;
-using Javax.Security.Auth;
+//using Javax.Security.Auth;
 
 namespace Manofthematch
 {
