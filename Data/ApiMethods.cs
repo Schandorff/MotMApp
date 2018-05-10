@@ -46,6 +46,7 @@ namespace Manofthematch.Data
             List<Player> response = JsonConvert.DeserializeObject<List<Player>>(await answer.Content.ReadAsStringAsync());
             return response;
         }
+
         public async Task<Team> GetTeam(string method, [Optional] int id)
         {
             HttpClient client = new HttpClient();
@@ -59,13 +60,13 @@ namespace Manofthematch.Data
         public async Task<Vote> PostVote(string method, int id, Vote vote)
         {
             HttpClient client = new HttpClient();
-            VoteSend testmessage = new VoteSend();
-            testmessage.playerId = vote.playerId;
-            testmessage.deviceId = vote.deviceId;
+            Vote postVote = new Vote();
+            postVote.playerId = vote.playerId;
+            postVote.deviceId = vote.deviceId;
             var Token = await authorization.GetToken();
             
             StringContent message = new StringContent(
-                JsonConvert.SerializeObject(testmessage),
+                JsonConvert.SerializeObject(postVote),
                 Encoding.UTF8, "application/json");
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
             var answer = await client.PostAsync(ContentUrl + method + "?" + "mID=" + id, message);
@@ -73,10 +74,37 @@ namespace Manofthematch.Data
             return response;
         }
 
+        public async Task<object> UpdateVote(string method, int id, Vote vote)
+        {
+            HttpClient client = new HttpClient();
+            Vote updateVote = new Vote();
+            updateVote.playerId = vote.playerId;
+            updateVote.deviceId = vote.deviceId;
+            updateVote.voteId = vote.voteId;
+            var Token = await authorization.GetToken();
+            StringContent message = new StringContent(
+                JsonConvert.SerializeObject(updateVote),
+                Encoding.UTF8, "application/json");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.PutAsync(ContentUrl + method + "?" + "vID=" + id, message);
+            var response = JsonConvert.DeserializeObject<object>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
         private class VoteSend
         {
             public string deviceId { get; set; }
             public int playerId { get; set;  }
+        }
+
+        public async Task<List<Vote>> GetMatchVotes(string method, int id)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetToken();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "mID=" + id);
+            List<Vote> response = JsonConvert.DeserializeObject<List<Vote>>(await answer.Content.ReadAsStringAsync());
+            return response;
         }
     }
 }
