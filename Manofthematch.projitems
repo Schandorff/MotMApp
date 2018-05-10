@@ -68,17 +68,15 @@
       <DependentUpon>TeamPlayersPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="$(MSBuildThisFileDirectory)AdminLogin.xaml.cs">
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)FinishedMatch.xaml.cs">
       <DependentUpon>FinishedMatch.xaml</DependentUpon>
-=======
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)VoteReceipt.xaml.cs">
       <DependentUpon>VoteReceipt.xaml</DependentUpon>
       <SubType>Code</SubType>
->>>>>>> 337699bc126f92ecc63e20b01618e4357a09a5ab
     </Compile>
   </ItemGroup>
   <ItemGroup>
