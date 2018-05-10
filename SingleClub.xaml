@@ -13,7 +13,7 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="1.3*"/>
                 <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
 
@@ -24,7 +24,7 @@
                             <ContentView>
                                 <ContentView.Content>
                                     <StackLayout>
-                                    <Image Source="{Binding sponsorLogo}" Margin="10, 0" HeightRequest="80" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Image Source="{Binding sponsorLogo}" Margin="10" HeightRequest="70" WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center"/>
                                     </StackLayout>
                                 </ContentView.Content>
                             </ContentView>
@@ -34,11 +34,11 @@
             </StackLayout>
 
             <ScrollView Grid.Column="0" Grid.Row="1">
-                <flv:FlowListView x:Name="clubTeamList" BackgroundColor="Transparent" FlowColumnCount="1" FlowItemTapped="OnTeamSelect" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="30" FlowUseAbsoluteLayoutInternally="false" IsGroupingEnabled="false" VerticalOptions="Center">
+                <flv:FlowListView x:Name="clubTeamList" BackgroundColor="Transparent" FlowColumnCount="2" FlowItemTapped="OnTeamSelect" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="50" FlowUseAbsoluteLayoutInternally="false" IsGroupingEnabled="false" VerticalOptions="Center">
                     <flv:FlowListView.FlowColumnTemplate>
                         <DataTemplate>
-                             <Frame BackgroundColor="Silver" HeightRequest="30" Margin="2" Padding="5">
-                                <Label Text="{Binding TeamName}" TextColor="#fff" FontSize="12"/>
+                             <Frame BackgroundColor="White" HeightRequest="50" Margin="2" Padding="5">
+                                <Label Text="{Binding TeamName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16"/>
                               </Frame>
                         </DataTemplate>
                     </flv:FlowListView.FlowColumnTemplate>
@@ -112,7 +112,7 @@
                                             <StackLayout Margin="0, 20, 0, 0">
                                                 
                                                 <!--<Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM" Clicked="MatchVoteBtn_OnClicked" CommandParameter="{Binding matchId}"/>-->
-                                                <Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM" Clicked="MatchVoteBtn_OnClicked" CommandParameter="{Binding matchId}"/>
+                                                <Button Style="{StaticResource btnStyle}" BackgroundColor="{Binding buttonColor}" WidthRequest="50" Text="{Binding buttonText}"  Clicked="MatchVoteBtn_OnClicked" CommandParameter="{Binding matchId}"/>
 
                                             </StackLayout>
                                         </StackLayout>

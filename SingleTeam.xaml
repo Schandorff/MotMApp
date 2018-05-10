@@ -30,7 +30,7 @@
                                
                                     <StackLayout>
 
-                                    <Image Source="{Binding sponsorLogo}" Margin="10, 0" HeightRequest="80" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Image Source="{Binding sponsorLogo}" Margin="10" HeightRequest="70" WidthRequest="160" VerticalOptions="Center" HorizontalOptions="Center"/>
 
                                     </StackLayout>
 
@@ -43,7 +43,15 @@
             </StackLayout>
 
             <ScrollView Grid.Column="0" Grid.Row="1">
-
+                <flv:FlowListView x:Name="playerList" BackgroundColor="Transparent" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="50" FlowUseAbsoluteLayoutInternally="false" IsGroupingEnabled="false" VerticalOptions="Center">
+                    <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate>
+                             <Frame BackgroundColor="White" HeightRequest="50" Margin="2" Padding="5">
+                                <Label Text="{Binding playerNumber}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="16"/>
+                              </Frame>
+                        </DataTemplate>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
             </ScrollView>
 
 
@@ -115,7 +123,7 @@
                                                            VerticalTextAlignment="Center"/> 
                                             </Grid> 
                                             <StackLayout Margin="0, 20, 0, 0">
-                                                <Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM"/>
+                                                <Button Style="{StaticResource btnStyle}" BackgroundColor="{Binding buttonColor}" WidthRequest="50" Text="{Binding buttonText}" Clicked="MatchVoteBtn_OnClicked"/>
                                             </StackLayout>
                                         </StackLayout>
                                     </Frame>

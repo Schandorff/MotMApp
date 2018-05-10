@@ -29,7 +29,7 @@ namespace Manofthematch
         {
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             this.currentClub = currentClub;
-            InitializeComponent();
+            InitializeComponent();         
 
         }
 
@@ -70,14 +70,20 @@ namespace Manofthematch
                         {
                     
                                 if (match.status == "Current"){
+        							match.buttonColor = "#F8144E";
+							        match.buttonText = "STEM";
                                     currentMatches.Add(match);
                                 }
                                 else if (match.status == "Coming")
                                 {
+        							match.buttonColor = "#F8144E";
+							        match.buttonText = "STEM";
                                     comingMatches.Add(match);
                                 }
                                 else if (match.status == "Finished")
                                 {
+							        match.buttonColor = "#FF7F00";
+							        match.buttonText = "SE";
                                     completedMatches.Add(match);
                                 }   
 
@@ -137,6 +143,7 @@ namespace Manofthematch
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
                 coming.FontSize = 14;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+            
 
         }
         async void OnTeamSelect(object sender, ItemTappedEventArgs e)
@@ -160,8 +167,16 @@ namespace Manofthematch
             }
             else
             {
-                await Navigation.PushAsync(new TeamPlayersPage(_sender));
+				if (_sender.Text == "SE")
+				{
+					await Navigation.PushAsync(new FinishedMatch(_sender));
+				}
+				else
+				{
+					await Navigation.PushAsync(new TeamPlayersPage(_sender));
+				}            
             }
         }
+
     }
 }

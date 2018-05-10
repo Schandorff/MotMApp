@@ -52,6 +52,11 @@
                             </Image.GestureRecognizers>
                         </Image>
                         <Label x:Name="navTitle" Text="{TemplateBinding Title}" FontSize="Large" FontAttributes="Bold" TextColor="White" Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                        <Image Source="burgermenu.png" Grid.Column="2" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnLoginPressed" />
+                            </Image.GestureRecognizers>
+                        </Image>
                     </Grid>
 
                     <!-- End Header -->

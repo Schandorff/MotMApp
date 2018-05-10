@@ -20,7 +20,7 @@ namespace Manofthematch
         {
             InitializeComponent();
             FlowListView.Init();
-            MainPage = new NavigationPage(new LandingPage());
+			MainPage = new NavigationPage(new LandingPage());
             BlobCache.ApplicationName = "Manofthematch";
         }        
 
@@ -56,6 +56,12 @@ namespace Manofthematch
         public async void OnBackButtonPressed(object sender, EventArgs e)
         {
             await MainPage.Navigation.PopAsync();
+        }
+
+		async void OnLoginPressed(object sender, EventArgs e)
+        {
+			
+			await MainPage.Navigation.PushAsync(new AdminLogin());
         }
     }
 }

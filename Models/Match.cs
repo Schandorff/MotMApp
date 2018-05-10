@@ -17,5 +17,7 @@ namespace Manofthematch.Models
         public int homeGoal { get; set; }
         public int opponentGoal { get; set; }
         public List<Player> matchPlayers { get; set; }
+		public string buttonText { get; set; }
+		public string buttonColor { get; set; }      
     }
 }

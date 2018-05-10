@@ -194,6 +194,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -212,6 +213,10 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\splashScreen.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\splashScreen.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\splashScreen.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\splashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\FodboldBG.png" />

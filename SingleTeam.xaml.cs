@@ -16,11 +16,11 @@ namespace Manofthematch
     {
         readonly Team currentTeam;
         readonly Authorization manager = new Authorization();
-        readonly IList<Sponsor> sponsors = new ObservableCollection<Sponsor>();
+		readonly IList<Sponsor> sponsors = new ObservableCollection<Sponsor>();
         public IList<Match> currentMatches = new ObservableCollection<Match>();
         public IList<Match> comingMatches = new ObservableCollection<Match>();
         public IList<Match> completedMatches = new ObservableCollection<Match>();
-        readonly FlowObservableCollection<Player> players = new FlowObservableCollection<Player>();
+		readonly FlowObservableCollection<Player> players = new FlowObservableCollection<Player>();
         readonly ApiMethods apiMethods = new ApiMethods();
         bool isInitialized = false;
         Team requestedTeam = new Team();
@@ -75,36 +75,40 @@ namespace Manofthematch
                     foreach (Match match in TeamMatches)
                     {
 
-                        if (match.status == "Current")
-                        {
-                            currentMatches.Add(match);
-                        }
-                        else if (match.status == "Coming")
-                        {
-                            comingMatches.Add(match);
-                        }
-                        else if (match.status == "Finished")
-                        {
-                            completedMatches.Add(match);
-                        }
+						if (match.status == "Current"){
+                                    match.buttonColor = "#F8144E";
+                                    match.buttonText = "STEM";
+                                    currentMatches.Add(match);
+                                }
+                                else if (match.status == "Coming")
+                                {
+                                    match.buttonColor = "#F8144E";
+                                    match.buttonText = "STEM";
+                                    comingMatches.Add(match);
+                                }
+                                else if (match.status == "Finished")
+                                {
+                                    match.buttonColor = "#FF7F00";
+                                    match.buttonText = "SE";
+                                    completedMatches.Add(match);
+                                }   
 
                     }
                 }
-                if (TeamPlayers.Count != 0)
-                {
+                
                     foreach (Player player in TeamPlayers)
                     {
                         if (players.All(b => b.playerId != player.playerId))
                             players.Add(player);
-
                     }
-                }
+                
 
 
 
                 gameList.ItemsSource = currentMatches;
                 sponsorList.ItemsSource = sponsors;
-
+				playerList.ItemsSource = players;
+               
 
 
                 Title = currentTeam.TeamName;
@@ -147,6 +151,26 @@ namespace Manofthematch
             coming.FontSize = 14;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
 
+        }
+
+		async void MatchVoteBtn_OnClicked(object sender, EventArgs e)
+        {
+            Button _sender = (Button)sender;
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else
+            {
+                if (_sender.Text == "SE")
+                {
+                    await Navigation.PushAsync(new FinishedMatch(_sender));
+                }
+                else
+                {
+                    await Navigation.PushAsync(new TeamPlayersPage(_sender));
+                }
+            }
         }
     }
 }
