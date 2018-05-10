@@ -15,9 +15,8 @@ namespace Manofthematch.Controls
         readonly ApiMethods apiMethods = new ApiMethods();
         public Favourites Favourites = new Favourites();
         
-        
-
-        public async Task<Guid> CreateDeviceId()
+        // returns a new device id if none exists, returns device id if it exists
+        public async Task<Guid> GetCreateDeviceId()
         {
 
             Guid deviceIdFromLocalStorage;

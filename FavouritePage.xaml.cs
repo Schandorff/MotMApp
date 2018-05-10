@@ -32,7 +32,7 @@ namespace Manofthematch
 	        }
 	        else
 	        {
-	            Guid DeviceId = await LocalStorage.CreateDeviceId();
+	            Guid DeviceId = await LocalStorage.GetCreateDeviceId();
 	            DeviceIdLbl.Text = DeviceId.ToString();
 	            //await Navigation.PushAsync(new SingleClub((Club)e.Item));
 	        }

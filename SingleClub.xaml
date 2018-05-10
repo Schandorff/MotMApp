@@ -110,22 +110,22 @@
                                                            VerticalTextAlignment="Center"/> 
                                             </Grid> 
                                             <StackLayout Margin="0, 20, 0, 0">
+<<<<<<< HEAD
                                                 
                                                 <!--<Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM" Clicked="MatchVoteBtn_OnClicked" CommandParameter="{Binding matchId}"/>-->
                                                 <Button Style="{StaticResource btnStyle}" BackgroundColor="{Binding buttonColor}" WidthRequest="50" Text="{Binding buttonText}"  Clicked="MatchVoteBtn_OnClicked" CommandParameter="{Binding matchId}"/>
 
+=======
+                                                <Button Style="{StaticResource btnStyle}" WidthRequest="50" Text="STEM" Clicked="MatchVoteBtn_OnClicked" CommandParameter="{Binding matchId}"/>
+>>>>>>> 337699bc126f92ecc63e20b01618e4357a09a5ab
                                             </StackLayout>
                                         </StackLayout>
                                     </Frame>
-
                                 </ContentView.Content>
                             </ContentView>
                         </DataTemplate>
                     </local:HVScrollGridView.ItemTemplate>
                 </local:HVScrollGridView>
-
-           
-
             </StackLayout>
         </Grid>
     </ContentPage.Content>

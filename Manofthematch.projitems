@@ -52,6 +52,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Match.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Player.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sponsor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Vote.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PlayerCard.xaml.cs">
       <DependentUpon>PlayerCard.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -67,11 +68,17 @@
       <DependentUpon>TeamPlayersPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="$(MSBuildThisFileDirectory)AdminLogin.xaml.cs">
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)FinishedMatch.xaml.cs">
       <DependentUpon>FinishedMatch.xaml</DependentUpon>
+=======
+    <Compile Include="$(MSBuildThisFileDirectory)VoteReceipt.xaml.cs">
+      <DependentUpon>VoteReceipt.xaml</DependentUpon>
+      <SubType>Code</SubType>
+>>>>>>> 337699bc126f92ecc63e20b01618e4357a09a5ab
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)PlayerCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)VoteReceipt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

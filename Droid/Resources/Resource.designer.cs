@@ -5308,10 +5308,14 @@ namespace Manofthematch.Droid
 			public const int Prev = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int soccer = 2130837818;
+			public const int ReceiptBG = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
+<<<<<<< HEAD
 			public const int splashScreen = 2130837819;
+=======
+			public const int soccer = 2130837819;
+>>>>>>> 337699bc126f92ecc63e20b01618e4357a09a5ab
 			
 			// aapt resource value: 0x7f02013c
 			public const int star = 2130837820;

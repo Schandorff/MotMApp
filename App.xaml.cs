@@ -10,11 +10,13 @@ using System.Diagnostics;
 using Akavache;
 using DLToolkit.Forms;
 using DLToolkit.Forms.Controls;
+using Manofthematch.Controls;
 
 namespace Manofthematch
 {
     public partial class App : Application
     {
+        public LocalStorage LocalStorage = new LocalStorage();
         //public static NavigationPage Navigation = null;
         public App()
         {
@@ -24,9 +26,10 @@ namespace Manofthematch
             BlobCache.ApplicationName = "Manofthematch";
         }        
 
-        protected override void OnStart()
+        protected async override void OnStart()
         {            
             CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+            Guid DeviceId = await LocalStorage.GetCreateDeviceId(); //Ensure that a device id is created
         }        
 
         protected override void OnSleep()
