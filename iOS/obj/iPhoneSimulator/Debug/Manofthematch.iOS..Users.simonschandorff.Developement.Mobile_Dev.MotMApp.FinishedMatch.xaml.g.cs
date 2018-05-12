@@ -15,8 +15,16 @@ namespace Manofthematch {
     public partial class FinishedMatch : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image PLayerImage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Manofthematch.Controls.HVScrollGridView sponsorList;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FinishedMatch));
+            PLayerImage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "PLayerImage");
+            sponsorList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Manofthematch.Controls.HVScrollGridView>(this, "sponsorList");
         }
     }
 }

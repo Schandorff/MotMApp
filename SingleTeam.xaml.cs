@@ -36,89 +36,92 @@ namespace Manofthematch
         {
             base.OnAppearing();
 
-            if (!isInitialized)
-                switch (currentTeam.teamSport)
-                {
-                    case "Soccer":
-                        BackgroundImage = "FodboldBG.png";
-                        break;
-                    case "Handball":
-                        BackgroundImage = "HandballBG.png";
-                        break;
-                    case "Tennis":
-                        BackgroundImage = "TennisBG.png";
-                        break;
-                    case "Hockey":
-                        BackgroundImage = "HockeyBG.png";
-                        break;
-                default:
-                        break;
-                }
-            {
-                requestedTeam = await apiMethods.GetTeam("GetTeam", currentTeam.teamId);
-                List<Sponsor> TeamSponsors = requestedTeam.teamSponsors;
-                List<Match> TeamMatches = requestedTeam.teamMatches;
-                List<Player> TeamPlayers = requestedTeam.teamPlayers;
+			if (!isInitialized)
+			{
+				switch (currentTeam.teamSport)
+				{
+					case "Soccer":
+						BackgroundImage = "FodboldBG.png";
+						break;
+					case "Handball":
+						BackgroundImage = "HandballBG.png";
+						break;
+					case "Tennis":
+						BackgroundImage = "TennisBG.png";
+						break;
+					case "Hockey":
+						BackgroundImage = "HockeyBG.png";
+						break;
+					default:
+						break;
+				}
+				{
+					requestedTeam = await apiMethods.GetTeam("GetTeam", currentTeam.teamId);
+					List<Sponsor> TeamSponsors = requestedTeam.teamSponsors;
+					List<Match> TeamMatches = requestedTeam.teamMatches;
+					List<Player> TeamPlayers = requestedTeam.teamPlayers;
 
-                if (TeamSponsors.Count != 0)
-                {
-                    foreach (Sponsor sponsor in TeamSponsors)
-                    {
-                        if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
-                            sponsors.Add(sponsor);
+					if (TeamSponsors.Count != 0)
+					{
+						foreach (Sponsor sponsor in TeamSponsors)
+						{
+							if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
+								sponsors.Add(sponsor);
 
-                    }
-                }
+						}
+					}
 
-                if (TeamMatches.Count != 0)
-                {
-                    foreach (Match match in TeamMatches)
-                    {
+					if (TeamMatches.Count != 0)
+					{
+						foreach (Match match in TeamMatches)
+						{
 
-						if (match.status == "Current"){
-                                    match.buttonColor = "#F8144E";
-                                    match.buttonText = "STEM";
-                                    currentMatches.Add(match);
-                                }
-                                else if (match.status == "Coming")
-                                {
-                                    match.buttonColor = "#F8144E";
-                                    match.buttonText = "STEM";
-                                    comingMatches.Add(match);
-                                }
-                                else if (match.status == "Finished")
-                                {
-                                    match.buttonColor = "#FF7F00";
-                                    match.buttonText = "SE";
-                                    completedMatches.Add(match);
-                                }   
+							if (match.status == "Current")
+							{
+								match.buttonColor = "#F8144E";
+								match.buttonText = "STEM";
+								currentMatches.Add(match);
+							}
+							else if (match.status == "Coming")
+							{
+								match.buttonColor = "#F8144E";
+								match.buttonText = "STEM";
+								comingMatches.Add(match);
+							}
+							else if (match.status == "Finished")
+							{
+								match.buttonColor = "#FF7F00";
+								match.buttonText = "SE";
+								completedMatches.Add(match);
+							}
 
-                    }
-                }
-                
-                    foreach (Player player in TeamPlayers)
-                    {
-                        if (players.All(b => b.playerId != player.playerId))
-                            players.Add(player);
-                    }
-                
+						}
+					}
 
-
-
-                gameList.ItemsSource = currentMatches;
-                sponsorList.ItemsSource = sponsors;
-				playerList.ItemsSource = players;
-               
+					foreach (Player player in TeamPlayers)
+					{
+						if (players.All(b => b.playerId != player.playerId))
+							players.Add(player);
+					}
 
 
-                Title = currentTeam.TeamName;
-                coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
 
-            }
 
-            isInitialized = true;
+					gameList.ItemsSource = currentMatches;
+					sponsorList.ItemsSource = sponsors;
+					playerList.FlowItemsSource = players;
+
+
+
+					Title = currentTeam.TeamName;
+					coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+					completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
+					sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
+
+				}
+
+				isInitialized = true;
+			}
         }
         private void currentMatchSorting(object sender, EventArgs e)
         {

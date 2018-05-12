@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{53AC13EA-02F5-4C53-90E8-16DE6EBE670F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SingleClub.xaml">
     <Files>
-      <File FileName="Droid/Resources/values/styles.xml" Line="2" Column="1" />
-      <File FileName="SingleClub.xaml" Line="126" Column="15" />
-      <File FileName="Droid/Resources/Resource.designer.cs" Line="1" Column="1" />
-      <File FileName="Droid/Manofthematch.Droid.csproj" Line="1" Column="1" />
-      <File FileName="TeamPlayersPage.xaml.cs" Line="113" Column="53" />
-      <File FileName="VoteReceipt.xaml" Line="70" Column="15" />
+      <File FileName="LandingPage.xaml" Line="80" Column="15" />
+      <File FileName="SingleClub.xaml.cs" Line="117" Column="3" />
+      <File FileName="SingleClub.xaml" Line="36" Column="54" />
+      <File FileName="LandingPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -17,7 +15,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AE83162B-6AE0-4552-933D-1E2AD5BB355A" />
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.74705BCB-5305-4F34-919C-0095830F304D" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.new_device" />
 </Properties>

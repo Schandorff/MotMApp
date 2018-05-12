@@ -1,0 +1,1212 @@
+Function=xamarin_timezone_get_names
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_get_locale_country_code
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/mscorlib.dll
+Function=CreateZStream
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/System.dll
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSend_NVector3_int_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_NVector3_int_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSend_stret_NVector3_int_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_stret_NVector3_int_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSend_NVector3_Int64_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_NVector3_Int64_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSend_stret_NVector3_Int64_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_stret_NVector3_Int64_CGSize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_int_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_int_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_int_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_int_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_Int64_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_Int64_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Int64_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Int64_CGSize_nfloat_nfloat
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_UInt32
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_UInt32
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_UInt64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_UInt64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_nint_nint_nint_UInt32
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_nint_nint_nint_UInt32
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_nint_nint_nint_UInt64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_nint_nint_nint_UInt64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_UInt32_nint_UInt32
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UInt32_nint_UInt32
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_UInt64_nint_UInt64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UInt64_nint_UInt64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Matrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Matrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2i_int_int_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2i_int_int_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2i_int_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2i_int_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_Vector2_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_Vector2_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSend_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSendSuper_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSend_stret_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSendSuper_stret_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSend_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSendSuper_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3d
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3d
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2d_Vector2d_Vector2i_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2d_Vector2d_Vector2i_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSend_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSendSuper_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_float_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_float_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKBox_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKBox_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_GKBox
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_GKBox
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKBox
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKBox
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_nuint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKQuad_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKQuad_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_GKQuad
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_GKQuad
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKQuad
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKQuad
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_ref_MPSImageHistogramInfo
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_ref_MPSImageHistogramInfo
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4d_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4d
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4d
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_MDLAxisAlignedBoundingBox_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_MDLAxisAlignedBoundingBox_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Vector2i_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector2i_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector2i_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector2i_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_bool_IntPtr_Vector2i_nint_nuint_int_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_bool_IntPtr_Vector2i_nint_nuint_int_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_bool_IntPtr_Vector2i_nint_nuint_Int64_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_bool_IntPtr_Vector2i_nint_nuint_Int64_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_int_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_int_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_Int64_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_Int64_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_float_IntPtr_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_float_IntPtr_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Vector2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt64_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt64_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_bool_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_bool_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_UInt32_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_UInt32_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_Int64_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_Int64_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2i_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2i_int_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2i_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2i_Int64_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_nuint_nuint_int_bool_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_nuint_nuint_int_bool_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_nuint_nuint_Int64_bool_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_nuint_nuint_Int64_bool_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_Int64_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_Int64_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_nuint_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_nuint_int_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_nuint_nuint_nuint_Int64_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_nuint_nuint_nuint_Int64_bool_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSend_Vector2i_nint_float_IntPtr_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSendSuper_Vector2i_nint_float_IntPtr_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSend_Vector2i_IntPtr_IntPtr_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSendSuper_Vector2i_IntPtr_IntPtr_IntPtr_IntPtr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_Int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_int_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_int_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_Int64_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_Int64_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_Vector2i_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_Vector2i_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Int64_Vector2i_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Int64_Vector2i_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_Vector2i_float_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_Vector2i_float_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Int64_Vector2i_float_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Int64_Vector2i_float_float_float_float_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_Vector2i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_Vector2i_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Matrix4_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Matrix4_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_NMatrix4_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NMatrix4_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_stret_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Matrix4_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Matrix4_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_IntPtr_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_IntPtr_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_stret_IntPtr_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_stret_IntPtr_Double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_MDLAxisAlignedBoundingBox_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_MDLAxisAlignedBoundingBox_float
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSend_Vector4i_bool_bool_bool_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSendSuper_Vector4i_bool_bool_bool_bool
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_MDLVoxelIndexExtent2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_MDLVoxelIndexExtent2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSend_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSendSuper_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSend_stret_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSendSuper_stret_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret_Vector4i
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__void_objc_msgSend_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__void_objc_msgSendSuper_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Quaternion
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Quaternion
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSend
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSendSuper
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSend_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSendSuper_stret
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Matrix2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Matrix2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Matrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Matrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Matrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_nint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_nint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret_nint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_nint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_CGPoint__VNNormalizedFaceBoundingBoxPointForLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_CGPoint__VNImagePointForFaceLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_1
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_3
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_4
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_5
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_6
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_7
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_8
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_9
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_init_nsthread
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/Xamarin.iOS.dll
+Function=sqlite3_close
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_close_v2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_enable_shared_cache
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_interrupt
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_finalize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_reset
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_clear_bindings
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_status
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_parameter_name
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_database_name
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_database_name16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_decltype
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_decltype16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_name
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_name16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_origin_name
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_origin_name16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_table_name
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_table_name16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_text
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_text16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_errmsg
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_readonly
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_filename
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_prepare
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_prepare_v2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_status
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_complete
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_compileoption_used
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_compileoption_get
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_table_column_metadata
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_text
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_text16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_enable_load_extension
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_load_extension
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_initialize
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_shutdown
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_libversion
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_libversion_number
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_threadsafe
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_sourceid
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_malloc
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_realloc
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_free
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_open
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_open_v2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_vfs_find
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_open16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_last_insert_rowid
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_changes
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_total_changes
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_memory_used
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_memory_highwater
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_status
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_busy_timeout
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_blob
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_zeroblob
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_null
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_text
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_parameter_count
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_parameter_index
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_count
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_data_count
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_step
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_sql
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_blob
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_bytes
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_column_type
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_aggregate_count
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_blob
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_bytes
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_value_type
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_user_data
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_blob
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_double
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_int
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_int64
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_null
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_text
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_zeroblob
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error_toobig
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error_nomem
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error_code
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_aggregate_context
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_bind_text16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_error16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_result_text16
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_config
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_create_function_v2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_create_collation
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_update_hook
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_commit_hook
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_profile
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_progress_handler
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_trace
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_rollback_hook
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_db_handle
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_next_stmt
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_busy
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_stmt_readonly
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_exec
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_get_autocommit
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_extended_result_codes
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_errcode
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_extended_errcode
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_errstr
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_log
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_file_control
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_init
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_step
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_finish
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_remaining
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_backup_pagecount
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_open
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_write
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_read
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_bytes
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_blob_close
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_wal_autocheckpoint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_wal_checkpoint
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_wal_checkpoint_v2
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=sqlite3_set_authorizer
+	/Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/mtouch-cache/Link/SQLitePCLRaw.provider.internal.dll
+Function=mono_pmip
+Function=xamarin_dyn_objc_msgSend
+Function=xamarin_dyn_objc_msgSendSuper
+Function=xamarin_dyn_objc_msgSend_stret
+Function=xamarin_dyn_objc_msgSendSuper_stret

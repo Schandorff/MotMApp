@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
@@ -71,7 +71,7 @@
                                 </StackLayout>
 
                                 <Image x:Name="PLayerImage" Source="playerImg.png" VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"></Image>
-                                <Button Style="{StaticResource btnStyle}" Clicked="PlayerVoteBtn_OnClicked" CommandParameter="{Binding playerId}" WidthRequest="70" Text="STEM" VerticalOptions="End" Margin="0, 0 , 0, 0" BackgroundColor="#CCF8144E" Grid.Column="1" Grid.Row="3"/>
+                                <Button Style="{StaticResource btnStyle}" Clicked="PlayerVoteBtn_OnClicked" CommandParameter="{Binding playerId}" WidthRequest="70" Text="STEM" VerticalOptions="End" Margin="0, 0, 0, 0" BackgroundColor="#CCF8144E" Grid.Column="1" Grid.Row="3"/>
                                 
                             </Grid>
                             </Frame>

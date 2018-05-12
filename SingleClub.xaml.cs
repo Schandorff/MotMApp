@@ -114,6 +114,7 @@ namespace Manofthematch
 
             isInitialized = true;
         }
+
         private void currentMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = currentMatches;

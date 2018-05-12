@@ -106,5 +106,16 @@ namespace Manofthematch.Data
             List<Vote> response = JsonConvert.DeserializeObject<List<Vote>>(await answer.Content.ReadAsStringAsync());
             return response;
         }
+        
+		public async Task<Match> GetMatch(string method, [Optional] int id)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetToken();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "mID=" + id);
+            Match response = JsonConvert.DeserializeObject<Match>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
     }
 }
