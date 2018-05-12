@@ -25,7 +25,7 @@ namespace Manofthematch.Controls
             {
                 deviceIdFromLocalStorage = await BlobCache.UserAccount.GetObject<Guid>("deviceId");
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 Guid deviceId = Guid.NewGuid();
                 await BlobCache.UserAccount.InsertObject("deviceId", deviceId);
@@ -41,7 +41,57 @@ namespace Manofthematch.Controls
             {
                 await BlobCache.UserAccount.InvalidateObject<Guid>("deviceId");
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
+            {
+
+            }
+        }
+
+        public async Task<Admin> GetCreateAdminCredentials(Admin admin)
+        {
+            Admin clubAdmin = new Admin();
+
+            try
+            {
+                clubAdmin = await BlobCache.UserAccount.GetObject<Admin>("clubAdmin");
+                if (clubAdmin.ClubId == 0)
+                {
+                    await BlobCache.UserAccount.InsertObject("clubAdmin", admin);
+                    clubAdmin = await BlobCache.UserAccount.GetObject<Admin>("clubAdmin");
+                }
+            }
+            catch (KeyNotFoundException)
+            {
+                await BlobCache.UserAccount.InsertObject("clubAdmin", admin);
+                clubAdmin = await BlobCache.UserAccount.GetObject<Admin>("clubAdmin");
+            }
+
+            return clubAdmin;
+        }
+
+        public async Task<Admin> GetAdminCredentials()
+        {
+            Admin clubAdmin = new Admin();
+
+            try
+            {
+                clubAdmin = await BlobCache.UserAccount.GetObject<Admin>("clubAdmin");
+            }
+            catch (KeyNotFoundException)
+            {
+               
+            }
+
+            return clubAdmin;
+        }
+
+        public async void DeleteAdminCredentials()
+        {
+            try
+            {
+                await BlobCache.UserAccount.InvalidateObject<Admin>("clubAdmin");
+            }
+            catch (KeyNotFoundException)
             {
 
             }

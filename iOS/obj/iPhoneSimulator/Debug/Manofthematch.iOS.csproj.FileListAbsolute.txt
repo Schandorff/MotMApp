@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/bin/iPhoneSimulator/Debug/Manofthematch.iOS.exe.config
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/bin/iPhoneSimulator/Debug/Manofthematch.iOS.exe
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/bin/iPhoneSimulator/Debug/Manofthematch.iOS.pdb
@@ -151,3 +152,23 @@
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/optimized/ReceiptBG@2x.png
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/optimized/ReceiptBG@3x.png
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/optimized/
+=======
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.csprojAssemblyReference.cache
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.csproj.CoreCompileInputs.cache
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.App.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.SingleClub.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.SingleTeam.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.AdminLogin.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.FinishedMatch.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.LandingPage.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.FavouritePage.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.TeamPlayersPage.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.PlayerCard.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\iOS\obj\iPhoneSimulator\Debug\Manofthematch.iOS.VoteReceipt.xaml.g.cs
+>>>>>>> e044432d08baa32f1ccab400a6a7c7b5f31f8df2

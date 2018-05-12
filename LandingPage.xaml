@@ -5,7 +5,7 @@
              x:Class="Manofthematch.LandingPage"
              Title="Klubber"
              BackgroundImage="FodboldBG.png"
-             ControlTemplate="{DynamicResource MainPageTemplate}">
+             ControlTemplate="{DynamicResource LandingPageTemplate}">
     <ContentPage.Content>
         <Grid x:Name="OuterGrid">
             <Grid.ColumnDefinitions>

@@ -34,7 +34,6 @@ namespace Manofthematch
 	        {
 	            Guid DeviceId = await LocalStorage.GetCreateDeviceId();
 	            DeviceIdLbl.Text = DeviceId.ToString();
-	            //await Navigation.PushAsync(new SingleClub((Club)e.Item));
 	        }
         }
 
@@ -47,8 +46,41 @@ namespace Manofthematch
 	        else
 	        {
 	            LocalStorage.DeleteDeviceId();
-	            
-	            //await Navigation.PushAsync(new SingleClub((Club)e.Item));
+	            DeviceIdLbl2.Text = "Device id deleted from local storage";
+	        }
+        }
+
+	    private async void GetAdmin_OnClicked(object sender, EventArgs e)
+	    {
+	        if (!CrossConnectivity.Current.IsConnected)
+	        {
+	            Debug.WriteLine($"No connection");
+	        }
+	        else
+	        {
+                Admin clubAdmin = new Admin();
+	            Admin admin = await LocalStorage.GetCreateAdminCredentials(clubAdmin);
+	            if (admin.Username != null)
+	            {
+	                AdminLbl.Text = admin.UserFriendlyName;
+	            }
+	            else
+	            {
+	                AdminLbl.Text = "No admin in local storage";
+	            }
+	        }
+        }
+
+	    private void DeleteAdmin_OnClicked(object sender, EventArgs e)
+	    {
+	        if (!CrossConnectivity.Current.IsConnected)
+	        {
+	            Debug.WriteLine($"No connection");
+	        }
+	        else
+	        {
+	            LocalStorage.DeleteAdminCredentials();
+	            AdminLbl2.Text = "Admin credentials deleted from local storage";
 	        }
         }
 	}

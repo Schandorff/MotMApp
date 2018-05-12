@@ -16,7 +16,8 @@ namespace Manofthematch.Droid
     [Activity(Label = "Manofthematch.Droid",
 	          Icon = "@drawable/icon", Theme = "@style/MyTheme",
 	          MainLauncher = false,
-	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	          ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
+        ScreenOrientation = ScreenOrientation.Portrait)]
     //public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
