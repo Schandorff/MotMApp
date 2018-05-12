@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Manofthematch.AdminMatch"
+             BackgroundImage="HockeyBG.png"
+             ControlTemplate="{DynamicResource LoginPageTemplate}">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center" RowSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="80*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="CurrentMatchStatus" Grid.Column="1" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="StatusTitle" Text="Kamp status: " Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <Label x:Name="CurrentStatus" Text="" TextColor="{StaticResource btnColor}" Grid.Column="1" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </Grid>
+
+            <Picker x:Name="StatusPicker" Title="Vælg ny kamp status" TextColor="{StaticResource btnColor}" Grid.Column="1" Grid.Row="1" SelectedIndexChanged="OnPickerSelectedIndexChanged">
+            </Picker>
+            <Label x:Name="HomeTeamName" Text="HomeTeamName" TextColor="{StaticResource btnColor}" Grid.Column="1" Grid.Row="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+            <Grid x:Name="HomeTeamScoreControl" Grid.Column="1" Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="33*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                <Button x:Name="HomeMinusBtn" Text="-" Grid.Column="0" Grid.Row="0" Clicked="HomeGoalBtn_OnClicked"/>
+                <Label x:Name="HomeTeamScore" Text="2" FontSize="Large" VerticalTextAlignment="Center" TextColor="{StaticResource btnColor}" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"/>
+                <Button x:Name="HomePlusBtn" Text="+" Grid.Column="2" Grid.Row="0" Clicked="HomeGoalBtn_OnClicked"/>
+                </Grid>
+
+            <Label x:Name="OpponentTeamName" Text="OpponentTeamName" TextColor="{StaticResource btnColor}" Grid.Column="1" Grid.Row="4" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+                <Grid x:Name="OpponentTeamScoreControl" Grid.Column="1" Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="33*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                <Button x:Name="OpponentMinusBtn" Text="-" Grid.Column="0" Grid.Row="0" Clicked="OpponentGoalBtn_OnClicked"/>
+                <Label x:Name="OpponentTeamScore" Text="1" FontSize="Large" VerticalTextAlignment="Center" TextColor="{StaticResource btnColor}" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"/>
+                <Button x:Name="OpponentPlusBtn" Text="+" Grid.Column="2" Grid.Row="0" Clicked="OpponentGoalBtn_OnClicked"/>
+                </Grid>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

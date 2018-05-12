@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Manofthematch.AdminLogin"
+             
+             Title="Admin login"
+             BackgroundImage="HockeyBG.png"
+             ControlTemplate="{DynamicResource LoginPageTemplate}">
+    <ContentPage.Content>
+        <Grid VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="80*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="1" Grid.Row="0" Text="Brugernavn" TextColor="{StaticResource btnColor}" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Entry x:Name="username" Grid.Column="1" Grid.Row="1" Placeholder="navn@mail.com" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Label Grid.Column="1" Grid.Row="2" Text="Adgangskode" TextColor="{StaticResource btnColor}" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Entry x:Name="password" Grid.Column="1" Grid.Row="3" Placeholder="************" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Label x:Name="eMessage" Grid.Column="1" Grid.Row="4" TextColor="{StaticResource btnColor}" FontSize="12" HorizontalOptions="FillAndExpand"/>
+            <Grid Grid.Column="1" Grid.Row="5" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="60*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                <Button x:Name="loginBtn" Text="Login" Grid.Column="1" Grid.Row="0" Style="{StaticResource btnStyle}" Clicked="LoginBtn_OnClicked"/>
+                </Grid>
+        </Grid>
+        <!--<StackLayout>
+        <Label Text="Hej jeg er en adminside" VerticalOptions="Center" HorizontalOptions="Center"></Label>
+        </StackLayout>-->
+    </ContentPage.Content>
+</ContentPage>

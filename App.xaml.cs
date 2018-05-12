@@ -17,6 +17,7 @@ namespace Manofthematch
     public partial class App : Application
     {
         public LocalStorage LocalStorage = new LocalStorage();
+        ApiMethods apiMethods = new ApiMethods();
         //public static NavigationPage Navigation = null;
         public App()
         {
@@ -63,8 +64,17 @@ namespace Manofthematch
 
 		async void OnLoginPressed(object sender, EventArgs e)
         {
-			
-			await MainPage.Navigation.PushAsync(new AdminLogin());
+            Admin admin = await LocalStorage.GetAdminCredentials();
+            if (admin.Username != null)
+            {
+                Club club = await apiMethods.GetClub("GetClub", admin.ClubId);
+                await MainPage.Navigation.PushAsync(new AdminTeamsMatches(club));
+            }
+            else
+            {
+                await MainPage.Navigation.PushAsync(new AdminLogin());
+            }
+            
         }
     }
 }

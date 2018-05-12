@@ -259,11 +259,11 @@ D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Platform.Androi
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csproj.CoreCompileInputs.cache
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.App.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.SingleClub.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.SingleTeam.xaml.g.cs
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.AdminLogin.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.FinishedMatch.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.LandingPage.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.FavouritePage.xaml.g.cs
@@ -402,7 +402,6 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Splat.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Xamarin.Forms.Xaml.dll.mdb
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.csprojAssemblyReference.cache
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Akavache.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Akavache.Sqlite3.dll.mdb
@@ -432,6 +431,9 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Transac
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Services.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.pdb
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.AdminPages.AdminLogin.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.AdminPages.AdminTeamsMatches.xaml.g.cs
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\Manofthematch.Droid.AdminPages.AdminMatch.xaml.g.cs
 D:\source\Xamarin projects\MotMApp\Droid\bin\Debug\Manofthematch.Droid.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Manofthematch.Droid.dll.mdb
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\linksrc\Akavache.dll.mdb

@@ -30,7 +30,6 @@ namespace Manofthematch
 	    {
 	        Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
             await Navigation.PopAsync();
-
         }
 	}
 }

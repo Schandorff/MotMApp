@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Manofthematch.Models;
 using System.Runtime.InteropServices;
-using MOTMUmbracoBackend.Models;
 
 namespace Manofthematch.Data
 {
@@ -91,12 +90,6 @@ namespace Manofthematch.Data
             return response;
         }
 
-        private class VoteSend
-        {
-            public string deviceId { get; set; }
-            public int playerId { get; set;  }
-        }
-
         public async Task<List<Vote>> GetMatchVotes(string method, int id)
         {
             HttpClient client = new HttpClient();
@@ -104,6 +97,52 @@ namespace Manofthematch.Data
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
             var answer = await client.GetAsync(ContentUrl + method + "?" + "mID=" + id);
             List<Vote> response = JsonConvert.DeserializeObject<List<Vote>>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
+        public async Task<Admin> ClubAdminLogin(string method, Admin clubAdmin)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetClubAdminToken(clubAdmin);
+            StringContent message = new StringContent(
+                JsonConvert.SerializeObject(clubAdmin),
+                Encoding.UTF8, "application/json");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.PutAsync(ContentUrl + method, message);
+            Admin response = JsonConvert.DeserializeObject<Admin>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
+        public async Task<List<Team>> GetClubAdminTeams(string method, int id, Admin clubAdmin)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetClubAdminToken(clubAdmin);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "cID=" + id);
+            List<Team> response = JsonConvert.DeserializeObject<List<Team>>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
+        public async Task<Match> GetMatch(string method, [Optional] int id)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetToken();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.GetAsync(ContentUrl + method + "?" + "mID=" + id);
+            Match response = JsonConvert.DeserializeObject<Match>(await answer.Content.ReadAsStringAsync());
+            return response;
+        }
+
+        public async Task<Match> UpdateMatchById(string method, int id, Match match)
+        {
+            HttpClient client = new HttpClient();
+            var Token = await authorization.GetToken();
+            StringContent message = new StringContent(
+                JsonConvert.SerializeObject(match),
+                Encoding.UTF8, "application/json");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token.access_token);
+            var answer = await client.PutAsync(ContentUrl + method + "?" + "mID=" + id, message);
+            Match response = JsonConvert.DeserializeObject<Match>(await answer.Content.ReadAsStringAsync());
             return response;
         }
     }

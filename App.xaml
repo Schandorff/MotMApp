@@ -24,15 +24,12 @@
             
             <!--Header and content template for content pages-->
             <ControlTemplate x:Key="MainPageTemplate">
-
                 <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50" />
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-
                     <!-- Begin Header -->
-
                     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="#0000" Grid.Column="0" Grid.Row="0">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="30" />
@@ -48,25 +45,103 @@
                                 Android="10, 10, 10, 10"
                                 WinPhone="10, 10, 10, 10" />
                         </Grid.Padding>
-                        <Image Source="arrowback.png" Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="MenuBackArrow" Source="arrowback.png" Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnBackButtonPressed" />
                             </Image.GestureRecognizers>
                         </Image>
                         <Label x:Name="navTitle" Text="{TemplateBinding Title}" FontSize="Large" FontAttributes="Bold" TextColor="White" Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
-                        <Image Source="burgermenu.png" Grid.Column="2" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        <Image x:Name="MenuBurger" Source="burgermenu.png" Grid.Column="2" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnLoginPressed" />
                             </Image.GestureRecognizers>
                         </Image>
                     </Grid>
-
                     <!-- End Header -->
-
                     <!-- Begin Content -->
-                    
                         <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"/>
-                    
+                    <!-- End Content -->
+                </Grid>
+            </ControlTemplate>
+
+            <ControlTemplate x:Key="LandingPageTemplate">
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!-- Begin Header -->
+                    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="#0000" Grid.Column="0" Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="20"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                iOS="10, 10, 10, 10"
+                                Android="10, 10, 10, 10"
+                                WinPhone="10, 10, 10, 10" />
+                        </Grid.Padding>
+                        <!--<Image x:Name="MenuBackArrow" Source="arrowback.png" Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnBackButtonPressed" />
+                            </Image.GestureRecognizers>
+                        </Image>-->
+                        <Label x:Name="navTitle" Text="{TemplateBinding Title}" FontSize="Large" FontAttributes="Bold" TextColor="White" Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                        <Image x:Name="MenuBurger" Source="burgermenu.png" Grid.Column="2" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnLoginPressed" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <!-- End Header -->
+                    <!-- Begin Content -->
+                    <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"/>
+                    <!-- End Content -->
+                </Grid>
+            </ControlTemplate>
+
+            <ControlTemplate x:Key="LoginPageTemplate">
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!-- Begin Header -->
+                    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0" BackgroundColor="#0000" Grid.Column="0" Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="20"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.Padding>
+                            <OnPlatform x:TypeArguments="Thickness"
+                                iOS="10, 10, 10, 10"
+                                Android="10, 10, 10, 10"
+                                WinPhone="10, 10, 10, 10" />
+                        </Grid.Padding>
+                        <Image x:Name="MenuBackArrow" Source="arrowback.png" Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnBackButtonPressed" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label x:Name="navTitle" Text="{TemplateBinding Title}" FontSize="Large" FontAttributes="Bold" TextColor="White" Grid.Column="1" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                        <!--<Image x:Name="MenuBurger" Source="burgermenu.png" Grid.Column="2" Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnLoginPressed" />
+                            </Image.GestureRecognizers>
+                        </Image>-->
+                    </Grid>
+                    <!-- End Header -->
+                    <!-- Begin Content -->
+                    <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"/>
                     <!-- End Content -->
                 </Grid>
             </ControlTemplate>

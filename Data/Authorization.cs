@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Manofthematch.Models;
 using System.Runtime.InteropServices;
+//using Javax.Security.Auth;
 
 namespace Manofthematch.Data
 {
@@ -20,6 +21,15 @@ namespace Manofthematch.Data
         {
             HttpClient client = new HttpClient();
             var response = await client.PostAsync(AuthUrl, new StringContent(Credentials, Encoding.UTF8, "application/json"));
+            AuthToken Token = JsonConvert.DeserializeObject<AuthToken>(await response.Content.ReadAsStringAsync());
+            return Token;
+        }
+
+        public async Task<AuthToken> GetClubAdminToken(Admin admin)
+        {
+            string AdminCredentials = $"grant_type=password&username={admin.Username}&password={admin.Password}";
+            HttpClient client = new HttpClient();
+            var response = await client.PostAsync(AuthUrl, new StringContent(AdminCredentials, Encoding.UTF8, "application/json"));
             AuthToken Token = JsonConvert.DeserializeObject<AuthToken>(await response.Content.ReadAsStringAsync());
             return Token;
         }

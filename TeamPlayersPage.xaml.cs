@@ -10,7 +10,6 @@ using DLToolkit.Forms.Controls;
 using Manofthematch.Controls;
 using Manofthematch.Data;
 using Manofthematch.Models;
-using MOTMUmbracoBackend.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
