@@ -5,6 +5,7 @@ using Manofthematch.Data;
 using Manofthematch.Models;
 using Manofthematch.Controls;
 using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 using Xamarin.Forms;
 
 namespace Manofthematch
@@ -20,12 +21,7 @@ namespace Manofthematch
             InitializeComponent();
         }
 
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-        }
-
-        async private void LoginBtn_OnClicked(object sender, EventArgs e)
+        private async void LoginBtn_OnClicked(object sender, EventArgs e)
         {
             if (!CrossConnectivity.Current.IsConnected)
             {

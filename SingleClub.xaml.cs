@@ -4,10 +4,9 @@ using Manofthematch.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using DLToolkit.Forms.Controls;
-using DLToolkit.Forms;
 using Plugin.Connectivity;
-using System.Diagnostics;
+using Plugin.Connectivity.Abstractions;
+using DLToolkit.Forms.Controls;
 using Xamarin.Forms;
 
 namespace Manofthematch
@@ -23,20 +22,21 @@ namespace Manofthematch
         public IList<Match> completedMatches = new ObservableCollection<Match>();
         readonly ApiMethods apiMethods = new ApiMethods();
         bool isInitialized = false;
+        public string Message = "";
         Club requestedClub = new Club();
 
-        public SingleClub(Club currentClub)
+        public SingleClub(Club currentClub, string message)
         {
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             this.currentClub = currentClub;
-            InitializeComponent();         
-
+            Message = message;
+            InitializeComponent();
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            switch (currentClub.clubSports[0])
+            switch (Message)
             {
                 case "Soccer":
                     BackgroundImage = "FodboldBG.png";
@@ -50,8 +50,6 @@ namespace Manofthematch
                 case "Hockey":
                     BackgroundImage = "HockeyBG.png";
                     break;
-                default:
-                    break;
             }
             if (!isInitialized) { 
             requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
@@ -63,55 +61,45 @@ namespace Manofthematch
             {
                 if (teams.All(b => b.teamId != team.teamId))
                     teams.Add(team);
-
-                    //if (teamMatches.Count != 0)
-                    //{
-                        foreach (Match match in team.teamMatches)
-                        {
-                    
-                                if (match.status == "Current"){
-        							match.buttonColor = "#F8144E";
-							        match.buttonText = "STEM";
-                                    currentMatches.Add(match);
-                                }
-                                else if (match.status == "Coming")
-                                {
-        							match.buttonColor = "#F8144E";
-							        match.buttonText = "STEM";
-                                    comingMatches.Add(match);
-                                }
-                                else if (match.status == "Finished")
-                                {
-							        match.buttonColor = "#FF7F00";
-							        match.buttonText = "SE";
-                                    completedMatches.Add(match);
-                                }   
-
+                    foreach (Match match in team.teamMatches)
+                    {
+                        if (match.status == "Current"){
+        					match.buttonColor = "#F8144E";
+							match.buttonText = "STEM";
+                            currentMatches.Add(match);
                         }
-                    //}
-
+                        else if (match.status == "Coming")
+                        {
+        					match.buttonColor = "#F8144E";
+							match.buttonText = "STEM";
+                            comingMatches.Add(match);
+                        }
+                        else if (match.status == "Finished")
+                        {
+							match.buttonColor = "#FF7F00";
+							match.buttonText = "SE";
+                            completedMatches.Add(match);
+                        }
+                    }
                 }
 
-            // add to sponsor list
-            foreach (Sponsor sponsor in ClubSponsors){
-                if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
-                    sponsors.Add(sponsor);
-            }
+                // add to sponsor list
+                foreach (Sponsor sponsor in ClubSponsors)
+                {
+                    if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
+                        sponsors.Add(sponsor);
+                }   
 
                 BindingContext = teams;
                 clubTeamList.FlowItemsSource = teams;
                 gameList.ItemsSource = currentMatches;
                 sponsorList.ItemsSource = sponsors;
 
-
-
-            Title = currentClub.clubName;
+                Title = currentClub.clubName;
                 coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
                 completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
                 sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
-
             }
-
             isInitialized = true;
         }
 
@@ -120,38 +108,38 @@ namespace Manofthematch
             gameList.ItemsSource = currentMatches;
             current.FontSize = 18;
             current.TextColor = Color.White;
-                coming.FontSize = 14;
+            coming.FontSize = 14;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.FontSize = 14;
+            completed.FontSize = 14;
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
         }
-        private void comingMatchSorting(object sender, EventArgs e){
+        private void comingMatchSorting(object sender, EventArgs e)
+        {
             gameList.ItemsSource = comingMatches;
             coming.FontSize = 18;
             coming.TextColor = Color.White;
-                current.FontSize = 14;
+            current.FontSize = 14;
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                completed.FontSize = 14;
+            completed.FontSize = 14;
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-
         }
+
         private void completedMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = completedMatches;
             completed.FontSize = 18;
             completed.TextColor = Color.White;
-                current.FontSize = 14;
+            current.FontSize = 14;
             current.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-                coming.FontSize = 14;
+            coming.FontSize = 14;
             coming.TextColor = Color.FromHsla(255, 255, 255, 0.6);
-            
-
         }
+
         async void OnTeamSelect(object sender, ItemTappedEventArgs e)
         {
             if (!CrossConnectivity.Current.IsConnected)
             {
-                Debug.WriteLine($"No connection");
+                //Not Connected
             }
             else
             {
@@ -164,20 +152,19 @@ namespace Manofthematch
             Button _sender = (Button)sender;
             if (!CrossConnectivity.Current.IsConnected)
             {
-                Debug.WriteLine($"No connection");
+                //Not Connected
             }
             else
             {
-				if (_sender.Text == "SE")
-				{
-					await Navigation.PushAsync(new FinishedMatch(_sender));
-				}
-				else
-				{
-					await Navigation.PushAsync(new TeamPlayersPage(_sender));
-				}            
+                if (_sender.Text == "SE")
+                {
+                    await Navigation.PushAsync(new FinishedMatch(_sender));
+                }
+                else
+                {
+                    await Navigation.PushAsync(new TeamPlayersPage(_sender));
+                }
             }
         }
-
     }
 }

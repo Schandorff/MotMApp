@@ -42,12 +42,12 @@ namespace Manofthematch
 	            case "Coming":
 	                return "Kommende";
 	            case "Current":
-	                return "Nuværende";
+	                return "Aktuelle";
 	            case "Finished":
 	                return "Afsluttet";
 	            case "Kommende":
 	                return "Coming";
-	            case "Nuværende":
+	            case "Aktuelle":
 	                return "Current";
 	            case "Afsluttet":
 	                return "Finished";
@@ -60,7 +60,7 @@ namespace Manofthematch
 	    {
             List<string> statusList = new List<string>();
             statusList.Add("Kommende");
-	        statusList.Add("Nuværende");
+	        statusList.Add("Aktuelle");
 	        statusList.Add("Afsluttet");
 	        return statusList;
 	    }
@@ -69,16 +69,21 @@ namespace Manofthematch
 	    {
 	        var picker = (Picker)sender;
 	        int selectedIndex = picker.SelectedIndex;
-
-	        if (selectedIndex != -1)
+	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            //CurrentStatus.Text = MatchStatusTranslator((string)picker.ItemsSource[selectedIndex]);
-                currentMatch.status = MatchStatusTranslator((string)picker.ItemsSource[selectedIndex]);
-            }
+	            Navigation.PopAsync();
+	        }
+	        else
+	        {
+	            if (selectedIndex != -1)
+	            {
+	                currentMatch.status = MatchStatusTranslator((string) picker.ItemsSource[selectedIndex]);
+	            }
 
-	        currentMatch = await apiMethods.UpdateMatchById("UpdateMatchById", currentMatch.matchId, currentMatch);
-	        OnAppearing();
-        }
+	            currentMatch = await apiMethods.UpdateMatchById("UpdateMatchById", currentMatch.matchId, currentMatch);
+	            OnAppearing();
+	        }
+	    }
 
 	    private async void HomeGoalBtn_OnClicked(object sender, EventArgs e)
 	    {
@@ -87,8 +92,8 @@ namespace Manofthematch
 
 	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            Debug.WriteLine($"No connection");
-	        }
+	            Navigation.PopAsync();
+            }
 	        else
 	        {
 	            if (_sender.Text == "+")
@@ -99,16 +104,17 @@ namespace Manofthematch
 	            else
 	            {
 	                HomeScore -= 1;
-	                currentMatch.homeGoal = HomeScore;
-	                if (HomeScore < 0)
+	                if (HomeScore <= 0)
 	                {
-	                    HomeScore = 0;}
+	                    HomeScore = 0;
 	                }
-	            
-	        }
+	                currentMatch.homeGoal = HomeScore;
+                }
+	            currentMatch = await apiMethods.UpdateMatchById("UpdateMatchById", currentMatch.matchId, currentMatch);
+	            OnAppearing();
+            }
 
-	        currentMatch = await apiMethods.UpdateMatchById("UpdateMatchById", currentMatch.matchId, currentMatch);
-            OnAppearing();
+	        
 	    }
         
 	    private async void OpponentGoalBtn_OnClicked(object sender, EventArgs e)
@@ -117,8 +123,8 @@ namespace Manofthematch
 	        int OpponentScore = currentMatch.opponentGoal;
 	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            Debug.WriteLine($"No connection");
-	        }
+	            Navigation.PopAsync();
+            }
 	        else
 	        {
 	            if (_sender.Text == "+")
@@ -129,16 +135,17 @@ namespace Manofthematch
 	            else
 	            {
 	                OpponentScore -= 1;
-	                currentMatch.opponentGoal = OpponentScore;
-	                if (OpponentScore < 0)
+	                if (OpponentScore <= 0)
 	                {
 	                    OpponentScore = 0;
 	                }
-	            }
+	                currentMatch.opponentGoal = OpponentScore;
+                }
+	            currentMatch = await apiMethods.UpdateMatchById("UpdateMatchById", currentMatch.matchId, currentMatch);
+	            OnAppearing();
             }
 
-	        currentMatch = await apiMethods.UpdateMatchById("UpdateMatchById", currentMatch.matchId, currentMatch);
-	        OnAppearing();
+	        
         }
 	}
 }

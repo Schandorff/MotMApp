@@ -1,14 +1,11 @@
 ﻿using Xamarin.Forms;
 using Manofthematch.Models;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 using Manofthematch.Data;
 using System;
 using Plugin.Connectivity;
 using Plugin.Connectivity.Abstractions;
 using System.Diagnostics;
 using Akavache;
-using DLToolkit.Forms;
 using DLToolkit.Forms.Controls;
 using Manofthematch.Controls;
 
@@ -27,9 +24,8 @@ namespace Manofthematch
             BlobCache.ApplicationName = "Manofthematch";
         }        
 
-        protected async override void OnStart()
-        {            
-            CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+        protected override async void OnStart()
+        {   
             Guid DeviceId = await LocalStorage.GetCreateDeviceId(); //Ensure that a device id is created
         }        
 
@@ -43,38 +39,31 @@ namespace Manofthematch
             // Handle when your app resumes
         }
 
-        private void UpdateNetworkInfo(object sender, ConnectivityChangedEventArgs e)
-        {
-            if (!e.IsConnected)
-            {
-                Debug.WriteLine($"No connection");
-            }
-            else if (e.IsConnected)
-            {
-                Debug.WriteLine($"Connected");
-            }
-
-        }
-
-        // Called by the back button in our header/navigation bar.
-        public async void OnBackButtonPressed(object sender, EventArgs e)
-        {
+        // Called by the back button in navigation bar.
+        public async void OnBackButtonPressed(object sender, EventArgs e){
+            
             await MainPage.Navigation.PopAsync();
         }
 
 		async void OnLoginPressed(object sender, EventArgs e)
         {
-            Admin admin = await LocalStorage.GetAdminCredentials();
-            if (admin.Username != null)
+            if (!CrossConnectivity.Current.IsConnected)
             {
-                Club club = await apiMethods.GetClub("GetClub", admin.ClubId);
-                await MainPage.Navigation.PushAsync(new AdminTeamsMatches(club));
+                //Not Connected
             }
             else
             {
-                await MainPage.Navigation.PushAsync(new AdminLogin());
+                Admin admin = await LocalStorage.GetAdminCredentials();
+                if (admin.Username != null)
+                {
+                    Club club = await apiMethods.GetClub("GetClub", admin.ClubId);
+                    await MainPage.Navigation.PushAsync(new AdminTeamsMatches(club));
+                }
+                else
+                {
+                    await MainPage.Navigation.PushAsync(new AdminLogin());
+                }
             }
-            
         }
     }
 }

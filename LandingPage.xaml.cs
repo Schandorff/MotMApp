@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Manofthematch.Models;
 using Manofthematch.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
-using System.Diagnostics;
+using Plugin.Connectivity.Abstractions;
 using DLToolkit.Forms.Controls;
-using DLToolkit.Forms;
-using System.Collections.ObjectModel;
-using System.Reactive.Linq;
-using Akavache;
-//using Javax.Security.Auth;
 
 namespace Manofthematch
 {
@@ -26,8 +20,7 @@ namespace Manofthematch
         public List<Club> clubCollection = new List<Club>();
         bool isInitialized = false;
         readonly ApiMethods apiMethods = new ApiMethods();
-        public string Message;
-        public Favourites Favourites = new Favourites();
+        public string Message = "Soccer";
 
         public LandingPage()
         {
@@ -35,57 +28,59 @@ namespace Manofthematch
             InitializeComponent();
         }
 
-
-        protected override async void OnAppearing()
+        protected async void ListItems_Refreshing(object sender, EventArgs e)
         {
-            base.OnAppearing();
-            clubsSorted = await SortClubs(allClubs, Message);
-            TestClubXamlList.FlowItemsSource = clubsSorted;
-            if (!isInitialized)
-            {
-                if (!CrossConnectivity.Current.IsConnected)
-                {
-                    Debug.WriteLine($"No connection");
-                }
-                else
-                {
-                    Debug.WriteLine($"Connected");
-                    this.IsBusy = true;
-
-                    try
-                    {
-                        clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
-                        allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
-                        clubsSorted = await SortClubs(allClubs, "Soccer");
-
-                        TestClubXamlList.FlowItemsSource = clubsSorted;
-                    }
-                    finally
-                    {
-                        this.IsBusy = false;
-                        isInitialized = true;
-                    }
-                    
-                }
-            }
-            
+            await DoRefresh();
+            ClubList.EndRefresh(); //important step. It will refresh forever without triggering it
         }
-        
 
-        async void OnClubSelect(object sender, ItemTappedEventArgs e)
+        public async Task DoRefresh()
         {
-
             if (!CrossConnectivity.Current.IsConnected)
             {
-                Debug.WriteLine($"No connection");
+                //Not Connected
             }
             else
             {
-                await Navigation.PushAsync(new SingleClub((Club)e.Item));
+                clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
+                allClubs = new FlowObservableCollection<Club>(
+                clubCollection); //cast List<Club> to FlowObservableCollection
+                clubsSorted = await SortClubs(allClubs, Message);
+                ClubList.FlowItemsSource = clubsSorted;
             }
         }
 
-
+        protected override async void OnAppearing()
+        {
+            CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
+            base.OnAppearing();
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                //Not Connected
+            }
+            else
+            {
+                clubsSorted = await SortClubs(allClubs, Message);
+                ClubList.FlowItemsSource = clubsSorted;
+                if (!isInitialized)
+                {
+                    IsBusy = true;
+                    try
+                    {
+                        clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
+                        allClubs = new FlowObservableCollection<Club>(
+                            clubCollection); //cast List<Club> to FlowObservableCollection
+                        clubsSorted = await SortClubs(allClubs, Message);
+                        ClubList.FlowItemsSource = clubsSorted;
+                    }
+                    finally
+                    {
+                        IsBusy = false;
+                        isInitialized = true;
+                    }
+                }
+            }
+        }
 
         //sort the clubs into sports ordered by region
         async Task<FlowObservableCollection<Object>> SortClubs(FlowObservableCollection<Club> allClubs, string sportstype)
@@ -100,6 +95,53 @@ namespace Manofthematch
             return Items;
         }
 
+        private async void SportBtn_Clicked(object sender, EventArgs e)
+        {
+            Button _sender = (Button)sender;
+            Message = _sender.CommandParameter.ToString();
+            clubsSorted = await SortClubs(allClubs, Message);
+            ClubList.FlowItemsSource = clubsSorted;
+            switch (Message)
+            {
+                case "Soccer":
+                    sportTypeLabel.Text = "Fodbold";
+                    BackgroundImage = "FodboldBG.png";
+                    break;
+                case "Handball":
+                    sportTypeLabel.Text = "Håndbold";
+                    BackgroundImage = "HandballBG.png";
+                    break;
+                case "Tennis":
+                    sportTypeLabel.Text = "Tennis";
+                    BackgroundImage = "TennisBG.png";
+                    break;
+                case "Hockey":
+                    sportTypeLabel.Text = "Hockey";
+                    BackgroundImage = "HockeyBG.png";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        async void OnClubSelect(object sender, ItemTappedEventArgs e)
+        {
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                //Not Connected
+            }
+            else
+            {
+                await Navigation.PushAsync(new SingleClub((Club) e.Item, Message));
+            }
+        }
+
+        private async void FavBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FavouritePage(allClubs));
+        }
+
+        //SortClubs Grouping Helper
         public class Grouping<K, T> : FlowObservableCollection<T>
         {
             public K Key { get; private set; }
@@ -123,56 +165,18 @@ namespace Manofthematch
             }
         }
 
-        private async void sportBtn_Clicked(object sender, EventArgs e)
+        private async void UpdateNetworkInfo(object sender, ConnectivityChangedEventArgs e)
         {
-            Button _sender = (Button)sender;
-            Message = _sender.CommandParameter.ToString();
-            clubsSorted = await SortClubs(allClubs, Message);
-            TestClubXamlList.FlowItemsSource = clubsSorted;
-            switch (Message)
+            if (!e.IsConnected)
             {
-                case "Soccer":
-                    sportTypeLabel.Text = "Fodbold";
-                    BackgroundImage = "FodboldBG.png";
-                    break;
-                case "Handball":
-                    sportTypeLabel.Text = "Håndbold";
-                    BackgroundImage = "HandballBG.png";
-                    break;
-                case "Tennis":
-                    sportTypeLabel.Text = "Tennis";
-                    BackgroundImage = "TennisBG.png";
-                    break;
-                case "Hockey":
-                    sportTypeLabel.Text = "Hockey";
-                    BackgroundImage = "HockeyBG.png";
-                    break;
-                //case "Favourites":
-                //    //Favourites.FavClubs = clubCollection;
-                //    //await BlobCache.InMemory.InsertObject("favourites", Favourites);
-                //    //sportTypeLabel.Text = "Favourites";
-                //    //BackgroundImage = "FavouritesBG.png";
-                //    await Navigation.PushAsync(new FavouritePage(allClubs));
-                //    break;
-                default:
-                    break;
+                IsBusy = true;
+                await DisplayAlert("Ingen Forbindelse", "Du har ikke forbindelse til internettet og funktionaliteten er begrænset", "OK");
             }
-
-            
-
-
+            else if (e.IsConnected)
+            {
+                IsBusy = false;
+            }
         }
-        private async void favBtn_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new FavouritePage(allClubs));
-        }
-
-        //async void button_Click(object sender, EventArgs e, string message)
-        //{
-        //    clubsSorted = await SortClubs(allClubs, message);
-        //    TestClubXamlList.FlowItemsSource = clubsSorted;
-
-        //}
     }
 }
 

@@ -64,24 +64,26 @@ namespace Manofthematch
             comingMatches.Clear();
             completedMatches.Clear();
 
-            requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
-            
+            if (!CrossConnectivity.Current.IsConnected)
+            {
+                Debug.WriteLine($"No connection");
+            }
+            else
+            {
+                requestedClub = await apiMethods.GetClub("GetCLub", currentClub.clubId);
+            }
+
             List<Team> ClubTeams = requestedClub.Teams;
             List<Sponsor> ClubSponsors = requestedClub.Sponsors;
-            
 
             //add to teams list
             foreach (Team team in ClubTeams)
             {
-                
-
                 if (teams.All(b => b.teamId != team.teamId))
                     teams.Add(team);
 
                 foreach (Match match in team.teamMatches)
                 {
-                    //Match m = new Match();
-                    //m.opponent = match.opponent;
                     ClubMatches.Add(match);
 
                     if (match.status == "Current")
@@ -113,7 +115,7 @@ namespace Manofthematch
             }
 
             BindingContext = teams;
-            clubTeamList.FlowItemsSource = teams;
+            //clubTeamList.FlowItemsSource = teams;
             gameList.ItemsSource = currentMatches;
             sponsorList.ItemsSource = sponsors;
 
@@ -122,8 +124,8 @@ namespace Manofthematch
             completed.TextColor = Color.FromHsla(255, 255, 255, 0.6);
             sponsorList.BackgroundColor = Color.FromHsla(255, 255, 255, 0.6);
             
-            
         }
+
         private void currentMatchSorting(object sender, EventArgs e)
         {
             gameList.ItemsSource = currentMatches;
@@ -178,24 +180,15 @@ namespace Manofthematch
             }
             else
             {
-                //if (_sender.Text == "SE")
-                //{
                 Match match = new Match();
                 foreach (var item in ClubMatches)
                 {
                     if (item.matchId == int.Parse(_sender.CommandParameter.ToString()))
                     {
                         match = item;
-                        //match.matchId = item.matchId;
                     }
                 }
-
                 await Navigation.PushAsync(new AdminMatch(match));
-                //}
-                //else
-                //{
-                    //await Navigation.PushAsync(new TeamPlayersPage(_sender));
-                //}
             }
         }
     }

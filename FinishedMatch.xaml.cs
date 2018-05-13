@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CarouselView.FormsPlugin.Abstractions;
-using DLToolkit.Forms.Controls;
 using Manofthematch.Data;
 using Manofthematch.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using Plugin.Connectivity;
 
 namespace Manofthematch
 {
@@ -23,7 +15,6 @@ namespace Manofthematch
 		readonly ApiMethods apiMethods = new ApiMethods();
 		bool isInitialized = false;
 		Match requestedMatch = new Match();
-        
 
 		public FinishedMatch(Button currentMatchId)
         {
@@ -32,6 +23,7 @@ namespace Manofthematch
             NavigationPage.SetHasNavigationBar(this, false); //remove default navigation
             InitializeComponent();
         }
+
 		protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -46,7 +38,6 @@ namespace Manofthematch
                     {
                         if (sponsors.All(b => b.sponsorId != sponsor.sponsorId))
                             sponsors.Add(sponsor);
-
                     }
                 }
 				BindingContext = requestedMatch;

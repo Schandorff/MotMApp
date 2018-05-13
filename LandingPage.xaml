@@ -34,11 +34,11 @@
                                 Android="10, 10, 10, 10"
                                 WinPhone="10, 10, 10, 10" />
                 </Grid.Padding>
-                <Button Clicked="sportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="sportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="sportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="sportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="favBtn_Clicked" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="FavBtn_Clicked" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
             </Grid>
 
             <StackLayout BackgroundColor="Transparent" Padding="0,0,3,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="1">
@@ -46,7 +46,7 @@
             </StackLayout>
 
             <ScrollView Grid.Column="0" Grid.Row="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <flv:FlowListView x:Name="TestClubXamlList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <flv:FlowListView x:Name="ClubList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsPullToRefreshEnabled="True" Refreshing="ListItems_Refreshing">
                     <flv:FlowListView.GroupHeaderTemplate>
                         <DataTemplate>
                             <ViewCell>

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Manofthematch.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 
 namespace Manofthematch
 {
@@ -22,14 +24,15 @@ namespace Manofthematch
 
 	    protected override async void OnAppearing()
 	    {
-	        firstName.Text = receivedPlayer.playerFirstName.ToUpper();
+            firstName.Text = receivedPlayer.playerFirstName.ToUpper();
 	        lastName.Text = receivedPlayer.playerLastName.ToUpper();
 	    }
 
 	    private async void _button_OnClicked(object sender, EventArgs e)
 	    {
+
 	        Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
             await Navigation.PopAsync();
         }
-	}
+    }
 }

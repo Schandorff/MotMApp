@@ -19,7 +19,7 @@ namespace Manofthematch.Models
         public List<Player> matchPlayers { get; set; }
 		public string buttonText { get; set; }
 		public string buttonColor { get; set; }
-		public List<Sponsor> matchSponsors { get; set; }
+        public List<Sponsor> matchSponsors { get; set; }
         public string manOfTheMatch { get; set; }
     }
 }

@@ -13,6 +13,7 @@ using Manofthematch.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 
 namespace Manofthematch
 {
@@ -37,95 +38,91 @@ namespace Manofthematch
 
 	    protected override async void OnAppearing()
 	    {
-	        if (!CrossConnectivity.Current.IsConnected)
+            base.OnAppearing();
+	        IsBusy = true;
+            try
 	        {
-	            Debug.WriteLine($"No connection");
-	        }
-	        else
+	            mPlayers = await apiMethods.GetMatchPlayers("GetMatchPlayers", matchID);
+	            MatchPlayers = new FlowObservableCollection<Player>(mPlayers); //cast List<Player> to FlowObservableCollection
+	            matchVotes = await apiMethods.GetMatchVotes("GetMatchVotes", matchID);
+	            Carousel.ItemsSource = MatchPlayers;
+            }
+	        finally
 	        {
-	            Debug.WriteLine($"Connected");
-	            this.IsBusy = true;
-
-	            try
-	            {
-	                
-	                mPlayers = await apiMethods.GetMatchPlayers("GetMatchPlayers", matchID);
-	                MatchPlayers = new FlowObservableCollection<Player>(mPlayers); //cast List<Player> to FlowObservableCollection
-	                matchVotes = await apiMethods.GetMatchVotes("GetMatchVotes", matchID);
-	                Carousel.ItemsSource = MatchPlayers;
-
-                }
-	            finally
-	            {
-	                this.IsBusy = false;
-	            }
+	            this.IsBusy = false;
 	        }
-
-	        //myCarousel.ItemTemplate = new DataTemplate(typeof(PlayerCard)); ; //new DataTemplate (typeof(MyView));
-	        //myCarousel.Position = 0; //default
-	        //myCarousel.InterPageSpacing = 10;
-	        //myCarousel.Orientation = CarouselViewOrientation.Horizontal;
-
         }
 
 	    private async void PlayerVoteBtn_OnClicked(object sender, EventArgs e)
 	    {
-	        Button VoteBtn = (Button)sender;
-	        int PlayerID = int.Parse(VoteBtn.CommandParameter.ToString());
-	        Player selectedPlayer = MatchPlayers.FirstOrDefault(t => t.playerId == PlayerID);
-	        Guid _DeviceId = await LocalStorage.GetCreateDeviceId();
-	        int presentVoteIndex = matchVotes.FindIndex(v => v.deviceId == _DeviceId.ToString());
-            Vote vote = new Vote();
-	        Vote presentVote = new Vote();
-	        presentVote.playerId = presentVoteIndex == -1 ? 0 : matchVotes[presentVoteIndex].playerId;
-	        presentVote.voteId = presentVoteIndex == -1 ? 0 : matchVotes[presentVoteIndex].voteId;
-            
-            Player votedPlayer = MatchPlayers.FirstOrDefault(t => t.playerId == presentVote.playerId);
-            bool answer;
-
-	        if (selectedPlayer != null)
+	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            vote.playerId = selectedPlayer.playerId;
-	            vote.deviceId = _DeviceId.ToString();
+	            //Not Connected
 	        }
-
-            
-            //index will be -1 if device didn't vote yet
-	        if (presentVoteIndex != -1) 
+	        else
 	        {
-	            //Already voted on selected player
-                if (presentVote.playerId == selectedPlayer.playerId)
+	            Button VoteBtn = (Button) sender;
+	            int PlayerID = int.Parse(VoteBtn.CommandParameter.ToString());
+	            Player selectedPlayer = MatchPlayers.FirstOrDefault(t => t.playerId == PlayerID);
+	            Guid _DeviceId = await LocalStorage.GetCreateDeviceId();
+	            int presentVoteIndex = matchVotes.FindIndex(v => v.deviceId == _DeviceId.ToString());
+	            Vote vote = new Vote();
+	            Vote presentVote = new Vote();
+	            presentVote.playerId = presentVoteIndex == -1 ? 0 : matchVotes[presentVoteIndex].playerId;
+	            presentVote.voteId = presentVoteIndex == -1 ? 0 : matchVotes[presentVoteIndex].voteId;
+
+	            Player votedPlayer = MatchPlayers.FirstOrDefault(t => t.playerId == presentVote.playerId);
+	            bool answer;
+
+	            if (selectedPlayer != null)
 	            {
-	                await DisplayAlert("Stem på Man of The Match?", $"Du har allerede stemt på {votedPlayer.playerFirstName} {votedPlayer.playerLastName}", "OK");
+	                vote.playerId = selectedPlayer.playerId;
+	                vote.deviceId = _DeviceId.ToString();
 	            }
-                //Already voted on another player, ask user if they want to make a new vote
-                else
-                {
-	                answer = await DisplayAlert("Stem på Man of The Match?", $"Du har allerede stemt på {votedPlayer.playerFirstName} {votedPlayer.playerLastName} Vil du hellere stemme på {selectedPlayer.playerFirstName} {selectedPlayer.playerLastName}", "Stem", "Annuller");
+
+
+	            //index will be -1 if device didn't vote yet
+	            if (presentVoteIndex != -1)
+	            {
+	                //Already voted on selected player
+	                if (presentVote.playerId == selectedPlayer.playerId)
+	                {
+	                    await DisplayAlert("Stem på Man of The Match?",
+	                        $"Du har allerede stemt på {votedPlayer.playerFirstName} {votedPlayer.playerLastName}", "OK");
+	                }
+	                //Already voted on another player, ask user if they want to make a new vote
+	                else
+	                {
+	                    answer = await DisplayAlert("Stem på Man of The Match?",
+	                        $"Du har allerede stemt på {votedPlayer.playerFirstName} {votedPlayer.playerLastName} Vil du hellere stemme på {selectedPlayer.playerFirstName} {selectedPlayer.playerLastName}",
+	                        "Stem", "Annuller");
+	                    if (!answer)
+	                    {
+	                        //do nothing
+	                    }
+	                    else
+	                    {
+	                        await apiMethods.UpdateVote("UpdateVote", presentVote.voteId, vote);
+	                        await Navigation.PushAsync(new VoteReceipt(selectedPlayer));
+	                    }
+	                }
+	            }
+	            else
+	            {
+	                answer = await DisplayAlert("Stem på Man of The Match?",
+	                    $"Er du sikker på at du vil stemme på {selectedPlayer.playerFirstName} {selectedPlayer.playerLastName}",
+	                    "Stem", "Annuller");
 	                if (!answer)
 	                {
 	                    //do nothing
 	                }
 	                else
 	                {
-	                    await apiMethods.UpdateVote("UpdateVote", presentVote.voteId, vote);
+	                    await apiMethods.PostVote("PostVote", matchID, vote);
 	                    await Navigation.PushAsync(new VoteReceipt(selectedPlayer));
 	                }
 	            }
 	        }
-            else
-            {
-                answer = await DisplayAlert("Stem på Man of The Match?", $"Er du sikker på at du vil stemme på {selectedPlayer.playerFirstName} {selectedPlayer.playerLastName}", "Stem", "Annuller");
-                if (!answer)
-                {
-                    //do nothing
-                }
-                else
-                {
-                    await apiMethods.PostVote("PostVote", matchID, vote);
-                    await Navigation.PushAsync(new VoteReceipt(selectedPlayer));
-                }
-            }
-        }
-	}
+	    }
+    }
 }
