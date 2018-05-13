@@ -71,7 +71,7 @@ namespace Manofthematch
 	        int selectedIndex = picker.SelectedIndex;
 	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            Navigation.PopAsync();
+	            await Navigation.PopAsync();
 	        }
 	        else
 	        {
@@ -92,7 +92,7 @@ namespace Manofthematch
 
 	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            Navigation.PopAsync();
+	            await Navigation.PopAsync();
             }
 	        else
 	        {
@@ -123,7 +123,7 @@ namespace Manofthematch
 	        int OpponentScore = currentMatch.opponentGoal;
 	        if (!CrossConnectivity.Current.IsConnected)
 	        {
-	            Navigation.PopAsync();
+	            await Navigation.PopAsync();
             }
 	        else
 	        {

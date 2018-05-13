@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="Manofthematch.LandingPage"
+             Title="Klubber"
+             BackgroundImage="FodboldBG.png"
+             ControlTemplate="{DynamicResource LandingPageTemplate}">
+    <ContentPage.Content>
+        <Grid x:Name="OuterGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid x:Name="sportTypeGrid" Grid.Column="0" Grid.Row="0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.Padding>
+                    <OnPlatform x:TypeArguments="Thickness"
+                                iOS="10, 10, 10, 10"
+                                Android="10, 10, 10, 10"
+                                WinPhone="10, 10, 10, 10" />
+                </Grid.Padding>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="SportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button Clicked="FavBtn_Clicked" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
+            </Grid>
+
+            <StackLayout BackgroundColor="Transparent" Padding="0,0,3,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="1">
+                <Label  x:Name="sportTypeLabel" Text="Fodbold" FontSize="Large" FontAttributes="Bold" Margin="10" TextColor="White" ></Label>
+            </StackLayout>
+
+            <ScrollView Grid.Column="0" Grid.Row="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <flv:FlowListView x:Name="ClubList" FlowColumnCount="4" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="80" FlowUseAbsoluteLayoutInternally="false" FlowItemTapped="OnClubSelect" IsGroupingEnabled="true" FlowGroupDisplayBinding="{Binding Key}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" IsPullToRefreshEnabled="True" Refreshing="ListItems_Refreshing">
+                    <flv:FlowListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="Transparent" HeightRequest="20" Padding="0,3,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                    <Label Margin="10,0,0,40" Text="{Binding Key}" TextColor="White" VerticalTextAlignment="Center" FontSize="Large" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                    </Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </flv:FlowListView.GroupHeaderTemplate>
+                    <flv:FlowListView.FlowColumnTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" Grid.Column="0" Grid.Row="0"/>
+                                <Label Margin="0,0,0,0" Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="1"/>
+                            </Grid>
+                        </DataTemplate>
+                    </flv:FlowListView.FlowColumnTemplate>
+                </flv:FlowListView>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

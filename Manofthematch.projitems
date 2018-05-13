@@ -12,11 +12,11 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SingleClub.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SingleClub.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SingleTeam.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SingleTeam.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -24,7 +24,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FinishedMatch.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\FinishedMatch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -43,7 +43,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\LocalStorage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\ApiMethods.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FavouritePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FavouritePage.xaml.cs">
       <DependentUpon>FavouritePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -52,7 +52,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DeviceId.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Favourites.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Team.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)LandingPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -62,48 +62,48 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Player.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sponsor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Vote.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SingleClub.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SingleClub.xaml.cs">
       <DependentUpon>SingleClub.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\HVScrollGridView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SingleTeam.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SingleTeam.xaml.cs">
       <DependentUpon>SingleTeam.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)TeamPlayersPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\TeamPlayersPage.xaml.cs">
       <DependentUpon>TeamPlayersPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AdminPages\AdminLogin.xaml.cs">
       <DependentUpon>AdminLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)FinishedMatch.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FinishedMatch.xaml.cs">
       <DependentUpon>FinishedMatch.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)VoteReceipt.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\VoteReceipt.xaml.cs">
       <DependentUpon>VoteReceipt.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LandingPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LandingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FavouritePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\FavouritePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)TeamPlayersPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\TeamPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)VoteReceipt.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\VoteReceipt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -119,5 +119,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
 </Project>
