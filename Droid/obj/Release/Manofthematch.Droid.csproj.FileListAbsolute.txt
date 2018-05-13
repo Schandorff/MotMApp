@@ -365,3 +365,4 @@ D:/source/Xamarin projects/MotMApp/Droid/obj/Release/android/assets/System.Xml.p
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Release/linksrc/Xamarin.Forms.Core.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Release/linksrc/Xamarin.Forms.Platform.Android.dll.mdb
 /Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Release/linksrc/Xamarin.Forms.Xaml.dll.mdb
+/Users/simonschandorff/Developement/Mobile Dev/MotMApp/Droid/obj/Release/Manofthematch.Droid.csprojResolveAssemblyReference.cache

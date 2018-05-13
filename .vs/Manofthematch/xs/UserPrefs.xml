@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{53AC13EA-02F5-4C53-90E8-16DE6EBE670F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/LandingPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/TeamPlayersPage.xaml">
     <Files>
       <File FileName="Droid/Resources/values/styles.xml" Line="2" Column="1" />
       <File FileName="Controls/HVScrollGridView.cs" Line="1" Column="1" />
-      <File FileName="Data/ApiMethods.cs" Line="11" Column="1" />
+      <File FileName="Data/ApiMethods.cs" Line="1" Column="1" />
       <File FileName="Data/Authorization.cs" Line="1" Column="1" />
       <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.3.0-19/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1152" Column="10" />
-      <File FileName="Pages/FinishedMatch.xaml" Line="61" Column="110" />
+      <File FileName="Pages/FinishedMatch.xaml" Line="92" Column="1" />
       <File FileName="Pages/LandingPage.xaml" Line="80" Column="15" />
       <File FileName="Pages/LandingPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Pages/TeamPlayersPage.xaml" Line="74" Column="39" />
+      <File FileName="Pages/VoteReceipt.xaml" Line="70" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -21,5 +23,5 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Manofthematch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.74705BCB-5305-4F34-919C-0095830F304D" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.new_device" />
+  <MonoDevelop.Ide.ItemProperties.Manofthematch.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>
