@@ -52,7 +52,6 @@ namespace Manofthematch
 
         protected override async void OnAppearing()
         {
-            CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
             base.OnAppearing();
             if (!CrossConnectivity.Current.IsConnected)
             {
@@ -64,6 +63,7 @@ namespace Manofthematch
                 ClubList.FlowItemsSource = clubsSorted;
                 if (!isInitialized)
                 {
+					CrossConnectivity.Current.ConnectivityChanged += UpdateNetworkInfo;
                     IsBusy = true;
                     try
                     {
