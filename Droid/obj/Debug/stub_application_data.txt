@@ -1,2 +1,0 @@
-android.app.Application
-MotM.Man_of_the_match
