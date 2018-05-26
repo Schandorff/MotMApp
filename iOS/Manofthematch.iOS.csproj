@@ -339,6 +339,51 @@
   <ItemGroup>
     <BundleResource Include="Resources\ReceiptBG%403x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\favSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\favSel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\favSel%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\handballSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\handballSel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\handballSel%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hockeySel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hockeySel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hockeySel%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soccerSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soccerSel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soccerSel%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tennisSel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tennisSel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tennisSel%403x.png" />
+  </ItemGroup>
   <Import Project="..\Manofthematch.projitems" Label="Shared" Condition="Exists('..\Manofthematch.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

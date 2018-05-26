@@ -4588,6 +4588,9 @@ namespace Manofthematch.Droid
 			public static int FavouritesBG = 0;
 			
 			// aapt resource value: 0
+			public static int favSel = 0;
+			
+			// aapt resource value: 0
 			public static int FodboldBG = 0;
 			
 			// aapt resource value: 0
@@ -4600,10 +4603,16 @@ namespace Manofthematch.Droid
 			public static int HandballBG = 0;
 			
 			// aapt resource value: 0
+			public static int handballSel = 0;
+			
+			// aapt resource value: 0
 			public static int hockey = 0;
 			
 			// aapt resource value: 0
 			public static int HockeyBG = 0;
+			
+			// aapt resource value: 0
+			public static int hockeySel = 0;
 			
 			// aapt resource value: 0
 			public static int icon = 0;
@@ -5254,6 +5263,9 @@ namespace Manofthematch.Droid
 			public static int soccer = 0;
 			
 			// aapt resource value: 0
+			public static int soccerSel = 0;
+			
+			// aapt resource value: 0
 			public static int splashScreen = 0;
 			
 			// aapt resource value: 0
@@ -5267,6 +5279,9 @@ namespace Manofthematch.Droid
 			
 			// aapt resource value: 0
 			public static int TennisBG = 0;
+			
+			// aapt resource value: 0
+			public static int tennisSel = 0;
 			
 			// aapt resource value: 2131296361
 			public static int tooltip_frame_dark = 2131296361;

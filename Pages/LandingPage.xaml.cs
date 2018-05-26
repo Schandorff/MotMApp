@@ -53,6 +53,7 @@ namespace Manofthematch
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            SetSportBtnsAndBg(Message);
             if (!CrossConnectivity.Current.IsConnected)
             {
                 //Not Connected
@@ -68,8 +69,7 @@ namespace Manofthematch
                     try
                     {
                         clubCollection = await apiMethods.GetAllClubs("GetAllCLubs", 1083);
-                        allClubs = new FlowObservableCollection<Club>(
-                            clubCollection); //cast List<Club> to FlowObservableCollection
+                        allClubs = new FlowObservableCollection<Club>(clubCollection); //cast List<Club> to FlowObservableCollection
                         clubsSorted = await SortClubs(allClubs, Message);
                         ClubList.FlowItemsSource = clubsSorted;
                     }
@@ -101,27 +101,49 @@ namespace Manofthematch
             Message = _sender.CommandParameter.ToString();
             clubsSorted = await SortClubs(allClubs, Message);
             ClubList.FlowItemsSource = clubsSorted;
-            switch (Message)
+            SetSportBtnsAndBg(Message);
+        }
+
+        private void SetSportBtnsAndBg(string message)
+        {
+            switch (message)
             {
                 case "Soccer":
                     sportTypeLabel.Text = "Fodbold";
                     BackgroundImage = "FodboldBG.png";
+                    ResetSportBtnsBg();
+                    SoccerBtn.Image = "soccerSel.png";
                     break;
                 case "Handball":
                     sportTypeLabel.Text = "Håndbold";
                     BackgroundImage = "HandballBG.png";
+                    ResetSportBtnsBg();
+                    HandballBtn.Image = "handballSel.png";
                     break;
                 case "Tennis":
                     sportTypeLabel.Text = "Tennis";
                     BackgroundImage = "TennisBG.png";
+                    ResetSportBtnsBg();
+                    TennisBtn.Image = "tennisSel.png";
                     break;
                 case "Hockey":
                     sportTypeLabel.Text = "Hockey";
                     BackgroundImage = "HockeyBG.png";
+                    ResetSportBtnsBg();
+                    HockeyBtn.Image = "hockeySel.png";
                     break;
                 default:
                     break;
             }
+        }
+
+        private void ResetSportBtnsBg()
+        {
+            SoccerBtn.Image = "soccer.png";
+            HandballBtn.Image = "handball";
+            TennisBtn.Image = "tennis";
+            HockeyBtn.Image = "hockey";
+            FavBtn.Image = "star.png";
         }
 
         async void OnClubSelect(object sender, ItemTappedEventArgs e)
@@ -138,6 +160,8 @@ namespace Manofthematch
 
         private async void FavBtn_Clicked(object sender, EventArgs e)
         {
+            ResetSportBtnsBg();
+            FavBtn.Image = "favSel.png";
             await Navigation.PushAsync(new FavouritePage(allClubs));
         }
 

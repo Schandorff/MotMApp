@@ -34,11 +34,11 @@
                                 Android="10, 10, 10, 10"
                                 WinPhone="10, 10, 10, 10" />
                 </Grid.Padding>
-                <Button Clicked="SportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="SportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="SportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="SportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"></Button>
-                <Button Clicked="FavBtn_Clicked" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"></Button>
+                <Button x:Name="SoccerBtn" Clicked="SportBtn_Clicked" CommandParameter="Soccer" Image="soccer.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent"/>
+                <Button x:Name="HandballBtn" Clicked="SportBtn_Clicked" CommandParameter="Handball" Image="handball.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent"/>
+                <Button x:Name="TennisBtn" Clicked="SportBtn_Clicked" CommandParameter="Tennis" Image="tennis.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent"/>
+                <Button x:Name="HockeyBtn" Clicked="SportBtn_Clicked" CommandParameter="Hockey" Image="hockey.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent"/>
+                <Button x:Name="FavBtn" Clicked="FavBtn_Clicked" Image="star.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent"/>
             </Grid>
 
             <StackLayout BackgroundColor="Transparent" Padding="0,0,3,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="1">
@@ -68,7 +68,7 @@
                                     <RowDefinition Height="20"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
-                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="40" Grid.Column="0" Grid.Row="0"/>
+                                <Image Source="{Binding clubLogo}" HeightRequest="40" WidthRequest="50" Grid.Column="0" Grid.Row="0"/>
                                 <Label Margin="0,0,0,0" Text="{Binding clubName}" TextColor="#fff" HorizontalOptions="CenterAndExpand" Grid.Column="0" Grid.Row="1"/>
                             </Grid>
                         </DataTemplate>
