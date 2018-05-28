@@ -53,11 +53,6 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\netstandard.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Data.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Numerics.dll
@@ -66,12 +61,14 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Diagnos
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Globalization.Extensions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.Compression.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.Compression.FileSystem.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Serialization.Xml.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Security.Cryptography.Algorithms.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Security.SecureString.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Web.Services.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Collections.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.dll
@@ -80,6 +77,7 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.IO.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Threading.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Linq.Expressions.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflection.Extensions.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ObjectModel.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
@@ -87,9 +85,9 @@ D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Reflect
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Dynamic.Runtime.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\Mono.Security.dll
+D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ComponentModel.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Globalization.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
 D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll
-D:\source\Xamarin projects\MotMApp\Droid\obj\Debug\android\assets\System.Text.RegularExpressions.dll

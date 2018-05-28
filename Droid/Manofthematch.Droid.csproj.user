@@ -4,6 +4,7 @@
     <SelectedDevice>Genymotion Google Pixel - 7.1.0 - API 25 - 1080x1920</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Nougat</DefaultDevice>
     <ProjectView>ProjectFiles</ProjectView>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault.NoActionBar.Fullscreen</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.AppCompat</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredDevice>Nexus 6</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>
